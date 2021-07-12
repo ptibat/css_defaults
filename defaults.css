@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 07/06/2021 10:12
+* Last modif	: 12/07/2021 16:33
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -139,6 +139,20 @@ a.external:hover:after
 .help
 	{
 		cursor :			help;
+	}
+
+
+/* ------------------------------------------------------------------------------------ CARET */
+
+.no_caret
+	{
+		color : 			transparent !important;
+		text-shadow :		0 0 0 #000 !important;
+	}
+
+.no_caret:focus
+	{
+		outline :			none !important;
 	}
 
 
@@ -904,14 +918,14 @@ button.bouton
 
 .bouton:hover
 	{
-		background-color :		#CFCFCF;
+		background-color :	#CFCFCF;
 		text-decoration :		none;
 	}
 
 .bouton:active
 	{
 		color :			#FFFFFF !important;
-		background-color :		#222222 !important;
+		background-color :	#222222 !important;
 		text-decoration :		none;
 	}
 	
