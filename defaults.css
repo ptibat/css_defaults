@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 15/10/2021 10:21
+* Last modif	: 15/10/2021 10:24
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -322,17 +322,17 @@ h5
 
 /* ------------------------------------------------------------------------------------ GRAISSES / WEIGHTS */
 
-.f_thin		{ font-weight :	100; }
-.f_extralight	{ font-weight :	200; }
-.f_light		{ font-weight :	300; }
-.f_semilight	{ font-weight :	350; }
-.f_normal		{ font-weight :	400; }
-.f_medium		{ font-weight :	500; }
-.f_semibold		{ font-weight :	600; }
-.f_bold		{ font-weight :	700; }
-.f_extrabold	{ font-weight :	800; }
-.f_black		{ font-weight :	900; }
-.f_extrablack	{ font-weight :	950; }
+body .f_thin		{ font-weight :	100; }
+body .f_extralight	{ font-weight :	200; }
+body .f_light		{ font-weight :	300; }
+body .f_semilight		{ font-weight :	350; }
+body .f_normal		{ font-weight :	400; }
+body .f_medium		{ font-weight :	500; }
+body .f_semibold		{ font-weight :	600; }
+body .f_bold		{ font-weight :	700; }
+body .f_extrabold		{ font-weight :	800; }
+body .f_black		{ font-weight :	900; }
+body .f_extrablack	{ font-weight :	950; }
 
 
 
