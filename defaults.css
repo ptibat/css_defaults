@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 15/10/2021 10:24
+* Last modif	: 21/10/2021 09:51
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -60,6 +60,7 @@ code,
 		background-color :		rgba( 0 , 0 , 0 , 0.03 );
 		border-left :			4px solid #2063AA;
 		white-space :			pre-wrap;
+		tab-size :				6;
 	}
 
 span.code
@@ -326,7 +327,8 @@ body .f_thin		{ font-weight :	100; }
 body .f_extralight	{ font-weight :	200; }
 body .f_light		{ font-weight :	300; }
 body .f_semilight		{ font-weight :	350; }
-body .f_normal		{ font-weight :	400; }
+body .f_normal,
+body .f_regular		{ font-weight :	400; }
 body .f_medium		{ font-weight :	500; }
 body .f_semibold		{ font-weight :	600; }
 body .f_bold		{ font-weight :	700; }
