@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 27/10/2021 11:55
+* Last modif	: 28/10/2021 12:42
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1280,6 +1280,38 @@ button.bouton.large
 .tag.orange_clair,
 .tag.orange_clair *		{ color : 			#744300; }
 
+/* ----------------------------------------------------------------- FLUO */
+
+.bouton.fluo,
+.tag.fluo				{ background-color : 	#7FFF00; }
+.bouton.fluo:not(.disabled):hover,
+.bouton.fluo.current		{ background-color :	#77ef00; color : #333; }
+.bouton.fluo,
+.bouton.fluo *,
+.tag.fluo,
+.tag.fluo *				{ color : 			#333; }
+
+/* ----------------------------------------------------------------- FLASHY */
+
+.bouton.flashy,
+.tag.flashy				{ background-color : 	#FF1493; }
+.bouton.flashy:not(.disabled):hover,
+.bouton.flashy.current		{ background-color :	#ea007d; color : #FFFFFF; }
+.bouton.flashy,
+.bouton.flashy *,
+.tag.flashy,
+.tag.flashy *			{ color : 			#FFFFFF; }
+
+/* ----------------------------------------------------------------- gold */
+
+.bouton.gold,
+.tag.gold				{ background-color : 	#ffe500; }
+.bouton.gold:not(.disabled):hover,
+.bouton.gold.current		{ background-color :	#fcc500; color : #333; }
+.bouton.gold,
+.bouton.gold *,
+.tag.gold,
+.tag.gold *				{ color : 			#333; }
 
 
 
