@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 28/10/2021 12:42
+* Last modif	: 28/10/2021 12:45
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1312,6 +1312,17 @@ button.bouton.large
 .bouton.gold *,
 .tag.gold,
 .tag.gold *				{ color : 			#333; }
+
+/* ----------------------------------------------------------------- AQUA */
+
+.bouton.aqua,
+.tag.aqua				{ background-color : 	#00FFFF; }
+.bouton.aqua:not(.disabled):hover,
+.bouton.aqua.current		{ background-color :	#00D0D0; color : #333; }
+.bouton.aqua,
+.bouton.aqua *,
+.tag.aqua,
+.tag.aqua *				{ color : 			#333; }
 
 
 
