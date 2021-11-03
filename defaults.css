@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 28/10/2021 12:45
+* Last modif	: 03/11/2021 17:09
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -428,20 +428,20 @@ code
 		white-space :			nowrap;
 	}
 
-.light,
-a.light,
-div.light,
-span.light,
-input.light
+.t_light,
+a.t_light,
+div.t_light,
+span.t_light,
+input.t_light
 	{
 		color :				#999999;
 	}
 
-.blue,
-a.blue,
-div.blue,
-span.blue,
-input.blue
+.t_blue,
+a.t_blue,
+div.t_blue,
+span.t_blue,
+input.t_blue
 	{
 		color :				#0000FF;
 	}
@@ -1318,7 +1318,7 @@ button.bouton.large
 .bouton.aqua,
 .tag.aqua				{ background-color : 	#00FFFF; }
 .bouton.aqua:not(.disabled):hover,
-.bouton.aqua.current		{ background-color :	#00D0D0; color : #333; }
+.bouton.aqua.current		{ background-color :	#00f2f2; color : #333; }
 .bouton.aqua,
 .bouton.aqua *,
 .tag.aqua,
