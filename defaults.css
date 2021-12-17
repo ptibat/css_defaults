@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 03/11/2021 17:09
+* Last modif	: 17/12/2021 16:46
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -233,6 +233,27 @@ img.grayscale.disabled
 		filter :				url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
 		-webkit-filter :			grayscale(0%);
 	}
+
+img.fullsize,
+object.fullsize,
+embed.fullsize,
+video.fullsize 
+	{
+		display :				block;
+		width : 				100%;
+		height :				100%;
+		object-fit :			cover;
+		object-position :			center center;
+	}
+
+img.contain,
+object.contain,
+embed.contain,
+video.contain 
+	{
+		object-fit :			contain;
+	}
+
 
 /* ------------------------------------------------------------------------------------ HR */
 
@@ -1989,7 +2010,17 @@ table.tableau.hover > tbody > tr:hover > td
 
 /* ------------------------------------------------------------------------------------ COLONNES */
 
-.colonnes
+.colonnes		{ column-count : 3; }
+.colonnes2		{ column-count : 2; }
+.colonnes4		{ column-count : 4; }
+.colonnes5		{ column-count : 5; }
+.colonnes6		{ column-count : 6; }
+
+
+
+/* ------------------------------------------------------------------------------------ COLONNES : GRID */
+
+[class*="colonnes_grid"]
 	{
 		display :				grid;
 		grid-gap :				10px;
@@ -1998,35 +2029,17 @@ table.tableau.hover > tbody > tr:hover > td
 		grid-auto-flow :			dense;
 	}
 
-
-.colonne1,
-.colonne2,
-.colonne3,
-.colonne4
+[class*="colonnes_grid"] > div
 	{
 		padding :				10px;
 		min-height :			50px;
 	}
 
-.colonne1
-	{
-		grid-column-end :			span 1;
-	}
-
-.colonne2
-	{
-		grid-column-end :			span 2;
-	}
-
-.colonne3
-	{
-		grid-column-end :			span 3;
-	}
-
-.colonne4
-	{
-		grid-column-end :			span 4;
-	}
+.colonnes_grid1 > div	{ grid-column-end : span 1; }
+.colonnes_grid2 > div	{ grid-column-end : span 2; }
+.colonnes_grid3 > div	{ grid-column-end : span 3; }
+.colonnes_grid5 > div	{ grid-column-end : span 5; }
+.colonnes_grid6 > div	{ grid-column-end : span 6; }
 
 
 /* ------------------------------------------------------------------------------------ ANIMATIONS */
