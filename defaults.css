@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 17/12/2021 16:46
+* Last modif	: 17/12/2021 16:50
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -2010,11 +2010,11 @@ table.tableau.hover > tbody > tr:hover > td
 
 /* ------------------------------------------------------------------------------------ COLONNES */
 
-.colonnes		{ column-count : 3; }
-.colonnes2		{ column-count : 2; }
-.colonnes4		{ column-count : 4; }
-.colonnes5		{ column-count : 5; }
-.colonnes6		{ column-count : 6; }
+.colonnes2			{ column-count : 2; }
+.colonnes3,.colonnes	{ column-count : 3; }
+.colonnes4			{ column-count : 4; }
+.colonnes5			{ column-count : 5; }
+.colonnes6			{ column-count : 6; }
 
 
 
