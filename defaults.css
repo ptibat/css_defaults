@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 17/12/2021 16:50
+* Last modif	: 06/01/2022 16:16
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -742,60 +742,57 @@ select.minimalist
 
 /* ------------------------------------------------------------------------------------ ESPACEMENTS */
 
-.tab,
-.tab2,
-.tab3,
-.tab4,
-.tab5,
-.tab6,
-.tab7,
-.tab8,
-.tab9,
-.tab10
+span[class^="tab"]
 	{
+		--w : 				20px;
+
 		display :				inline-block;
 		margin :				0;
-		width :				20px;
+		width : 				calc(var(--w) * 1 );
 		height :				1em;
 	}
 
-.tab2			{ width :   40px; }
-.tab3			{ width :   60px; }
-.tab4			{ width :   80px; }
-.tab5			{ width :   80px; }
-.tab6			{ width :  100px; }
-.tab7			{ width :  120px; }
-.tab8			{ width :  140px; }
-.tab9			{ width :  160px; }
-.tab10		{ width :  180px; }
+span.tab2			{ width :   calc(var(--w) *  2 ); }
+span.tab3			{ width :	calc(var(--w) *  3 ); }
+span.tab4			{ width :	calc(var(--w) *  4 ); }
+span.tab5			{ width :	calc(var(--w) *  5 ); }
+span.tab6			{ width :	calc(var(--w) *  6 ); }
+span.tab7			{ width :	calc(var(--w) *  7 ); }
+span.tab8			{ width :	calc(var(--w) *  8 ); }
+span.tab9			{ width :	calc(var(--w) *  9 ); }
+span.tab10			{ width :	calc(var(--w) * 10 ); }
 
-.space,
-.space1		{ height :    1px; }
-.space2		{ height :    2px; }
-.space3		{ height :    3px; }
-.space4		{ height :    4px; }
-.space5		{ height :    5px; }
-.space6		{ height :    6px; }
-.space7		{ height :    7px; }
-.space8		{ height :    8px; }
-.space9		{ height :    9px; }
-.space10		{ height :   10px; }
-.space20		{ height :   20px; }
-.space30		{ height :   30px; }
-.space40		{ height :   40px; }
-.space50		{ height :   50px; }
-.space60		{ height :   60px; }
-.space70		{ height :   70px; }
-.space80		{ height :   80px; }
-.space90		{ height :   90px; }
-.space100		{ height :  100px; }
-.space120		{ height :  120px; }
-.space150		{ height :  150px; }
-.space200		{ height :  200px; }
-.space300		{ height :  300px; }
-.space400		{ height :  400px; }
-.space500		{ height :  500px; }
-.space1000		{ height : 1000px; }
+div[class^="space"]
+	{
+		--h : 				1px;
+		height : 				calc(var(--h) * 1 );
+	}
+
+div.space2			{ height : calc(var(--h) *    2 ); }
+div.space3			{ height : calc(var(--h) *    3 ); }
+div.space4			{ height : calc(var(--h) *    4 ); }
+div.space5			{ height : calc(var(--h) *    5 ); }
+div.space6			{ height : calc(var(--h) *    6 ); }
+div.space7			{ height : calc(var(--h) *    7 ); }
+div.space8			{ height : calc(var(--h) *    8 ); }
+div.space9			{ height : calc(var(--h) *    9 ); }
+div.space10			{ height : calc(var(--h) *   10 ); }
+div.space20			{ height : calc(var(--h) *   20 ); }
+div.space30			{ height : calc(var(--h) *   30 ); }
+div.space40			{ height : calc(var(--h) *   40 ); }
+div.space50			{ height : calc(var(--h) *   50 ); }
+div.space60			{ height : calc(var(--h) *   60 ); }
+div.space70			{ height : calc(var(--h) *   70 ); }
+div.space80			{ height : calc(var(--h) *   80 ); }
+div.space90			{ height : calc(var(--h) *   90 ); }
+div.space100		{ height : calc(var(--h) *  100 ); }
+div.space120		{ height : calc(var(--h) *  120 ); }
+div.space150		{ height : calc(var(--h) *  150 ); }
+div.space200		{ height : calc(var(--h) *  200 ); }
+div.space300		{ height : calc(var(--h) *  300 ); }
+div.space400		{ height : calc(var(--h) *  400 ); }
+div.space500		{ height : calc(var(--h) *  500 ); }
+div.space1000		{ height : calc(var(--h) * 1000 ); }
 
 
 /* ------------------------------------------------------------------------------------ TAGS */
