@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 13/01/2022 15:35
+* Last modif	: 13/01/2022 17:43
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -619,6 +619,14 @@ sub
 .nopadding
 	{
 		padding :				0;
+	}
+
+.autocenter
+	{
+		display :				grid;
+		align-items :			center;
+		justify-content :			center;
+		text-align :			center;
 	}
 
 .autosize
