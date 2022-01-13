@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 06/01/2022 16:16
+* Last modif	: 13/01/2022 15:35
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -2015,28 +2015,38 @@ table.tableau.hover > tbody > tr:hover > td
 
 
 
-/* ------------------------------------------------------------------------------------ COLONNES : GRID */
+/* ------------------------------------------------------------------------------------ GRILLE */
 
-[class*="colonnes_grid"]
+[class*="grid"]
 	{
 		display :				grid;
-		grid-gap :				10px;
+		grid-gap :				0rem;
 		grid-template-columns :		repeat( 4 , 1fr );
 		grid-template-rows :		1fr;
 		grid-auto-flow :			dense;
 	}
 
-[class*="colonnes_grid"] > div
+[class*="grid"].spaced
 	{
-		padding :				10px;
-		min-height :			50px;
+		grid-gap :				0.6rem;
 	}
 
-.colonnes_grid1 > div	{ grid-column-end : span 1; }
-.colonnes_grid2 > div	{ grid-column-end : span 2; }
-.colonnes_grid3 > div	{ grid-column-end : span 3; }
-.colonnes_grid5 > div	{ grid-column-end : span 5; }
-.colonnes_grid6 > div	{ grid-column-end : span 6; }
+[class*="grid"] > div
+	{
+		grid-column-end :			span 1;
+		grid-row-end :			span 1;
+	}
+
+.grid1	{ grid-template-columns : repeat(  1 , 1fr ); }
+.grid2	{ grid-template-columns : repeat(  2 , 1fr ); }
+.grid3	{ grid-template-columns : repeat(  3 , 1fr ); }
+.grid4	{ grid-template-columns : repeat(  4 , 1fr ); }
+.grid5	{ grid-template-columns : repeat(  5 , 1fr ); }
+.grid6	{ grid-template-columns : repeat(  6 , 1fr ); }
+.grid7	{ grid-template-columns : repeat(  7 , 1fr ); }
+.grid8	{ grid-template-columns : repeat(  8 , 1fr ); }
+.grid9	{ grid-template-columns : repeat(  9 , 1fr ); }
+.grid10	{ grid-template-columns : repeat( 10 , 1fr ); }
 
 
 /* ------------------------------------------------------------------------------------ ANIMATIONS */
