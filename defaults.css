@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 13/01/2022 17:43
+* Last modif	: 14/01/2022 10:30
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -627,6 +627,13 @@ sub
 		align-items :			center;
 		justify-content :			center;
 		text-align :			center;
+	}
+
+.autocenter > img
+	{
+		position : 				relative;
+		left : 				50%;
+		transform :				translateX(-50%);
 	}
 
 .autosize
