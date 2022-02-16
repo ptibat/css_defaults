@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 14/01/2022 10:30
+* Last modif	: 16/02/2022 15:52
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -754,6 +754,16 @@ select.minimalist
 		pointer-events :			none;
 	}
 
+.overflow
+	{
+		overflow :				visible !important;
+	}
+
+.nooverflow
+	{
+		overflow :				hidden !important;
+	}
+
 
 /* ------------------------------------------------------------------------------------ ESPACEMENTS */
 
@@ -987,6 +997,17 @@ button.bouton
 .bouton *
 	{
 		color :				inherit;
+	}
+
+.bouton.extended::before
+	{
+		content :				"";
+		position :				absolute;
+		left :				-0.6em;
+		right :				-0.6em;
+		top :				 	-0.6em;
+		bottom :				-0.6em;
+  		border-radius :			inherit;
 	}
 
 .bouton:hover
