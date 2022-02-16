@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 16/02/2022 16:24
+* Last modif	: 16/02/2022 16:50
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1043,7 +1043,6 @@ button.bouton.large
 		font-size :				18px;
 	}
 
-
 .bouton.border,
 .bouton.border:hover
 	{
@@ -1053,6 +1052,19 @@ button.bouton.large
 		border-color :			rgba( 0 , 0 , 0 , 0.6 ) !important;
 	}
 
+.bouton.d3
+	{
+		box-shadow :			0  0.1em #888 ;
+		transform :				translateY( -0.1em );
+		transition :			all 0.01s ease-in;
+	}
+
+.bouton.d3:active,
+.bouton.d3.active 
+	{
+    		box-shadow :			none;
+		transform :				translateY(0);
+	}
 
 
 /* ----------------------------------------------------------------- BTN */
