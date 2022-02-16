@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 16/02/2022 15:52
+* Last modif	: 16/02/2022 16:24
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -883,7 +883,7 @@ div.error
 .erreur
 	{
 		color :				#FFFFFF !important;
-		background-color :		#AB0000 !important;
+		background-color :		#DC143C !important;
 	}
 
 .important,
@@ -1154,12 +1154,12 @@ button.bouton.large
 .tag.framboise,
 .tag.framboise *			{ color : 			#FFFFFF; }
 
-/* ----------------------------------------------------------------- ROUGE */
+/* ----------------------------------------------------------------- ROUGE : D03535 + C91D1D */
 
 .bouton.rouge,
-.tag.rouge				{ background-color : 	#d03535; }
+.tag.rouge				{ background-color : 	#DC143C; } 
 .bouton.rouge:not(.disabled):hover,
-.bouton.rouge.current		{ background-color :	#c91d1d; color : #FFFFFF; }
+.bouton.rouge.current		{ background-color :	#FF0134; color : #FFFFFF; }
 .bouton.rouge,
 .bouton.rouge *,
 .tag.rouge,
@@ -2048,6 +2048,12 @@ table.tableau.hover > tbody > tr:hover > td
 .colonnes4			{ column-count : 4; }
 .colonnes5			{ column-count : 5; }
 .colonnes6			{ column-count : 6; }
+
+
+[class*="colonnes"] > .colonne 
+	{
+		break-inside :			avoid-column;
+	}
 
 
 
