@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 16/02/2022 16:50
+* Last modif	: 01/03/2022 15:48
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -621,11 +621,17 @@ sub
 		padding :				0;
 	}
 
-.autocenter
+
+.autocenter,
+.vertical_center
 	{
 		display :				grid;
 		align-items :			center;
 		justify-content :			center;
+	}
+
+.autocenter
+	{
 		text-align :			center;
 	}
 
@@ -634,6 +640,11 @@ sub
 		position : 				relative;
 		left : 				50%;
 		transform :				translateX(-50%);
+	}
+
+.autocenter > *
+	{
+		margin :				auto;
 	}
 
 .autosize
@@ -2130,6 +2141,24 @@ table.tableau.hover > tbody > tr:hover > td
 		50% 		{ opacity: 		0; }
 		100% 		{ opacity: 		0; }
 	}
+
+
+/* ------------------------------------------------------------------------------------ BLEND MODES */
+
+.multiply
+	{
+		mix-blend-mode :			multiply;
+	}
+
+.isolate
+	{
+		isolation :				isolate;
+	}
+
+
+
+
+
 
 
 
