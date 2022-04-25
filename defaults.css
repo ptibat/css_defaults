@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 17/03/2022 11:05
+* Last modif	: 25/04/2022 11:44
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1385,7 +1385,7 @@ button.bouton.large
 /* ----------------------------------------------------------------- gold */
 
 .bouton.gold,
-.tag.gold				{ background-color : 	#ffe500; }
+.tag.gold				{ background-color : 	#FFD700; }
 .bouton.gold:not(.disabled):hover,
 .bouton.gold.current		{ background-color :	#fcc500; color : #333; }
 .bouton.gold,
