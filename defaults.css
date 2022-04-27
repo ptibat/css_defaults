@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 25/04/2022 11:44
+* Last modif	: 26/04/2022 10:58
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1967,16 +1967,26 @@ table.tableau.hover > tbody > tr:hover > td
 
 /* ------------------------------------------------------------------------------------ DIV AS TABLE */
 
-.table,
-.table100
+.table
 	{
 		display :				table;
 	}
 
-.table100
+.table.large
 	{
 		width :				100%;
 	}
+
+.table.borders
+	{
+		border-collapse :			collapse;
+	}
+
+.table.borders .table_cell
+	{
+		border :				1px solid #CCCCCC;
+	}
+
 	
 .table_row
 	{
