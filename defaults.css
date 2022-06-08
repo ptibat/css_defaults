@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 26/04/2022 10:58
+* Last modif	: 08/06/2022 11:44
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -997,11 +997,6 @@ a.bouton,
 		box-shadow :			0 0 2px rgba( 0 , 0 , 0, 0.2 );
 	}
 
-.bouton.disabled
-	{
-		cursor :				default !important;
-	}
-
 input.bouton,
 button.bouton
 	{
@@ -1079,6 +1074,23 @@ button.bouton.large
     		box-shadow :			none;
 		transform :				translateY(0);
 	}
+
+
+
+.bouton:disabled,
+.bouton.disabled
+	{
+		cursor :				default !important;
+		color :				#555 !important;
+		background-color :		#E3E3E3 !important;
+	}
+
+
+
+
+
+
+
 
 
 /* ----------------------------------------------------------------- BTN */
