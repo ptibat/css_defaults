@@ -15,28 +15,71 @@
 				padding :			0;
 			}
 
+		#commands,
 		#preview_css
 			{
 				position :			relative;
 				margin :			0 auto;
-				padding :			50px;
+				padding :			4rem;
 				width :			80%;
 				border-left :		1px solid #CCC;
 				border-right :		1px solid #CCC;
-				box-shadow :		0 0 20px rgba(0,0,0,0.1);
 			}
-				
+
+		#commands
+			{
+				padding :			2rem 4rem;
+			}
+
+		#preview_css
+			{
+				box-shadow :		0 0 2rem rgba(0,0,0,0.1);
+			}
+
 	</style>
 </head>
 <body style="">
+
+
+<div id="commands">
+	Root font-size : <input type="range" id="range_font_size" min="5" max="20" value="14" step="1" oninput="document.getElementById('range_font_size_value').innerHTML = this.value + 'px';" onchange="document.querySelector(':root').style.fontSize = this.value + 'px';" />
+			     <output id="range_font_size_value" class="tag bubble large framboise">14px</output>
+
+</div>
 
 <div id="preview_css">
 
 <!-- --------------------------------------------------------------------------------------------- -->
 
 	<div class="colonnes3">
-			
+
 		<div class="colonne">
+
+			<h1 style="margin-top:0;">Fonts</h1>
+			<div class="space10"></div>
+
+			<div class="bold">.bold</div>
+			<div class="italic">.italic</div>
+			<div class="space10"></div>
+			<div class="f_thin">.f_thin</div>
+			<div class="f_extralight">.f_extralight</div>
+			<div class="f_light">.f_light</div>
+			<div class="f_semilight">.f_semilight</div>
+			<div class="f_normal">.f_normal</div>
+			<div class="f_regular">.f_regular</div>
+			<div class="f_medium">.f_medium</div>
+			<div class="f_semibold">.f_semibold</div>
+			<div class="f_bold">.f_bold</div>
+			<div class="f_extrabold">.f_extrabold</div>
+			<div class="f_black">.f_black</div>
+			<div class="f_extrablack">.f_extrablack</div>
+
+ 			<p>This text contains <sup>superscript</sup> and <sub>subscript</sub>.</p>
+
+ 			Lien hypertexte <a href="./">normal</a> et avec <a href="./" class="link">la classe ".link"</a>.
+
+
+			<div class="space30"></div>
 
 			<h1 style="margin-top:0;">Titres</h1>
 			<div class="space10"></div>
@@ -49,108 +92,108 @@
 
 		</div>
 
-			
+
 		<div class="colonne">
-		
+
 			<h1>Checkboxes</h1>
 			<div class="space10"></div>
-			
+
 			<span class="checkbox">
 				<input  id="checkbox1" name="checkbox1" type="checkbox" checked="checked" />
 				<label for="checkbox1"></label>
 			</span> Checked
-			
+
 			<br />
-			
+
 			<span class="checkbox">
 				<input  id="checkbox2" name="checkbox2" type="checkbox" />
 				<label for="checkbox2"></label>
 			</span> Unchecked
-			
+
 			<br />
-			
+
 			<span class="checkbox">
 				<input  id="checkbox3" name="checkbox3" type="checkbox" disabled="disabled" />
 				<label for="checkbox3"></label>
 			</span> Disabled
-			
+
 			<br />
 
 			<span class="checkbox orange">
 				<input  id="checkbox4" name="checkbox4" type="checkbox" checked="checked" />
 				<label for="checkbox4"></label>
 			</span> Orange
-			
+
 			<br />
 
 			<span class="checkbox rouge">
 				<input  id="checkbox5" name="checkbox5" type="checkbox" checked="checked" />
 				<label for="checkbox5"></label>
 			</span> Rouge
-			
+
 			<br />
 
 			<span class="checkbox bleu">
 				<input  id="checkbox6" name="checkbox6" type="checkbox" checked="checked" />
 				<label for="checkbox6"></label>
 			</span> Bleu
-			
+
 			<br />
 
 			<span class="checkbox gris">
 				<input  id="checkbox7" name="checkbox7" type="checkbox" checked="checked" />
 				<label for="checkbox7"></label>
 			</span> Gris
-			
-			
+
+
 			<div class="space40"></div>
 
 
 			<h1>Boutons radio</h1>
 			<div class="space10"></div>
-			
+
 			<span class="radio">
 				<input  id="radio1" name="radio[]" value="oui" type="radio" />
 				<label for="radio1"></label>
 			</span> Oui
-			
+
 			<br />
-			
+
 			<span class="radio">
 				<input  id="radio2" name="radio[]" value="non" type="radio" />
 				<label for="radio2"></label>
 			</span> Non
-			
+
 			<br />
-			
+
 			<span class="radio">
 				<input  id="radio3" name="radio[]" value="peutetre" type="radio" />
 				<label for="radio3"></label>
 			</span> Peut être
-			
+
 			<br />
-			
+
 			<span class="radio orange">
 				<input  id="radio4" name="radio[]" value="rouge" type="radio" />
 				<label for="radio4"></label>
 			</span> Orange
-			
+
 			<br />
-			
+
 			<span class="radio rouge">
 				<input  id="radio5" name="radio[]" value="orange" type="radio" />
 				<label for="radio5"></label>
 			</span> Rouge
-			
+
 			<br />
-			
+
 			<span class="radio bleu">
 				<input  id="radio6" name="radio[]" value="orange" type="radio" checked="checked" />
 				<label for="radio6"></label>
 			</span> Bleu
-			
+
 			<br />
-			
+
 			<span class="radio gris">
 				<input  id="radio7" name="radio[]" value="gris" type="radio" />
 				<label for="radio7"></label>
@@ -164,7 +207,7 @@
 
 			<h1>Listes</h1>
 			<div class="space10"></div>
-			
+
 			<h3>Virgules (.virgules)</h3>
 			<ul class="virgules">
 				<li>Un</li>
@@ -216,13 +259,13 @@
 	<div class="space100"></div>
 
 	<div class="colonnes3">
-		
+
 		<div class="colonne">
-			
+
 			<h1 style="margin-top:0;">Boutons & Tags</h1>
 
 			<div class="space20"></div>
-			
+
 				<span class="bouton">.bouton</span>
 			<br /><span class="bouton large">.bouton .large</span>
 			<br /><span class="bouton border">.bouton .border</span>
@@ -249,26 +292,26 @@
 
 
 			<h1>Bubbles</h1>
-			<br /><span class="tag jaune bubble">.tag .jaune .bubble</span> 
-				<span class="tag jaune bubble large">.bubble .large</span> 
-				<span class="tag rouge bubble">5</span> 
-				<span class="tag orange bubble">84</span> 
+			<br /><span class="tag jaune bubble">.tag .jaune .bubble</span>
+				<span class="tag jaune bubble large">.bubble .large</span>
+				<span class="tag rouge bubble">5</span>
+				<span class="tag orange bubble">84</span>
 				<span class="tag vert bubble">2020</span>
-				
+
 			<div class="space40"></div>
 			<h1>Arrows</h1>
 			<div class="center">
-				<span class="tag bleu left_arrow">.tag .left_arrow</span>  
-				<span class="tag bleu right_arrow">.tag .right_arrow</span> 
+				<span class="tag bleu left_arrow">.tag .left_arrow</span>
+				<span class="tag bleu right_arrow">.tag .right_arrow</span>
 				<div class="space5"></div>
-				<span class="tag bleu double_left_arrow">.tag .double_left_arrow</span>  
-				<span class="tag bleu double_right_arrow">.tag .double_right_arrow</span> 
-				<div class="space5"></div> 
+				<span class="tag bleu double_left_arrow">.tag .double_left_arrow</span>
+				<span class="tag bleu double_right_arrow">.tag .double_right_arrow</span>
+				<div class="space5"></div>
 				<span class="tag bleu double_left_arrow chained">1</span>
 				<span class="tag bleu double_left_arrow chained">2</span>
 				<span class="tag bleu double_left_arrow chained">3</span>
 				<span class="tag bleu double_left_arrow chained">4</span>
-				<div class="space5"></div> 
+				<div class="space5"></div>
 				<span class="tag bleu double_right_arrow chained">1</span>
 				<span class="tag bleu double_right_arrow chained">2</span>
 				<span class="tag bleu double_right_arrow chained">3</span>
@@ -306,7 +349,7 @@
 			<br /><span class="bouton large flashy">flashy</span> <span class="tag flashy">flashy</span>
 			<br /><span class="bouton large fluo">fluo</span> <span class="tag fluo">fluo</span>
 			<br /><span class="bouton large gold">gold</span> <span class="tag gold">gold</span>
-		
+
 		</div>
 
 
@@ -315,41 +358,41 @@
 
 			<h1>Notices & Messages</h1>
 			<div class="space20"></div>
-			
+
 				<span class="notice">.notice</span>
 			<br />
 			<br /><span class="notice big">.notice .big</span>
 			<br />
 			<br /><span class="message">.message</span>
-			
-			
+
+
 			<br /><span class="note">.note</span>
 			<br />
 			<br /><span class="note big">.note .big</span>
 			<br />
 			<br /><span class="message note">.message .note</span>
-			
-			
+
+
 			<br /><span class="info">.info</span>
 			<br />
 			<br /><span class="info big">.info .big</span>
 			<br />
 			<br /><span class="message info">.message .info</span>
-			
-			
+
+
 			<br /><span class="erreur">.erreur</span>
 			<br />
 			<br /><span class="erreur big">.erreur .big</span>
 			<br />
 			<br /><span class="message erreur">.message .erreur</span>
-			
-			
+
+
 			<br /><span class="important">.important</span>
 			<br />
 			<br /><span class="important big">.important .big</span>
 			<br />
 			<br /><span class="message error">.message .error</span>
-		
+
 		</div>
 
 	</div>
@@ -366,7 +409,7 @@
 	<pre>
 	body
 		{
-			font-family :		Sans-serif;
+			font-family :	Sans-serif;
 			font-size :		14px;
 		}
 	</pre>
@@ -385,7 +428,7 @@
 	<h1>Positions</h1>
 	<span class="tag big bleu_clair absolute" style="right:0;">.absolute</span>
 	<span class="tag big bleu_clair sticky" style="z-index:100;">.sticky</span>
-	
+
 	<div class="space5"></div>
 
 	<span class="tag big bleu_clair f_left">Float left : .f_left</span>
@@ -417,32 +460,42 @@
 
 	<div class="space10"></div>
 	<h3>Normal</h3>
-	<div class="space5"></div>
 	<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
 
 
 	<div class="space10"></div>
-	<h3>.light</h3>
-	<div class="space5"></div>
-	<p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
-
-
-	<div class="space10"></div>
 	<h3>.small</h3>
-	<div class="space5"></div>
 	<p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
 
 
 	<div class="space10"></div>
+	<h3>.condensed</h3>
+	<p class="condensed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.light</h3>
+	<p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
 	<h3>.uppercase</h3>
-	<div class="space5"></div>
-	<p class="uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae,<span class="sup">SUP</span> tempor eget odio.</p>
+	<p class="uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.monospaced</h3>
+	<p class="monospaced">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.monospaced.small</h3>
+	<p class="monospaced small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
 
 
 	<div class="space10"></div>
 	<h3>.strikeout</h3>
-	<div class="space5"></div>
-	<span class="strikeout">C"est faux !</span>
+	<span class="strikeout">C'est faux !</span>
 
 
 
@@ -455,17 +508,21 @@
 
 	<div class="space20"></div>
 	<h3>Input : text</h3>
-	<input type="text" placeholder="input" /> 
-	<input type="text" class="vert" placeholder=".vert" /> 
-	<input type="text" class="orange" placeholder=".orange" /> 
-	<input type="text" class="rouge" placeholder=".rouge" /> 
+	<input type="text" placeholder="input" />
+	<input type="text" class="vert" placeholder=".vert" />
+	<input type="text" class="orange" placeholder=".orange" />
+	<input type="text" class="rouge" placeholder=".rouge" />
 	<input type="text" class="bleu" placeholder=".bleu" />
 
 
 	<div class="space20"></div>
 	<h3>Input : range</h3>
 	<div class="space5"></div>
-	<input type="range" id="demo_range" min="0" max="100" value="90" step="10" onchange="document.getElementById("demo_range_value").innerHTML = this.value;" /> <span id="demo_range_value" class="tag bubble large framboise">90</span>
+
+	<input type="range" id="range_demo" min="0" max="100" value="90" step="10" oninput="document.getElementById('range_demo_value').innerHTML = this.value;" />
+	 <output id="range_demo_value" class="tag bubble large framboise">90</output>
+
+
 	<div class="space20"></div>
 	<h3>Select</h3>
 	<select>
@@ -484,13 +541,13 @@
 
 	<br />
 	<br />
-	<br /><b>Bouton de confirmation : </b> <span class="tab"></span> 
+	<br /><b>Bouton de confirmation : </b> <span class="tab"></span> <span class='small'>(Requiert JQuery)</span>
 		<div class="btn_confirm">
-			<span class="btn_confirm_span_1" onclick="$(this).hide();$(this).parent().find(".btn_confirm_span_2").fadeIn("fast");">Supprimer cet élement</span>
+			<span class="btn_confirm_span_1" onclick="$(this).hide();$(this).parent().find('.btn_confirm_span_2').fadeIn('fast');">Supprimer cet élement</span>
 			<span class="btn_confirm_span_2">
-				En &ecirc;tes vous s&ucirc;r ?
-				<a class="btn_confirm_link_oui" href="" onclick="$(".btn_confirm_span_2").fadeOut();">OUI</a>
-				<span class="btn_confirm_link_non" onclick="$(".btn_confirm_span_2").hide();$(".btn_confirm_span_1").fadeIn("fast");">NON</span>
+				En êtes vous sûr ?
+				<a class="btn_confirm_link_oui" href="" onclick="$('.btn_confirm_span_2').fadeOut();">OUI</a>
+				<span class="btn_confirm_link_non" onclick="$('.btn_confirm_span_2').hide();$('.btn_confirm_span_1').fadeIn('fast');">NON</span>
 			</span>
 		</div>
 
@@ -502,7 +559,7 @@
 
 	<div class="space100"></div>
 	<h1>Colonnes</h1>
-	
+
 	<div class="space20"></div><b>Texte 2 colonnes</b><div class="space50"></div><div class="colonnes2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
 	<div class="space50"></div><b>Texte 3 colonnes</b><div class="space50"></div><div class="colonnes3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
 	<div class="space50"></div><b>Texte 4 colonnes</b><div class="space50"></div><div class="colonnes4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
@@ -523,7 +580,7 @@
 		<div class="center" style="background-color:lightpink;padding:4rem;">2</div>
 	</div>
 
-	
+
 	<div class="space20"></div>
 	<b>3 Colonnes</b>
 	<div class="space20"></div>
@@ -539,7 +596,7 @@
 		<div class="center" style="background-color:lightpink;padding:4rem;">8</div>
 		<div class="center" style="background-color:lightpink;padding:4rem;">9</div>
 	</div>
-	
+
 	<div class="space20"></div>
 	<b>4 Colonnes</b>
 	<div class="space20"></div>
@@ -551,7 +608,7 @@
 		<div class="center" style="background-color:lightpink;padding:4rem;">4</div>
 	</div>
 
-	
+
 	<div class="space20"></div>
 	<b>5 Colonnes</b>
 	<div class="space20"></div>
@@ -564,7 +621,7 @@
 		<div class="center" style="background-color:lightpink;padding:4rem;">5</div>
 	</div>
 
-	
+
 	<div class="space20"></div>
 	<b>6 Colonnes</b>
 	<div class="space20"></div>
@@ -716,7 +773,7 @@
 
 
 	<div class="colonnes2">
-			
+
 		<div class="colonne">
 			<h3>div .table</h3>
 			<div class="space5"></div>
@@ -812,6 +869,23 @@
 
 	<h3>.hr5</h3>
 	<hr class="hr5" />
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Autosize</h1>
+	<div class="space20"></div>
+
+	<div class="grid4 spaced">
+		<div class="center" style="padding:4rem;"><div class="bold autosize" style="border:2px dashed crimson;color:crimson;"><div class="absolute full vertical_center">.autosize (16/9)</div></div></div>
+		<div class="center" style="padding:4rem;"><div class="bold autosize ratio-3-2" style="border:2px dashed crimson;color:crimson;"><div class="absolute full vertical_center">.autosize.ratio-3-2</div></div></div>
+		<div class="center" style="padding:4rem;"><div class="bold autosize ratio-4-3" style="border:2px dashed crimson;color:crimson;"><div class="absolute full vertical_center">.autosize.ratio-4-3</div></div></div>
+		<div class="center" style="padding:4rem;"><div class="bold autosize ratio-1-1" style="border:2px dashed crimson;color:crimson;"><div class="absolute full vertical_center">.autosize.ratio-1-1</div></div></div>
+	</div>
 
 
 
