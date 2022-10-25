@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 29/09/2022 12:05
+* Last modif	: 25/10/2022 11:27
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -431,21 +431,25 @@ u,
 .left
 	{
 		text-align :			left !important;
+		justify-content :			left !important;
 	}
 
 .right
 	{
 		text-align :			right !important;
+		justify-content :			right !important;
 	}
 
 .center
 	{
 		text-align :			center !important;
+		justify-content :			center !important;
 	}
 
 .justify
 	{
 		text-align :			justify !important;
+		justify-content :			stretch !important;
 	}
 
 .pre,
@@ -652,13 +656,13 @@ sub
 .autocenter,
 .vertical_center
 	{
-		display :				grid;
+		display :				flex;
 		align-items :			center;
-		justify-content :			center;
 	}
 
 .autocenter
 	{
+		justify-content :			center;
 		text-align :			center;
 	}
 
@@ -1836,6 +1840,68 @@ span.radio > label:before
 		        transition :		all 200ms ease;
 	}
 
+
+/* --------------------------------------------------------- Checkboxes toggle */
+
+
+span.toggle_checkbox
+	{
+		--w :					3rem;
+		--h :					1.6rem;
+		vertical-align :			middle;
+	}
+
+span.toggle_checkbox input[type=checkbox]
+	{
+		height :				0;
+		width :				0;
+		visibility :			hidden;
+	}
+
+span.toggle_checkbox label
+	{
+		display :				inline-block;
+		position :				relative;
+		width :				var(--w);
+		height :				var(--h);
+		text-indent :			-9999px;
+		background :			#777;
+		border-radius :			calc( var(--w) * 10 );
+		cursor :				pointer;
+	}
+
+span.toggle_checkbox label:after
+	{
+		content :				"";
+		position :				absolute;
+		top :					calc( var(--h) * 0.12 );
+		left :				calc( var(--h) * 0.12 );
+		width :				calc( var(--h) * 0.76 );
+		height :				calc( var(--h) * 0.76 );
+		backgroun-color :			#FFF;
+		border-radius :			calc( var(--w) * 10 );
+		transition :			all 300ms ease-in-out;
+	}
+
+span.toggle_checkbox input:checked+label
+	{
+		background : 			#01AD12;
+	}
+
+span.toggle_checkbox input:checked+label:after
+	{
+		left :				calc( 100% - calc( var(--h) * 0.12 ) );
+		transform :				translateX( -100% );
+	}
+
+span.toggle_checkbox label:active:after
+	{
+		width :				30px;
+	}
+
+
+/* --------------------------------------------------------- Checkboxes styles */
+
 span.checkbox:hover > label:before,
 span.radio:hover > label:before
 	{
@@ -1870,7 +1936,8 @@ span.radio.bleu:hover > label:before
 	}
 
 span.checkbox.bleu > input[type="checkbox"]:checked + label:before,
-span.radio.bleu > input[type="radio"]:checked + label:before
+span.radio.bleu > input[type="radio"]:checked + label:before,
+span.toggle_checkbox.bleu input:checked+label
 	{
 		border-color :			#0071C1;
 		background-color :		#0071C1;
@@ -1886,7 +1953,8 @@ span.radio.jaune:hover > label:before
 	}
 
 span.checkbox.jaune > input[type="checkbox"]:checked + label:before,
-span.radio.jaune > input[type="radio"]:checked + label:before
+span.radio.jaune > input[type="radio"]:checked + label:before,
+span.toggle_checkbox.jaune input:checked+label
 	{
 		border-color :			#FEA700;
 		background-color :		#FEA700;
@@ -1902,7 +1970,8 @@ span.radio.orange:hover > label:before
 	}
 
 span.checkbox.orange > input[type="checkbox"]:checked + label:before,
-span.radio.orange > input[type="radio"]:checked + label:before
+span.radio.orange > input[type="radio"]:checked + label:before,
+span.toggle_checkbox.orange input:checked+label
 	{
 		border-color :			#EF5B00;
 		background-color :		#FF6607;
@@ -1918,7 +1987,8 @@ span.radio.rouge:hover > label:before
 	}
 
 span.checkbox.rouge > input[type="checkbox"]:checked + label:before,
-span.radio.rouge > input[type="radio"]:checked + label:before
+span.radio.rouge > input[type="radio"]:checked + label:before,
+span.toggle_checkbox.rouge input:checked+label
 	{
 		border-color :			#EE0000;
 		background-color :		#EE0000;
@@ -1935,7 +2005,8 @@ span.radio.gris:hover > label:before
 	}
 
 span.checkbox.gris > input[type="checkbox"]:checked + label:before,
-span.radio.gris > input[type="radio"]:checked + label:before
+span.radio.gris > input[type="radio"]:checked + label:before,
+span.toggle_checkbox.gris input:checked+label
 	{
 		border-color :			#A0A0A0;
 		background-color :		#A0A0A0;
