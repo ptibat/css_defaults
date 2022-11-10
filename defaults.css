@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 03/11/2022 16:55
+* Last modif	: 10/11/2022 15:20
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1205,9 +1205,9 @@ button.bouton.large
 /* ----------------------------------------------------------------- GRIS */
 
 .bouton.gris,
-.tag.gris				{ background-color : 	#cbcfd2; }
+.tag.gris				{ background-color : 	#CBCFD2; }
 .bouton.gris:not(.disabled):hover,
-.bouton.gris.current		{ background-color :	#b9bdc2; }
+.bouton.gris.current		{ background-color :	#B9BDC2; }
 .bouton.gris,
 .bouton.gris *,
 .tag.gris,
@@ -1216,9 +1216,9 @@ button.bouton.large
 /* ----------------------------------------------------------------- FRAMBOISE */
 
 .bouton.framboise,
-.tag.framboise			{ background-color : 	#ed5565; }
+.tag.framboise			{ background-color : 	#ED5565; }
 .bouton.framboise:not(.disabled):hover,
-.bouton.framboise.current	{ background-color :	#da4453; color : #FFFFFF; }
+.bouton.framboise.current	{ background-color :	#DA4453; color : #FFFFFF; }
 .bouton.framboise,
 .bouton.framboise *,
 .tag.framboise,
@@ -1235,6 +1235,17 @@ button.bouton.large
 .tag.rouge,
 .tag.rouge *			{ color : 			#FFFFFF; }
 
+/* ----------------------------------------------------------------- ROUGE FONCÉ */
+
+.bouton.rouge_fonce,
+.tag.rouge_fonce			{ background-color : 	#AB0F27; }
+.bouton.rouge_fonce:not(.disabled):hover,
+.bouton.rouge_fonce.current	{ background-color :	#960202; color : #FFFFFF; }
+.bouton.rouge_fonce,
+.bouton.rouge_fonce *,
+.tag.rouge_fonce,
+.tag.rouge_fonce *		{ color : 			#FFFFFF; }
+
 /* ----------------------------------------------------------------- ORANGE */
 
 .bouton.orange,
@@ -1249,9 +1260,9 @@ button.bouton.large
 /* ----------------------------------------------------------------- JAUNE */
 
 .bouton.jaune,
-.tag.jaune				{ background-color : 	#ffce54; }
+.tag.jaune				{ background-color : 	#FFC933; }
 .bouton.jaune:not(.disabled):hover,
-.bouton.jaune.current		{ background-color :	#ffbe3b; }
+.bouton.jaune.current		{ background-color :	#EBB503; }
 .bouton.jaune,
 .bouton.jaune *,
 .tag.jaune,
@@ -1262,16 +1273,27 @@ button.bouton.large
 .bouton.vert,
 .tag.vert				{ background-color : 	#23AB11; }
 .bouton.vert:not(.disabled):hover,
-.bouton.vert.current		{ background-color :	#1d9c0c; color : #FFFFFF; }
+.bouton.vert.current		{ background-color :	#1D9C0C; color : #FFFFFF; }
 .bouton.vert,
 .bouton.vert *,
 .tag.vert,
 .tag.vert *				{ color : 			#FFFFFF; }
 
+/* ----------------------------------------------------------------- VERT */
+
+.bouton.vert_fonce,
+.tag.vert_fonce			{ background-color : 	#187A0F; }
+.bouton.vert_fonce:not(.disabled):hover,
+.bouton.vert_fonce.current	{ background-color :	#0F690A; color : #FFFFFF; }
+.bouton.vert_fonce,
+.bouton.vert_fonce *,
+.tag.vert_fonce,
+.tag.vert_fonce *			{ color : 			#FFFFFF; }
+
 /* ----------------------------------------------------------------- MENTHE */
 
 .bouton.menthe,
-.tag.menthe				{ background-color : 	#48cfad; }
+.tag.menthe				{ background-color : 	#48CFAD; }
 .bouton.menthe:not(.disabled):hover,
 .bouton.menthe.current		{ background-color :	#37bc9b; color : #FFFFFF; }
 .bouton.menthe,
@@ -1284,7 +1306,7 @@ button.bouton.large
 .bouton.cyan,
 .tag.cyan				{ background-color : 	#05B9D6; }
 .bouton.cyan:not(.disabled):hover,
-.bouton.cyan.current		{ background-color :	#3bafda; color : #FFFFFF; }
+.bouton.cyan.current		{ background-color :	#3BAFDA; color : #FFFFFF; }
 .bouton.cyan,
 .bouton.cyan *,
 .tag.cyan,
@@ -1293,31 +1315,53 @@ button.bouton.large
 /* ----------------------------------------------------------------- BLEU */
 
 .bouton.bleu,
-.tag.bleu				{ background-color : 	#3975ef; }
+.tag.bleu				{ background-color : 	#3975EF; }
 .bouton.bleu:not(.disabled):hover,
-.bouton.bleu.current		{ background-color :	#4058e8; color : #FFFFFF; }
+.bouton.bleu.current		{ background-color :	#4058E8; color : #FFFFFF; }
 .bouton.bleu,
 .bouton.bleu *,
 .tag.bleu,
 .tag.bleu *				{ color : 			#FFFFFF; }
 
+/* ----------------------------------------------------------------- BLEU FONCÉ */
+
+.bouton.bleu_fonce,
+.tag.bleu_fonce			{ background-color : 	#095496; }
+.bouton.bleu_fonce:not(.disabled):hover,
+.bouton.bleu_fonce.current	{ background-color :	#0F4C82; color : #FFFFFF; }
+.bouton.bleu_fonce,
+.bouton.bleu_fonce *,
+.tag.bleu_fonce,
+.tag.bleu_fonce *			{ color : 			#FFFFFF; }
+
 /* ----------------------------------------------------------------- VIOLET */
 
 .bouton.violet,
-.tag.violet				{ background-color : 	#a071ff; }
+.tag.violet				{ background-color : 	#A071FF; }
 .bouton.violet:not(.disabled):hover,
-.bouton.violet.current		{ background-color :	#804fe1; color : #FFFFFF; }
+.bouton.violet.current		{ background-color :	#804FE1; color : #FFFFFF; }
 .bouton.violet,
 .bouton.violet *,
 .tag.violet,
 .tag.violet *			{ color : 			#FFFFFF; }
+
+/* ----------------------------------------------------------------- VIOLET FONCÉ */
+
+.bouton.violet_fonce,
+.tag.violet_fonce			{ background-color : 	#6503E6; }
+.bouton.violet_fonce:not(.disabled):hover,
+.bouton.violet_fonce.current	{ background-color :	#5B02BA; color : #FFFFFF; }
+.bouton.violet_fonce,
+.bouton.violet_fonce *,
+.tag.violet_fonce,
+.tag.violet_fonce *		{ color : 			#FFFFFF; }
 
 /* ----------------------------------------------------------------- ROSE */
 
 .bouton.rose,
 .tag.rose				{ background-color : 	#ff71b7; }
 .bouton.rose:not(.disabled):hover,
-.bouton.rose.current		{ background-color :	#ff3c9c; color : #FFFFFF; }
+.bouton.rose.current		{ background-color :	#FF3C9C; color : #FFFFFF; }
 .bouton.rose,
 .bouton.rose *,
 .tag.rose,
@@ -1328,7 +1372,7 @@ button.bouton.large
 .bouton.gris_fonce,
 .tag.gris_fonce			{ background-color : 	#656d78; }
 .bouton.gris_fonce:not(.disabled):hover,
-.bouton.gris_fonce.current	{ background-color :	#434a54; color : #FFFFFF; }
+.bouton.gris_fonce.current	{ background-color :	#434A54; color : #FFFFFF; }
 .bouton.gris_fonce,
 .bouton.gris_fonce *,
 .tag.gris_fonce,
@@ -1341,9 +1385,9 @@ button.bouton.large
 /* ----------------------------------------------------------------- GRIS CLAIR */
 
 .bouton.gris_clair,
-.tag.gris_clair			{ background-color : 	#e3e3e3; }
+.tag.gris_clair			{ background-color : 	#E3E3E3; }
 .bouton.gris_clair:not(.disabled):hover,
-.bouton.gris_clair.current	{ background-color :	#cfcfcf; color : #444444; }
+.bouton.gris_clair.current	{ background-color :	#CFCFCF; color : #444444; }
 .bouton.gris_clair,
 .bouton.gris_clair *,
 .tag.gris_clair,
@@ -1352,31 +1396,31 @@ button.bouton.large
 /* ----------------------------------------------------------------- JAUNE CLAIR */
 
 .bouton.jaune_clair,
-.tag.jaune_clair			{ background-color : 	#ffeb9b; }
+.tag.jaune_clair			{ background-color : 	#FFEB9B; }
 .bouton.jaune_clair:not(.disabled):hover,
-.bouton.jaune_clair.current	{ background-color :	#fde585; }
+.bouton.jaune_clair.current	{ background-color :	#FDE585; }
 .bouton.jaune_clair,
 .bouton.jaune_clair *,
 .tag.jaune_clair,
-.tag.jaune_clair *			{ color : 			#6b4600; }
+.tag.jaune_clair *		{ color : 			#6B4600; }
 
 /* ----------------------------------------------------------------- VERT CLAIR */
 
 .bouton.vert_clair,
-.tag.vert_clair			{ background-color : 	#d0f2ab; }
+.tag.vert_clair			{ background-color : 	#D0F2AB; }
 .bouton.vert_clair:not(.disabled):hover,
-.bouton.vert_clair.current	{ background-color :	#bef285; color : #315d00; }
+.bouton.vert_clair.current	{ background-color :	#BEF285; color : #315d00; }
 .bouton.vert_clair,
 .bouton.vert_clair *,
 .tag.vert_clair,
-.tag.vert_clair *			{ color : 			#315d00; }
+.tag.vert_clair *			{ color : 			#315D00; }
 
 /* ----------------------------------------------------------------- BLEU CLAIR */
 
 .bouton.bleu_clair,
-.tag.bleu_clair			{ background-color :	#c8edf8; }
+.tag.bleu_clair			{ background-color :	#C8EDF8; }
 .bouton.bleu_clair:not(.disabled):hover,
-.bouton.bleu_clair.current	{ background-color :	#bce9f6; }
+.bouton.bleu_clair.current	{ background-color :	#BCE9F6; }
 .bouton.bleu_clair,
 .bouton.bleu_clair *,
 .tag.bleu_clair,
@@ -1385,9 +1429,9 @@ button.bouton.large
 /* ----------------------------------------------------------------- ROUGE CLAIR */
 
 .bouton.rouge_clair,
-.tag.rouge_clair			{ background-color : 	#fcc6c6; }
+.tag.rouge_clair			{ background-color : 	#FCC6C6; }
 .bouton.rouge_clair:not(.disabled):hover,
-.bouton.rouge_clair.current	{ background-color :	#ffbebe; color : #960202; }
+.bouton.rouge_clair.current	{ background-color :	#FFBEBE; color : #960202; }
 .bouton.rouge_clair,
 .bouton.rouge_clair *,
 .tag.rouge_clair,
@@ -1409,7 +1453,7 @@ button.bouton.large
 .bouton.fluo,
 .tag.fluo				{ background-color : 	#7FFF00; }
 .bouton.fluo:not(.disabled):hover,
-.bouton.fluo.current		{ background-color :	#77ef00; color : #333; }
+.bouton.fluo.current		{ background-color :	#77EF00; color : #333; }
 .bouton.fluo,
 .bouton.fluo *,
 .tag.fluo,
@@ -1420,7 +1464,7 @@ button.bouton.large
 .bouton.flashy,
 .tag.flashy				{ background-color : 	#FF1493; }
 .bouton.flashy:not(.disabled):hover,
-.bouton.flashy.current		{ background-color :	#ea007d; color : #FFFFFF; }
+.bouton.flashy.current		{ background-color :	#EA007D; color : #FFFFFF; }
 .bouton.flashy,
 .bouton.flashy *,
 .tag.flashy,
@@ -1431,7 +1475,7 @@ button.bouton.large
 .bouton.gold,
 .tag.gold				{ background-color : 	#FFD700; }
 .bouton.gold:not(.disabled):hover,
-.bouton.gold.current		{ background-color :	#fcc500; color : #333; }
+.bouton.gold.current		{ background-color :	#FCC500; color : #333; }
 .bouton.gold,
 .bouton.gold *,
 .tag.gold,
@@ -1442,7 +1486,7 @@ button.bouton.large
 .bouton.aqua,
 .tag.aqua				{ background-color : 	#00FFFF; }
 .bouton.aqua:not(.disabled):hover,
-.bouton.aqua.current		{ background-color :	#00f2f2; color : #333; }
+.bouton.aqua.current		{ background-color :	#00F2F2; color : #333; }
 .bouton.aqua,
 .bouton.aqua *,
 .tag.aqua,
