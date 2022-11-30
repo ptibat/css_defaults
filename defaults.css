@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 10/11/2022 15:20
+* Last modif	: 30/11/2022 11:10
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -2262,6 +2262,14 @@ table.tableau.hover > tbody > tr:hover > td
 [class*="grid"].spaced
 	{
 		grid-gap :				0.6rem;
+	}
+
+
+[class*="grid"].auto,
+[class*="grid"].autofit,
+[class*="grid"].autofit > div
+	{
+		width :				fit-content;
 	}
 
 [class*="grid"] > div
