@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 30/11/2022 16:16
+* Last modif	: 02/12/2022 16:55
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -816,6 +816,7 @@ select.minimalist
 
 /* ------------------------------------------------------------------------------------ ESPACEMENTS */
 
+tab,
 span[class^="tab"]
 	{
 		display :				inline-block;
@@ -824,15 +825,15 @@ span[class^="tab"]
 		height :				1em;
 	}
 
-span.tab2			{ width :   calc(var(--tab_size) *  2 ); }
-span.tab3			{ width :	calc(var(--tab_size) *  3 ); }
-span.tab4			{ width :	calc(var(--tab_size) *  4 ); }
-span.tab5			{ width :	calc(var(--tab_size) *  5 ); }
-span.tab6			{ width :	calc(var(--tab_size) *  6 ); }
-span.tab7			{ width :	calc(var(--tab_size) *  7 ); }
-span.tab8			{ width :	calc(var(--tab_size) *  8 ); }
-span.tab9			{ width :	calc(var(--tab_size) *  9 ); }
-span.tab10			{ width :	calc(var(--tab_size) * 10 ); }
+tab.tab2, span.tab2	{ width :   calc(var(--tab_size) *  2 ); }
+tab.tab3, span.tab3	{ width :	calc(var(--tab_size) *  3 ); }
+tab.tab4, span.tab4	{ width :	calc(var(--tab_size) *  4 ); }
+tab.tab5, span.tab5	{ width :	calc(var(--tab_size) *  5 ); }
+tab.tab6, span.tab6	{ width :	calc(var(--tab_size) *  6 ); }
+tab.tab7, span.tab7	{ width :	calc(var(--tab_size) *  7 ); }
+tab.tab8, span.tab8	{ width :	calc(var(--tab_size) *  8 ); }
+tab.tab9, span.tab9	{ width :	calc(var(--tab_size) *  9 ); }
+tab.tab10, span.tab10	{ width :	calc(var(--tab_size) * 10 ); }
 
 div[class^="space"]
 	{
