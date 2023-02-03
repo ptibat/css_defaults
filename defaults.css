@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 02/12/2022 16:55
+* Last modif	: 03/02/2023 15:01
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -969,18 +969,22 @@ div.error
 
 
 
-/* ------------------------------------------------------------------------------------ OMBRE / SHADOW */
+/* ------------------------------------------------------------------------------------ OMBRES / SHADOWS */
 
 .ombre
 	{
 		box-shadow :			0 0 20px rgba( 0 , 0 , 0, 0.4 );
 	}
 
-.ombre_top		{ box-shadow : 0 -0.5em 0.8em -0.5em rgba(0,0,0,0.4);	}
-.ombre_left		{ box-shadow : -0.5em 0 0.8em -0.5em rgba(0,0,0,0.4);	}
-.ombre_right	{ box-shadow : 0.5em 0 0.8em -0.5em rgba(0,0,0,0.4);	}
-.ombre_bottom	{ box-shadow : 0 0.5em 0.8em -0.5em rgba(0,0,0,0.4);	}
+.ombre_top			{ box-shadow : 0 -0.5em 0.8em -0.5em rgba(0,0,0,0.4);	}
+.ombre_left			{ box-shadow : -0.5em 0 0.8em -0.5em rgba(0,0,0,0.4);	}
+.ombre_right		{ box-shadow : 0.5em 0 0.8em -0.5em rgba(0,0,0,0.4);	}
+.ombre_bottom		{ box-shadow : 0 0.5em 0.8em -0.5em rgba(0,0,0,0.4);	}
 
+.ombre_inset_top		{ box-shadow : inset 0 0.5em 0.8em -0.5em rgba(0,0,0,0.4);	}
+.ombre_inset_left		{ box-shadow : inset 0.6em 0 0.6em -0.6em rgba(0,0,0,0.4);	}
+.ombre_inset_right	{ box-shadow : inset -0.6em 0 0.6em -0.6em rgba(0,0,0,0.4);	}
+.ombre_inset_bottom	{ box-shadow : inset 0 -0.5em 0.8em -0.5em rgba(0,0,0,0.4);	}
 
 
 /* ------------------------------------------------------------------------------------ BOUTONS */
@@ -1214,6 +1218,28 @@ button.bouton.large
 .tag.gris,
 .tag.gris *:not(.bouton):not(.tag)			{ color : 			#222222; }
 
+/* ----------------------------------------------------------------- GRIS FONCÉ */
+
+.bouton.gris_fonce,
+.tag.gris_fonce						{ background-color : 	#656d78; }
+.bouton.gris_fonce:not(.disabled):hover,
+.bouton.gris_fonce.current				{ background-color :	#434A54; color : #FFFFFF; }
+.bouton.gris_fonce,
+.bouton.gris_fonce *:not(.bouton):not(.tag),
+.tag.gris_fonce,
+.tag.gris_fonce *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
+
+/* ----------------------------------------------------------------- GRIS CLAIR */
+
+.bouton.gris_clair,
+.tag.gris_clair						{ background-color : 	#E3E3E3; }
+.bouton.gris_clair:not(.disabled):hover,
+.bouton.gris_clair.current				{ background-color :	#CFCFCF; color : #444444; }
+.bouton.gris_clair,
+.bouton.gris_clair *:not(.bouton):not(.tag),
+.tag.gris_clair,
+.tag.gris_clair *:not(.bouton):not(.tag)		{ color : 			#444444; }
+
 /* ----------------------------------------------------------------- FRAMBOISE */
 
 .bouton.framboise,
@@ -1247,6 +1273,17 @@ button.bouton.large
 .tag.rouge_fonce,
 .tag.rouge_fonce *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
 
+/* ----------------------------------------------------------------- ROUGE CLAIR */
+
+.bouton.rouge_clair,
+.tag.rouge_clair						{ background-color : 	#FCC6C6; }
+.bouton.rouge_clair:not(.disabled):hover,
+.bouton.rouge_clair.current				{ background-color :	#FFBEBE; color : #960202; }
+.bouton.rouge_clair,
+.bouton.rouge_clair *:not(.bouton):not(.tag),
+.tag.rouge_clair,
+.tag.rouge_clair *:not(.bouton):not(.tag)		{ color : 			#960202; }
+
 /* ----------------------------------------------------------------- ORANGE */
 
 .bouton.orange,
@@ -1257,6 +1294,17 @@ button.bouton.large
 .bouton.orange *:not(.bouton):not(.tag),
 .tag.orange,
 .tag.orange *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
+
+/* ----------------------------------------------------------------- ORANGE CLAIR */
+
+.bouton.orange_clair,
+.tag.orange_clair						{ background-color : 	#FFD193; }
+.bouton.orange_clair:not(.disabled):hover,
+.bouton.orange_clair.current				{ background-color :	#FFC16E; color : #744300; }
+.bouton.orange_clair,
+.bouton.orange_clair *:not(.bouton):not(.tag),
+.tag.orange_clair,
+.tag.orange_clair *:not(.bouton):not(.tag)	{ color : 			#744300; }
 
 /* ----------------------------------------------------------------- JAUNE */
 
@@ -1269,6 +1317,28 @@ button.bouton.large
 .tag.jaune,
 .tag.jaune *:not(.bouton):not(.tag)			{ color : 			#222222; }
 
+/* ----------------------------------------------------------------- JAUNE CLAIR */
+
+.bouton.jaune_clair,
+.tag.jaune_clair						{ background-color : 	#FFEB9B; }
+.bouton.jaune_clair:not(.disabled):hover,
+.bouton.jaune_clair.current				{ background-color :	#FDE585; }
+.bouton.jaune_clair,
+.bouton.jaune_clair *:not(.bouton):not(.tag),
+.tag.jaune_clair,
+.tag.jaune_clair *:not(.bouton):not(.tag)	{ color : 			#6B4600; }
+
+/* ----------------------------------------------------------------- JAUNE FLASHY */
+
+.bouton.jaune_flashy,
+.tag.jaune_flashy						{ background-color : 	#FFFF00; }
+.bouton.jaune_flashy:not(.disabled):hover,
+.bouton.jaune_flashy.current				{ background-color :	#EEEE00; }
+.bouton.jaune_flashy,
+.bouton.jaune_flashy *:not(.bouton):not(.tag),
+.tag.jaune_flashy,
+.tag.jaune_flashy *:not(.bouton):not(.tag)	{ color : 			#222222; }
+
 /* ----------------------------------------------------------------- VERT */
 
 .bouton.vert,
@@ -1280,7 +1350,7 @@ button.bouton.large
 .tag.vert,
 .tag.vert *:not(.bouton):not(.tag)			{ color : 			#FFFFFF; }
 
-/* ----------------------------------------------------------------- VERT */
+/* ----------------------------------------------------------------- VERT FONCÉ */
 
 .bouton.vert_fonce,
 .tag.vert_fonce						{ background-color : 	#187A0F; }
@@ -1290,6 +1360,17 @@ button.bouton.large
 .bouton.vert_fonce *:not(.bouton):not(.tag),
 .tag.vert_fonce,
 .tag.vert_fonce *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
+
+/* ----------------------------------------------------------------- VERT CLAIR */
+
+.bouton.vert_clair,
+.tag.vert_clair						{ background-color : 	#D0F2AB; }
+.bouton.vert_clair:not(.disabled):hover,
+.bouton.vert_clair.current				{ background-color :	#BEF285; color : #315d00; }
+.bouton.vert_clair,
+.bouton.vert_clair *:not(.bouton):not(.tag),
+.tag.vert_clair,
+.tag.vert_clair *:not(.bouton):not(.tag)		{ color : 			#315D00; }
 
 /* ----------------------------------------------------------------- MENTHE */
 
@@ -1335,6 +1416,17 @@ button.bouton.large
 .tag.bleu_fonce,
 .tag.bleu_fonce *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
 
+/* ----------------------------------------------------------------- BLEU CLAIR */
+
+.bouton.bleu_clair,
+.tag.bleu_clair						{ background-color :	#C8EDF8; }
+.bouton.bleu_clair:not(.disabled):hover,
+.bouton.bleu_clair.current				{ background-color :	#BCE9F6; }
+.bouton.bleu_clair,
+.bouton.bleu_clair *:not(.bouton):not(.tag),
+.tag.bleu_clair,
+.tag.bleu_clair *:not(.bouton):not(.tag)		{ color :			#006775; }
+
 /* ----------------------------------------------------------------- VIOLET */
 
 .bouton.violet,
@@ -1368,82 +1460,16 @@ button.bouton.large
 .tag.rose,
 .tag.rose *:not(.bouton):not(.tag)			{ color : 			#FFFFFF; }
 
-/* ----------------------------------------------------------------- GRIS FONCE */
+/* ----------------------------------------------------------------- FLASHY */
 
-.bouton.gris_fonce,
-.tag.gris_fonce						{ background-color : 	#656d78; }
-.bouton.gris_fonce:not(.disabled):hover,
-.bouton.gris_fonce.current				{ background-color :	#434A54; color : #FFFFFF; }
-.bouton.gris_fonce,
-.bouton.gris_fonce *:not(.bouton):not(.tag),
-.tag.gris_fonce,
-.tag.gris_fonce *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
-
-/* ----------------------------------------------------------------- GRIS CLAIR */
-
-.bouton.gris_clair,
-.tag.gris_clair						{ background-color : 	#E3E3E3; }
-.bouton.gris_clair:not(.disabled):hover,
-.bouton.gris_clair.current				{ background-color :	#CFCFCF; color : #444444; }
-.bouton.gris_clair,
-.bouton.gris_clair *:not(.bouton):not(.tag),
-.tag.gris_clair,
-.tag.gris_clair *:not(.bouton):not(.tag)		{ color : 			#444444; }
-
-/* ----------------------------------------------------------------- JAUNE CLAIR */
-
-.bouton.jaune_clair,
-.tag.jaune_clair						{ background-color : 	#FFEB9B; }
-.bouton.jaune_clair:not(.disabled):hover,
-.bouton.jaune_clair.current				{ background-color :	#FDE585; }
-.bouton.jaune_clair,
-.bouton.jaune_clair *:not(.bouton):not(.tag),
-.tag.jaune_clair,
-.tag.jaune_clair *:not(.bouton):not(.tag)	{ color : 			#6B4600; }
-
-/* ----------------------------------------------------------------- VERT CLAIR */
-
-.bouton.vert_clair,
-.tag.vert_clair						{ background-color : 	#D0F2AB; }
-.bouton.vert_clair:not(.disabled):hover,
-.bouton.vert_clair.current				{ background-color :	#BEF285; color : #315d00; }
-.bouton.vert_clair,
-.bouton.vert_clair *:not(.bouton):not(.tag),
-.tag.vert_clair,
-.tag.vert_clair *:not(.bouton):not(.tag)		{ color : 			#315D00; }
-
-/* ----------------------------------------------------------------- BLEU CLAIR */
-
-.bouton.bleu_clair,
-.tag.bleu_clair						{ background-color :	#C8EDF8; }
-.bouton.bleu_clair:not(.disabled):hover,
-.bouton.bleu_clair.current				{ background-color :	#BCE9F6; }
-.bouton.bleu_clair,
-.bouton.bleu_clair *:not(.bouton):not(.tag),
-.tag.bleu_clair,
-.tag.bleu_clair *:not(.bouton):not(.tag)		{ color :			#006775; }
-
-/* ----------------------------------------------------------------- ROUGE CLAIR */
-
-.bouton.rouge_clair,
-.tag.rouge_clair						{ background-color : 	#FCC6C6; }
-.bouton.rouge_clair:not(.disabled):hover,
-.bouton.rouge_clair.current				{ background-color :	#FFBEBE; color : #960202; }
-.bouton.rouge_clair,
-.bouton.rouge_clair *:not(.bouton):not(.tag),
-.tag.rouge_clair,
-.tag.rouge_clair *:not(.bouton):not(.tag)		{ color : 			#960202; }
-
-/* ----------------------------------------------------------------- ORANGE CLAIR */
-
-.bouton.orange_clair,
-.tag.orange_clair						{ background-color : 	#FFD193; }
-.bouton.orange_clair:not(.disabled):hover,
-.bouton.orange_clair.current				{ background-color :	#FFC16E; color : #744300; }
-.bouton.orange_clair,
-.bouton.orange_clair *:not(.bouton):not(.tag),
-.tag.orange_clair,
-.tag.orange_clair *:not(.bouton):not(.tag)	{ color : 			#744300; }
+.bouton.flashy,
+.tag.flashy							{ background-color : 	#FF1493; }
+.bouton.flashy:not(.disabled):hover,
+.bouton.flashy.current					{ background-color :	#EA007D; color : #FFFFFF; }
+.bouton.flashy,
+.bouton.flashy *:not(.bouton):not(.tag),
+.tag.flashy,
+.tag.flashy *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
 
 /* ----------------------------------------------------------------- FLUO */
 
@@ -1455,17 +1481,6 @@ button.bouton.large
 .bouton.fluo *:not(.bouton):not(.tag),
 .tag.fluo,
 .tag.fluo *:not(.bouton):not(.tag)			{ color : 			#333; }
-
-/* ----------------------------------------------------------------- FLASHY */
-
-.bouton.flashy,
-.tag.flashy							{ background-color : 	#FF1493; }
-.bouton.flashy:not(.disabled):hover,
-.bouton.flashy.current					{ background-color :	#EA007D; color : #FFFFFF; }
-.bouton.flashy,
-.bouton.flashy *:not(.bouton):not(.tag),
-.tag.flashy,
-.tag.flashy *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
 
 /* ----------------------------------------------------------------- GOLD */
 
