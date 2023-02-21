@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 03/02/2023 15:01
+* Last modif	: 03/02/2023 15:09
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1331,9 +1331,9 @@ button.bouton.large
 /* ----------------------------------------------------------------- JAUNE FLASHY */
 
 .bouton.jaune_flashy,
-.tag.jaune_flashy						{ background-color : 	#FFFF00; }
+.tag.jaune_flashy						{ background-color : 	#FFFC00; }
 .bouton.jaune_flashy:not(.disabled):hover,
-.bouton.jaune_flashy.current				{ background-color :	#EEEE00; }
+.bouton.jaune_flashy.current				{ background-color :	#FFF500; }
 .bouton.jaune_flashy,
 .bouton.jaune_flashy *:not(.bouton):not(.tag),
 .tag.jaune_flashy,
