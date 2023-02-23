@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 23/02/2023  10:49
+* Last modif	: 23/02/2023  10:58
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1212,6 +1212,17 @@ button.bouton.large
 .bouton.noir *:not(.bouton):not(.tag),
 .tag.noir,
 .tag.noir *:not(.bouton):not(.tag)			{ color : 			#FFF; }
+
+/* ----------------------------------------------------------------- ANTHRACITE */
+
+.bouton.anthracite,
+.tag.anthracite						{ background-color : 	#383e42; }
+.bouton.anthracite:not(.disabled):hover,
+.bouton.anthracite.current				{ background-color :	#2f3437; }
+.bouton.anthracite,
+.bouton.anthracite *:not(.bouton):not(.tag),
+.tag.anthracite,
+.tag.anthracite *:not(.bouton):not(.tag)		{ color : 			#FFF; }
 
 /* ----------------------------------------------------------------- GRIS */
 
