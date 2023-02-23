@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 22/02/2023  10:18
+* Last modif	: 23/02/2023  10:49
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1201,6 +1201,17 @@ button.bouton.large
 
 
 
+
+/* ----------------------------------------------------------------- NOIR */
+
+.bouton.noir,
+.tag.noir							{ background-color : 	#222; }
+.bouton.noir:not(.disabled):hover,
+.bouton.noir.current					{ background-color :	#000; }
+.bouton.noir,
+.bouton.noir *:not(.bouton):not(.tag),
+.tag.noir,
+.tag.noir *:not(.bouton):not(.tag)			{ color : 			#FFF; }
 
 /* ----------------------------------------------------------------- GRIS */
 
