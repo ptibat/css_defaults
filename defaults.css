@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 27/02/2023 17:55
+* Last modif	: 28/02/2023 11:55
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1815,15 +1815,15 @@ select
 select:not([multiple])
 	{
 		padding :				0.3em 1.8em 0.2em 0.5em;
-		background-image :		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23999999'><polygon points='0,0 100,0 50,50'/></svg>");
+		background-image :		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='50' fill='%23999999'><polygon points='0,0 100,0 50,50'/></svg>");
 		background-size :			1.1em;
-		background-position :		calc( 100% - 0.3em ) 0.6em;
+		background-position :		calc( 100% - 0.3em ) center;
 		background-repeat :		no-repeat;
 	}
 
 select:not([multiple]):hover
 	{
-		background-image :		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23C11A46'><polygon points='0,0 100,0 50,50'/></svg>");
+		background-image :		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='50' fill='%23C11A46'><polygon points='0,0 100,0 50,50'/></svg>");
 	}
 
 select.levels > option[data-level]
