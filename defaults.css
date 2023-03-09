@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 06/03/2023 13:10
+* Last modif	: 09/03/2023 15:45
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -13,7 +13,6 @@
 	{
 		font-size :				14px;
 	}
-
 
 /* ------------------------------------------------------------------------------------ BODY */
 
@@ -1938,9 +1937,9 @@ span.toggle_switch
 
 span.toggle_switch input[type=checkbox]
 	{
+		display :				none;
 		height :				0;
 		width :				0;
-		visibility :			hidden;
 	}
 
 span.toggle_switch label
@@ -2197,7 +2196,7 @@ table.tableau.hover > tbody > tr:hover > td
 
 .table.spaced .table_cell
 	{
-		padding :				0.2em 1.5em 0.2em 0.2em;
+		padding :				0.5em 2em 0.5em 0.5em;
 	}
 
 
@@ -2355,7 +2354,7 @@ table.tableau.hover > tbody > tr:hover > td
 
 [class^="content__"].spaced
 	{
-		grid-gap :				0.6rem;
+		grid-gap :				2rem;
 	}
 
 [class^="content__"] > div 	/* .content__5050 */
