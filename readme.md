@@ -1,7 +1,7 @@
 # css_defaults
 
 
-**css_defaults**, permet d'appliquer des styles CSS par défaut sur une page HTML.  
+**css_defaults** permet d'appliquer des styles CSS par défaut sur une page HTML.  
 
 
 
