@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 02/05/2023 12:05
+* Last modif	: 03/05/2023 17:00
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -74,6 +74,8 @@ body
 ::-moz-placeholder 		{ color : #777777; }
 :-ms-input-placeholder 		{ color : #777777; }
 input:-moz-placeholder 		{ color : #777777; }
+
+
 
 
 
@@ -682,20 +684,21 @@ sub
 
 .flex
 	{
-
-		display :				-webkit-flex;
 		display :				flex;
-
-		-webkit-flex-flow :		wrap;
-		   	  flex-flow :		wrap;
+		flex-flow :				wrap;
 	}
 
-.flexbox
+/* Evenly width  */
+.flex > div
 	{
-		-webkit-flex :			1 auto;
-		        flex :			1 auto;
+		flex :				1;
 	}
 
+/* Autosize width  */
+.flex.auto > div
+	{
+		flex :				1 auto;
+	}
 
 
 
