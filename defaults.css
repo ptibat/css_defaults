@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 12/05/2023 10:50
+* Last modif	: 12/05/2023 11:15
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1054,6 +1054,18 @@ div.error
 
 
 /* ------------------------------------------------------------------------------------ PALETTE DE COULEURS */
+
+.bgc-white,
+.bgc-white-900		{ background-color : #FFFFFF; } 		.fgc-white, .fgc-white-900			{ color : #FFFFFF; }
+.bgc-white-50		{ background-color : #DFDFDF; } 		.fgc-white-50					{ color : #DFDFDF; }
+.bgc-white-100		{ background-color : #E1E1E1; } 		.fgc-white-100					{ color : #E1E1E1; }
+.bgc-white-200		{ background-color : #E3E3E3; } 		.fgc-white-200					{ color : #E3E3E3; }
+.bgc-white-300		{ background-color : #E5E5E5; } 		.fgc-white-300					{ color : #E5E5E5; }
+.bgc-white-400		{ background-color : #E7E7E7; } 		.fgc-white-400					{ color : #E7E7E7; }
+.bgc-white-500		{ background-color : #E9E9E9; } 		.fgc-white-500					{ color : #E9E9E9; }
+.bgc-white-600		{ background-color : #EBEBEB; } 		.fgc-white-600					{ color : #EBEBEB; }
+.bgc-white-700		{ background-color : #EDEDED; } 		.fgc-white-700					{ color : #EDEDED; }
+.bgc-white-800		{ background-color : #EFEFEF; } 		.fgc-white-800					{ color : #EFEFEF; }
 
 .bgc-red,
 .bgc-red-500		{ background-color : #F44336; } 		.fgc-red, .fgc-red-500				{ color : #F44336; }
