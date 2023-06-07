@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 01/06/2023 11:27
+* Last modif	: 07/06/2023 11:00
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -477,6 +477,25 @@ body .fs_195		{ font-size :	1.95rem; }
 body .fs_200		{ font-size :	2.00rem; }
 
 
+/* ------------------------------------------------------------------------------------ LINES HEIGHTS */
+
+body .lh_60			{ line-height :	0.6em; }
+body .lh_70			{ line-height :	0.7em; }
+body .lh_80			{ line-height :	0.8em; }
+body .lh_90			{ line-height :	0.9em; }
+body .lh_100		{ line-height :	1em; }
+body .lh_110		{ line-height :	1.1em; }
+body .lh_120		{ line-height :	1.2em; }
+body .lh_130		{ line-height :	1.3em; }
+body .lh_140		{ line-height :	1.4em; }
+body .lh_150		{ line-height :	1.5em; }
+body .lh_160		{ line-height :	1.6em; }
+body .lh_170		{ line-height :	1.7em; }
+body .lh_180		{ line-height :	1.8em; }
+body .lh_190		{ line-height :	1.9em; }
+body .lh_200		{ line-height :	2em; }
+
+
 
 /* ------------------------------------------------------------------------------------ TEXTES */
 
@@ -534,6 +553,11 @@ u,
 	{
 		text-align :			center !important;
 		justify-content :			center !important;
+	}
+
+.centered
+	{
+		margin :				0 auto;
 	}
 
 .justify
@@ -758,6 +782,10 @@ sub
 		padding :				0;
 	}
 
+.vmiddle
+	{
+		vertical-align :			middle;
+	}
 
 .autocenter,
 .vertical_center
@@ -2714,6 +2742,17 @@ body
 		--color-lime-700			: #AFB42B;
 		--color-lime-800			: #9E9D24;
 		--color-lime-900			: #827717;
+		--color-mint			: #9CED9F;
+		--color-mint-500			: #9CED9F;
+		--color-mint-50			: #EAFBEC;
+		--color-mint-100			: #D6F8DA;
+		--color-mint-200			: #C3F5C7;
+		--color-mint-300			: #AFF1B3;
+		--color-mint-400			: #88E98B;
+		--color-mint-600			: #72E475;
+		--color-mint-700			: #5BDF5E;
+		--color-mint-800			: #3EDA45;
+		--color-mint-900			: #00D523;
 		--color-yellow			: #FFEB3B;
 		--color-yellow-500		: #FFEB3B;
 		--color-yellow-50			: #FFFDE7;
@@ -2959,6 +2998,18 @@ body
 .bgc-lime-700		{ background-color : var(--color-lime-700); } 		.fgc-lime-700					{ color : var(--color-lime-700); }
 .bgc-lime-800		{ background-color : var(--color-lime-800); } 		.fgc-lime-800					{ color : var(--color-lime-800); }
 .bgc-lime-900		{ background-color : var(--color-lime-900); } 		.fgc-lime-900					{ color : var(--color-lime-900); }
+
+.bgc-mint,
+.bgc-mint-500		{ background-color : var(--color-mint-500); } 		.fgc-mint, .fgc-mint-500			{ color : var(--color-mint-500); }
+.bgc-mint-50		{ background-color : var(--color-mint-50); } 		.fgc-mint-50					{ color : var(--color-mint-50); }
+.bgc-mint-100		{ background-color : var(--color-mint-100); } 		.fgc-mint-100					{ color : var(--color-mint-100); }
+.bgc-mint-200		{ background-color : var(--color-mint-200); } 		.fgc-mint-200					{ color : var(--color-mint-200); }
+.bgc-mint-300		{ background-color : var(--color-mint-300); } 		.fgc-mint-300					{ color : var(--color-mint-300); }
+.bgc-mint-400		{ background-color : var(--color-mint-400); } 		.fgc-mint-400					{ color : var(--color-mint-400); }
+.bgc-mint-600		{ background-color : var(--color-mint-600); } 		.fgc-mint-600					{ color : var(--color-mint-600); }
+.bgc-mint-700		{ background-color : var(--color-mint-700); } 		.fgc-mint-700					{ color : var(--color-mint-700); }
+.bgc-mint-800		{ background-color : var(--color-mint-800); } 		.fgc-mint-800					{ color : var(--color-mint-800); }
+.bgc-mint-900		{ background-color : var(--color-mint-900); } 		.fgc-mint-900					{ color : var(--color-mint-900); }
 
 .bgc-yellow,
 .bgc-yellow-500		{ background-color : var(--color-yellow-500); } 	.fgc-yellow, .fgc-yellow-500			{ color : var(--color-yellow-500); }
