@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 07/06/2023 11:00
+* Last modif	: 21/06/2023 14:49
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -159,6 +159,18 @@ a.link:hover
 	}
 
 
+/* ------------------------- Link like normal text */
+
+a.inherit,
+.link.inherit,
+a.link.inherit
+	{
+		font :				inherit;
+		color :				inherit;
+		text-decoration :			inherit;
+		text-decoration-color :		inherit;
+	}
+
 
 /* ------------------------- Underlined link */
 
@@ -179,7 +191,6 @@ a._link:hover
 		text-decoration-thickness :	0.25em;
 		text-underline-offset :		1px;
 	}
-
 
 
 
@@ -526,6 +537,11 @@ em,
 		font-family :			monospace;
 	}
 
+.monospaced.small
+	{
+		font-size :				0.8rem;
+	}
+
 .smallcaps
 	{
 		font-variant :			small-caps;
@@ -725,6 +741,12 @@ sub
 	{
 		display :				block !important;
 	}
+
+
+.z_left 	{ left: 	0; }
+.z_right 	{ right : 	0; }
+.z_top 	{ top : 	0; }
+.z_bottom 	{ bottom : 	0; }
 
 
 
@@ -1109,7 +1131,12 @@ div.error
 
 .ombre
 	{
-		box-shadow :			0 0 20px rgba( 0 , 0 , 0, 0.4 );
+		box-shadow :			0 0 2em rgba( 0 , 0 , 0, 0.4 );
+	}
+
+.ombre_legere
+	{
+		box-shadow :			0 0 2em rgba( 0 , 0 , 0, 0.03 );
 	}
 
 .ombre_top			{ box-shadow : 0 -0.5em 0.8em -0.5em rgba(0,0,0,0.4);	}
@@ -2280,7 +2307,7 @@ table.tableau > thead > tr > th
 
 table.tableau.lines
 	{
-		white-space :		inherit;
+		white-space :			inherit;
 	}
 
 table.tableau.lines > tbody > tr:nth-child(odd) > td
