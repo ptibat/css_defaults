@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 21/06/2023 14:49
+* Last modif	: 21/06/2023 15:10
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -2168,6 +2168,24 @@ span.radio > input[type="radio"]:disabled + label:before
 		border-color :			rgba( 0 , 0 , 0 , 0.1 );
 		background-color :		#E2DEDE;
 		cursor :				not-allowed;
+	}
+
+
+
+/* ------------------- VERT */
+
+span.checkbox.vert:hover > label:before,
+span.radio.vert:hover > label:before
+	{
+		border-color :			#01AD12;
+	}
+
+span.checkbox.vert > input[type="checkbox"]:checked + label:before,
+span.radio.vert > input[type="radio"]:checked + label:before,
+span.toggle_switch.vert input:checked+label
+	{
+		border-color :			#01AD12;
+		background-color :		#01AD12;
 	}
 
 
