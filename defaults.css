@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 21/06/2023 15:10
+* Last modif	: 12/07/2023 09:47
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -360,6 +360,18 @@ ul
 ul li
 	{
 		padding :				0 0 1px 0;
+	}
+
+ul.nostyle
+	{
+		list-style :			none;
+		padding :				0;
+	}
+
+ul.nostyle
+	{
+		margin :				0;
+		padding :				0;
 	}
 
 ul.number
@@ -971,6 +983,14 @@ select.minimalist
 	}
 
 /* ------------------------------------------------------------------------------------ ESPACEMENTS */
+
+span.small_tab
+	{
+		display :				inline-block;
+		margin :				0;
+		width : 				calc(var(--tab_size) * 0.5 );
+		height :				1em;
+	}
 
 tab,
 span[class^="tab"]
@@ -2296,6 +2316,15 @@ table.tableau
 		border-collapse :			collapse;
 	}
 
+table.tableau > colgroup > col:nth-child(odd)
+	{
+		background-color :		rgba(183, 163, 102, 0.1);
+		background-color :		rgba( 0 , 0 , 0 , 0.03 );
+	}
+
+table.tableau > colgroup > col:nth-child(even) {}
+
+
 table.tableau.borders,
 table.tableau.borders th,
 table.tableau.borders td
@@ -2320,7 +2349,7 @@ table.tableau > thead > tr > th
 	{
 		text-align :			left;
 		color :				#FFFFFF;
-		background-color :		#141E8B;
+		background-color :		var( --couleur , #141E8B );
 	}
 
 table.tableau.lines
@@ -2348,6 +2377,7 @@ table.tableau > tbody > tr.highlight > td
 	{
 		background-color :		var(--couleur_highlight) !important;
 	}
+
 
 
 /* ------------------------------------------------------------------------------------ DIV AS TABLE */
