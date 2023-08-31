@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 30/08/2023 11:46
+* Last modif	: 31/08/2023 09:23
 * Description	: Fichier de config CSS par defaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -13,6 +13,7 @@
 	{
 		font-size :				14px;
 	}
+
 
 /* ------------------------------------------------------------------------------------ BODY */
 
@@ -407,31 +408,53 @@ ul.virgules > li:not(:last-child)::after
 	}
 
 
-ul.arrows
+ul.arrows,
+ul.chevron
 	{
 		list-style :			none;
 		position :				relative;
 	}
 
-ul.arrows
+ul.arrows,
+ul.chevron
 	{
-		padding-left :			2px;
+		padding-left :			0.1em;
 	}
 
-ul.arrows li:before
+ul.arrows li:before,
+ul.chevron li:before
 	{
 		position :				relative;
 		display :				inline-block;
 		content :				"";
-		margin-right :			7px;
-		width :				14px;
-		height :				14px;
+		margin-right :			0.5em;
+		width :				var(--s);
+		height :				var(--s);
 		vertical-align :			middle;
+	}
+
+
+ul.arrows li:before
+	{
+		--s :					1.2em;
+
 		background-image :		url( "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYWxxdWVfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCnZpZXdCb3g9IjAgMCAyMCAyMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjAgMjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZD0iTTEsMTAuMmMwLDAuNiwwLjQsMSwxLDFoMTMuMWwtMy45LDMuOWMtMC40LDAuNC0wLjQsMSwwLDEuNGwwLjEsMC4xYzAuNCwwLjQsMSwwLjQsMS40LDBsNS43LTUuN2MwLjQtMC40LDAuNC0xLDAtMS40CmwtNS43LTUuN2MtMC40LTAuNC0xLTAuNC0xLjQsMGwtMC4xLDAuMWMtMC40LDAuNC0wLjQsMSwwLDEuNGwzLjksMy45SDJDMS40LDkuMiwxLDkuNiwxLDEwLjJ6Ii8+Cjwvc3ZnPgo=" );
-		background-size :			14px 14px;
+		background-size :			var(--s) var(--s);
 		background-position :		center center;
 		background-repeat :		no-repeat;
 	}
+
+ul.chevron li:before
+	{
+		--s :					0.6em;
+
+		border-right :			calc( var(--s) * 0.2 ) solid #000;
+		border-bottom :			calc( var(--s) * 0.2 ) solid #000;
+		transform-origin :		center;
+		transform :				rotate(-45deg);
+
+	}
+
 
 
 /* ------------------------------------------------------------------------------------ TITRES */
@@ -601,6 +624,13 @@ u,
 .centered
 	{
 		margin :				0 auto;
+	}
+
+.inline_block
+	{
+		display :				inline-block;
+		vertical-align :			middle;
+		line-height :			1em;
 	}
 
 .justify
@@ -1419,6 +1449,18 @@ a.bouton,
 .bouton.noir *:not(.bouton):not(.tag),
 .tag.noir,
 .tag.noir *:not(.bouton):not(.tag)			{ color : 			#FFF; }
+
+
+/* ----------------------------------------------------------------- BLANC */
+
+.bouton.blanc,
+.tag.blanc							{ background-color : 	#FFF; }
+.bouton.blanc:not(.disabled):hover,
+.bouton.blanc.current					{ background-color :	#FAFAFA; color : #222; }
+.bouton.blanc,
+.bouton.blanc *:not(.bouton):not(.tag),
+.tag.blanc,
+.tag.blanc *:not(.bouton):not(.tag)			{ color : 			#222; }
 
 /* ----------------------------------------------------------------- ANTHRACITE */
 
@@ -2605,6 +2647,7 @@ table.tableau > tbody > tr.highlight > td
 
 [class*="content__"] > div 	/* .content__5050 */
 	{
+		position :				relative;
 		grid-column-end :			span 1;
 		grid-row-end :			span 1;
 	}
