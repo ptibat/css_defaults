@@ -42,7 +42,7 @@
 
 
 <div id="commands">
-	<span class='absolute z_right small'>30/08/2023  </span>
+	<span class='absolute z_right small'>12/09/2023  </span>
 	Root font-size : <input type="range" id="range_font_size" min="5" max="20" value="14" step="1" oninput="document.getElementById('range_font_size_value').innerHTML = this.value + 'px';" onchange="document.querySelector(':root').style.fontSize = this.value + 'px';">
 			     <output id="range_font_size_value" class="tag bubble large framboise">14px</output>
 
@@ -499,6 +499,41 @@
 
 	</div>
 
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space100"></div>
+	<a name='palette'></a>
+	<h1>Formulaires</h1>
+	<br>
+	<div class="formulaire">
+		<div class="ligne">
+			<label for="field_texte">Texte</label>
+			<input  id="field_texte" type="text" name="texte" placeholder="Texte">
+		</div>
+		<div class="ligne">
+			<label for="field_email">Email</label>
+			<input  id="field_email" type="email" name="email" placeholder="Email">
+		</div>
+		<div class="ligne">
+			<label for="field_select">Select</label>
+			<select id="field_select" name="select">
+				<option value='1'>1</option>
+				<option value='2'>2</option>
+				<option value='3'>3</option>
+				<option value='4'>4</option>
+				<option value='5'>5</option>
+			</select>
+
+		</div>
+		<div class="ligne">
+			<label for="field_file">Input file</label>
+			<input  id="field_file" type="file" class="input_file" name="file">
+		</div>
+
+	</div>
 
 
 
