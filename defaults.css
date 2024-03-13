@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 13/03/2024 11:26
+* Last modif	: 13/03/2024 11:28
 * Description	: Fichier de config CSS par défaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -2829,7 +2829,7 @@ table.tableau > tbody > tr.highlight > td
 ._loader
 	{
 		--s :					2rem;
-		--bg :				var( --couleur_body , #3332 );
+		--bg :				var( --couleur_body , #C9CECE );
 		--fg :				var( --couleur , crimson );
 
 		box-sizing :			border-box;
