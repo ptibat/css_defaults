@@ -42,7 +42,7 @@
 
 
 <div id="commands">
-	<span class='absolute z_right small'>12/09/2023  </span>
+	<span class='absolute z_right small'>13/03/2024</span>
 	Root font-size : <input type="range" id="range_font_size" min="5" max="20" value="14" step="1" oninput="document.getElementById('range_font_size_value').innerHTML = this.value + 'px';" onchange="document.querySelector(':root').style.fontSize = this.value + 'px';">
 			     <output id="range_font_size_value" class="tag bubble large framboise">14px</output>
 
@@ -1758,6 +1758,34 @@
 		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_inset_bottom" style="padding:3rem 0rem;">.ombre_inset_bottom</div></div>
 	</div>
 
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Loaders</h1>
+	<div class="space20"></div>
+
+
+	<div class="grid6 spaced">
+		<div class="center padding monospaced small"><b>._loader.small</b>	</div>
+		<div class="center padding monospaced small"><b>._loader</b>		</div>
+		<div class="center padding monospaced small"><b>._loader.big</b>		</div>
+		<div class="center padding monospaced small"><b>._loader</b> 	<br><br>--s : 100px;</div>
+		<div class="center padding monospaced small"><b>._loader</b> 	<br><br>--bg : #D7D1F7;<br>--fg : #4F3B78;</div>
+		<div class="center padding monospaced small"><b>._loader</b> 	<br><br>--bg : #0b8457;<br>--fg : transparent;</div>
+
+		<div class="center padding"><span class='_loader small'></span></div>
+		<div class="center padding"><span class='_loader'></span></div>
+		<div class="center padding"><span class='_loader big'></span></div>
+		<div class="center padding"><span class='_loader' style='--s:100px;'></span></div>
+		<div class="center padding"><span class='_loader' style='--bg:#D7D1F7;--fg:#4F3B78;'></span></div>
+		<div class="center padding"><span class='_loader' style='--bg:#0b8457;--fg:transparent;'></span></div>
+	</div>
+
+	
+	
 
 
 
