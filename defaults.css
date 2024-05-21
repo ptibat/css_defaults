@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 13/03/2024 11:28
+* Last modif	: 21/05/2024 11:47
 * Description	: Fichier de config CSS par défaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -474,6 +474,31 @@ ul.chevron li:before
 	}
 
 
+ul.inline
+	{
+		list-style :			none;
+		padding :				0;
+		width :				fit-content;
+	}
+
+ul.inline > li
+	{
+		display :				inline-block;
+		padding :				0;
+		margin :				0;
+		height :				inherit;
+	}
+
+ul.inline > li:nth-child( n + 2 )
+	{
+		margin-left :			0.5em;
+	}
+
+ul.inline.spaced > li:nth-child( n + 2 )
+	{
+		margin-left :			1.5em;
+	}
+
 
 /* ------------------------------------------------------------------------------------ TITRES */
 
@@ -632,22 +657,32 @@ a.nounderline:visited,
 		text-decoration :			none;
 	}
 
-.left
+.left,
+.align_left
 	{
 		text-align :			left !important;
 		justify-content :			left !important;
 	}
 
-.right
+.right,
+.align_right
 	{
 		text-align :			right !important;
 		justify-content :			right !important;
 	}
 
-.center
+.center,
+.align_center
 	{
 		text-align :			center !important;
 		justify-content :			center !important;
+	}
+
+.justify,
+.align_justify
+	{
+		text-align :			justify !important;
+		justify-content :			stretch !important;
 	}
 
 .centered
@@ -660,12 +695,6 @@ a.nounderline:visited,
 		display :				inline-block;
 		vertical-align :			middle;
 		line-height :			1em;
-	}
-
-.justify
-	{
-		text-align :			justify !important;
-		justify-content :			stretch !important;
 	}
 
 .pre,
@@ -722,6 +751,12 @@ input.t_blue
 .uppercase
 	{
 		text-transform :			uppercase;
+	}
+
+.kern
+	{
+		font-kerning :			normal;
+		text-rendering :			optimizeLegibility;
 	}
 
 .hyphens
@@ -1251,9 +1286,9 @@ div.error
 
 /* ------------------------------------------------------------------------------------ BOUTONS */
 
-.bouton,
-a.bouton,
-.bouton:not(.disabled):hover
+body .bouton,
+body a.bouton,
+body .bouton:not(.disabled):hover
 	{
 		display :				inline-block;
 		position :				relative;
@@ -1263,6 +1298,7 @@ a.bouton,
 		text-align :			center;
 		border :				none;
 		border-radius :			3px;
+		text-decoration :			none;
 
 		-webkit-touch-callout :		none;
 		  -webkit-user-select :		none;
