@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 17/07/2024 14:43
+* Last modif	: 28/01/2025 14:46
 * Description	: Fichier de config CSS par défaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -349,6 +349,14 @@ img.zoom_effect:hover,
 		transform :				scale(1.1);
 	}
 
+/* ------------------------------------------------------------------------------------ MONOCHROME */
+
+.monochrome
+	{
+  		filter :				grayscale(100%);
+	}
+
+
 
 
 /* ------------------------------------------------------------------------------------ HR */
@@ -598,6 +606,43 @@ body .lh_170		{ line-height :	1.7em; }
 body .lh_180		{ line-height :	1.8em; }
 body .lh_190		{ line-height :	1.9em; }
 body .lh_200		{ line-height :	2em; }
+body .lh_210		{ line-height :	2.1em; }
+body .lh_220		{ line-height :	2.2em; }
+body .lh_230		{ line-height :	2.3em; }
+body .lh_240		{ line-height :	2.4em; }
+body .lh_250		{ line-height :	2.5em; }
+body .lh_260		{ line-height :	2.6em; }
+body .lh_270		{ line-height :	2.7em; }
+body .lh_280		{ line-height :	2.8em; }
+body .lh_290		{ line-height :	2.9em; }
+body .lh_300		{ line-height :	3em; }
+
+
+body .lh_60p		{ line-height :	 60%; }
+body .lh_70p		{ line-height :	 70%; }
+body .lh_80p		{ line-height :	 80%; }
+body .lh_90p		{ line-height :	 90%; }
+body .lh_100p		{ line-height :	100%; }
+body .lh_110p		{ line-height :	110%; }
+body .lh_120p		{ line-height :	120%; }
+body .lh_130p		{ line-height :	130%; }
+body .lh_140p		{ line-height :	140%; }
+body .lh_150p		{ line-height :	150%; }
+body .lh_160p		{ line-height :	160%; }
+body .lh_170p		{ line-height :	170%; }
+body .lh_180p		{ line-height :	180%; }
+body .lh_190p		{ line-height :	190%; }
+body .lh_200p		{ line-height :	200%; }
+body .lh_210p		{ line-height :	210%; }
+body .lh_220p		{ line-height :	220%; }
+body .lh_230p		{ line-height :	230%; }
+body .lh_240p		{ line-height :	240%; }
+body .lh_250p		{ line-height :	250%; }
+body .lh_260p		{ line-height :	260%; }
+body .lh_270p		{ line-height :	270%; }
+body .lh_280p		{ line-height :	280%; }
+body .lh_290p		{ line-height :	290%; }
+body .lh_300p		{ line-height :	300%; }
 
 
 
@@ -935,11 +980,22 @@ sub
 		vertical-align :			middle;
 	}
 
-.autocenter,
-.vertical_center
+.autocenter
 	{
 		display :				flex;
 		align-items :			center;
+	}
+
+.vertical_center
+	{
+		display :				flex;
+		flex-direction :			column;
+		justify-content :			center;
+	}
+
+.vertical_center.stretch
+	{
+		align-items :			stretch;
 	}
 
 .autocenter
@@ -980,6 +1036,27 @@ sub
 	{
 		padding-bottom :			100%;
 	}
+.autosize.ratio-gold
+	{
+		padding-bottom :			calc( 100% / 1.618 );
+	}
+.autosize.ratio-10
+	{
+		padding-bottom :			10%;
+	}
+.autosize.ratio-20
+	{
+		padding-bottom :			20%;
+	}
+.autosize.ratio-30
+	{
+		padding-bottom :			30%;
+	}
+.autosize.ratio-40
+	{
+		padding-bottom :			40%;
+	}
+
 
 .autosize iframe,
 .autosize object,
