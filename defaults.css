@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 28/01/2025 14:46
+* Last modif	: 03/02/2025 17:25
 * Description	: Fichier de config CSS par défaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -523,18 +523,18 @@ h5
 
 /* ------------------------------------------------------------------------------------ GRAISSES / WEIGHTS */
 
-body .f_thin		{ font-weight :	100; }
-body .f_extralight	{ font-weight :	200; }
-body .f_light		{ font-weight :	300; }
-body .f_semilight		{ font-weight :	350; }
-body .f_normal,
-body .f_regular		{ font-weight :	400; }
-body .f_medium		{ font-weight :	500; }
-body .f_semibold		{ font-weight :	600; }
-body .f_bold		{ font-weight :	700; }
-body .f_extrabold		{ font-weight :	800; }
-body .f_black		{ font-weight :	900; }
-body .f_extrablack	{ font-weight :	950; }
+body .fw_thin		{ font-weight :	100; }
+body .fw_extralight	{ font-weight :	200; }
+body .fw_light		{ font-weight :	300; }
+body .fw_semilight	{ font-weight :	350; }
+body .fw_normal,
+body .fw_regular		{ font-weight :	400; }
+body .fw_medium		{ font-weight :	500; }
+body .fw_semibold		{ font-weight :	600; }
+body .fw_bold		{ font-weight :	700; }
+body .fw_extrabold	{ font-weight :	800; }
+body .fw_black		{ font-weight :	900; }
+body .fw_extrablack	{ font-weight :	950; }
 
 
 /* ------------------------------------------------------------------------------------ FONT SIZES */
@@ -2978,6 +2978,7 @@ table.tableau > tbody > tr.highlight > td
 	}
 
 
+
 /* ------------------------------------------------------------------------------------ LOADERS */
 
 ._loader
@@ -3020,6 +3021,46 @@ table.tableau > tbody > tr.highlight > td
 			transform :			rotate(360deg);
 		}
 }
+
+
+
+._txt_loader
+	{
+		--fs :				1.5em;
+		--s :					var(--fs);
+		--c :					inherit;
+
+		display  :				inline-flex;
+		align-content :			center;
+		margin : 				0 0.1em;
+		padding :				0 !important;
+		width  :				var(--s);
+		aspect-ratio  :			1;
+		vertical-align  :			center;
+		font-family :			monospace;
+		font-size : 			var(--s);
+		text-align : 			center;
+		line-height :			var(--s);
+		overflow : 				hidden;
+	}
+
+._txt_loader::before
+	{
+		content :				"—";
+		display :				inline-block;
+		margin :				0 auto;
+		animation :				_txt_loader_animation 500ms steps(1) infinite;
+	}
+
+@keyframes _txt_loader_animation {
+
+	0% 	{ content : "—"; 	}
+	25% 	{ content : "\\";	}
+	50% 	{ content : "|"; 	}
+	75% 	{ content : "/"; 	}
+
+}
+
 
 
 
