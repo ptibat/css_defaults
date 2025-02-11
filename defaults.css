@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 04/02/2025 17:01
+* Last modif	: 11/02/2025 12:23
 * Description	: Fichier de config CSS par défaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -836,6 +836,53 @@ sub
 
 
 
+/* ------------------------------------------------------------------------------------ SIZE (WIDTH & HEIGHT) */
+
+body .width_10			{ width :	10%; }
+body .width_20			{ width :	20%; }
+body .width_30			{ width :	30%; }
+body .width_40			{ width :	40%; }
+body .width_50			{ width :	50%; }
+body .width_60			{ width :	60%; }
+body .width_70			{ width :	70%; }
+body .width_80			{ width :	80%; }
+body .width_90			{ width :	90%; }
+body .width_10			{ width :	100%; }
+
+body .height_10			{ height :	10%; }
+body .height_20			{ height :	20%; }
+body .height_30			{ height :	30%; }
+body .height_40			{ height :	40%; }
+body .height_50			{ height :	50%; }
+body .height_60			{ height :	60%; }
+body .height_70			{ height :	70%; }
+body .height_80			{ height :	80%; }
+body .height_90			{ height :	90%; }
+body .height_10			{ height :	100%; }
+
+body .width_10v			{ width :	10vw; }
+body .width_20v			{ width :	20vw; }
+body .width_30v			{ width :	30vw; }
+body .width_40v			{ width :	40vw; }
+body .width_50v			{ width :	50vw; }
+body .width_60v			{ width :	60vw; }
+body .width_70v			{ width :	70vw; }
+body .width_80v			{ width :	80vw; }
+body .width_90v			{ width :	90vw; }
+body .width_10v			{ width :	100vw; }
+
+body .height_10v			{ height :	10vh; }
+body .height_20v			{ height :	20vh; }
+body .height_30v			{ height :	30vh; }
+body .height_40v			{ height :	40vh; }
+body .height_50v			{ height :	50vh; }
+body .height_60v			{ height :	60vh; }
+body .height_70v			{ height :	70vh; }
+body .height_80v			{ height :	80vh; }
+body .height_90v			{ height :	90vh; }
+body .height_10v			{ height :	100vh; }
+
+
 /* ------------------------------------------------------------------------------------ DIVERS */
 
 .padding
@@ -1234,93 +1281,11 @@ div.space500		{ height : calc(var(--space_size) *  500 ); }
 div.space1000		{ height : calc(var(--space_size) * 1000 ); }
 
 
+
+
+
+
 /* ------------------------------------------------------------------------------------ TAGS */
-
-.info,
-.note,
-.notice,
-.tag,
-.important,
-.erreur,
-.error
-	{
-		display :				inline-block;
-		vertical-align :			middle;
-		padding :				4px 6px;
-		border-radius :			2px;
-	}
-
-.info.big,
-.note.big,
-.notice.big,
-.tag.big,
-.important.big,
-.erreur.big,
-.error.big
-	{
-		padding :				12px 20px;
-	}
-
-div.info,
-div.note,
-div.notice,
-div.tag,
-div.important,
-div.erreur,
-div.error
-	{
-		display :				block;
-	}
-
-
-
-.notice,
-.message
-	{
-		color :				#0080A6 !important;
-		background-color :		#DBF1F7 !important;
-	}
-
-.info,
-.message.ok
-	{
-		color :				#117700 !important;
-		background-color :		#D8EFAC !important;
-	}
-
-.note
-	{
-		color :				#6B4E00 !important;
-		background-color :		#FFF19B !important;
-	}
-
-.erreur
-	{
-		color :				#FFFFFF !important;
-		background-color :		#DC143C !important;
-	}
-
-.important,
-.message.error
-	{
-		color :				#AA0000 !important;
-		background-color :		#FCD1D1 !important;
-	}
-
-/* ------------------------------------------------------------------------------------ MESSAGES */
-
-.message
-	{
-		display :				block;
-		margin :				5px 0;
-		padding :				30px 20px;
-		text-align :			center;
-	}
-
-
-
-
-/* ------------------------------------------------------------------------------------ .tag */
 
 .tag
 	{
@@ -1335,6 +1300,91 @@ div.error
 	{
 		color :				#FFFFFF;
 	}
+
+
+
+
+/* ------------------------------------------------------------------------------------ MESSAGES */
+
+div.msg
+	{
+		display :				block;
+		margin :				5px 0;
+		padding :				30px 20px;
+		text-align :			center;
+	}
+
+span.msg
+	{
+		display :				inline-block;
+		margin :				0.1em 0;
+		padding :				0.1em 0.2em;
+		text-align :			center;
+	}
+
+
+/* ------------------------------------------------------------------------------------ TAGS & MESSAGES */
+
+.tag,
+.msg.info,
+.msg.note,
+.msg.notice,
+.msg.important,
+.msg.erreur,
+.msg.error
+	{
+		display :				inline-block;
+		vertical-align :			middle;
+		padding :				4px 6px;
+		border-radius :			2px;
+	}
+
+.tag.big,
+.msg.info.big,
+.msg.note.big,
+.msg.notice.big,
+.msg.important.big,
+.msg.erreur.big,
+.msg.error.big
+	{
+		padding :				12px 20px;
+	}
+
+
+.msg,
+.msg.notice
+	{
+		color :				#0080A6 !important;
+		background-color :		#DBF1F7 !important;
+	}
+
+.msg.info,
+.msg.ok
+	{
+		color :				#117700 !important;
+		background-color :		#D8EFAC !important;
+	}
+
+.msg.note
+	{
+		color :				#6B4E00 !important;
+		background-color :		#FFF19B !important;
+	}
+
+.msg.erreur,
+.msg.error
+	{
+		color :				#FFFFFF !important;
+		background-color :		#DC143C !important;
+	}
+
+.msg.important
+	{
+		color :				#FFFFFF !important;
+		background-color :		#EB7208 !important;
+	}
+
+
 
 
 
@@ -3033,7 +3083,7 @@ table.tableau > tbody > tr.highlight > td
 		width  :				2cap;
 		aspect-ratio  :			1;
 		font-family :			monospace;
-		font-size : 			1.5em;
+		font-size : 			1em;
 		text-align : 			center;
 		vertical-align  :			middle;
 		color :				inherit;

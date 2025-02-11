@@ -42,7 +42,7 @@
 
 
 <div id="commands">
-	<span class='absolute z_right small'>17/07/2024</span>
+	<span class='absolute z_right small'>11/02/2025</span>
 	Root font-size : <input type="range" id="range_font_size" min="5" max="20" value="14" step="1" oninput="document.getElementById('range_font_size_value').innerHTML = this.value + 'px';" onchange="document.querySelector(':root').style.fontSize = this.value + 'px';">
 			     <output id="range_font_size_value" class="tag bubble large framboise">14px</output>
 
@@ -62,18 +62,18 @@
 			<div class="bold">.bold</div>
 			<div class="italic">.italic</div>
 			<div class="space10"></div>
-			<div class="f_thin">.f_thin</div>
-			<div class="f_extralight">.f_extralight</div>
-			<div class="f_light">.f_light</div>
-			<div class="f_semilight">.f_semilight</div>
-			<div class="f_normal">.f_normal</div>
-			<div class="f_regular">.f_regular</div>
-			<div class="f_medium">.f_medium</div>
-			<div class="f_semibold">.f_semibold</div>
-			<div class="f_bold">.f_bold</div>
-			<div class="f_extrabold">.f_extrabold</div>
-			<div class="f_black">.f_black</div>
-			<div class="f_extrablack">.f_extrablack</div>
+			<div class="fw_thin">.fw_thin</div>
+			<div class="fw_extralight">.fw_extralight</div>
+			<div class="fw_light">.fw_light</div>
+			<div class="fw_semilight">.fw_semilight</div>
+			<div class="fw_normal">.fw_normal</div>
+			<div class="fw_regular">.fw_regular</div>
+			<div class="fw_medium">.fw_medium</div>
+			<div class="fw_semibold">.fw_semibold</div>
+			<div class="fw_bold">.fw_bold</div>
+			<div class="fw_extrabold">.fw_extrabold</div>
+			<div class="fw_black">.fw_black</div>
+			<div class="fw_extrablack">.fw_extrablack</div>
 
  			<p>This text contains <sup>superscript</sup> and <sub>subscript</sub>.</p>
 
@@ -478,42 +478,33 @@
 
 		<div class="colonne">
 
-			<h1>Notices & Messages</h1>
+			<h1>Messages & Notices</h1>
 			<div class="space20"></div>
 
-				<span class="notice">.notice</span>
-			<br>
-			<br><span class="notice big">.notice .big</span>
-			<br>
-			<br><span class="message">.message</span>
+			<br><span class="msg">.msg (span)</span>
+			<br><div class="msg">.msg (div)</div>
+
+			<div class="space40"></div>
+
+			<div class="grid2 auto spaced">
+
+				<div><span class="msg notice">.msg.notice</span></div>
+				<div><span class="msg notice big">.msg .notice .big</span></div>
+
+				<div><span class="msg note">.msg .note</span></div>
+				<div><span class="msg note big">.msg .note .big</span></div>		    
+
+				<div><span class="msg info">.msg .info</span></div>
+				<div><span class="msg info big">.msg .info .big</span></div>
+				
+				<div><span class="msg important">.msg .important</span></div>
+				<div><span class="msg important big">.msg .important .big</span></div>
+				
+				<div><span class="msg error">.msg .error (.erreur)</span></div>
+				<div><span class="msg error big">.msg .error (.erreur) .big</span></div>
 
 
-			<br><span class="note">.note</span>
-			<br>
-			<br><span class="note big">.note .big</span>
-			<br>
-			<br><span class="message note">.message .note</span>
-
-
-			<br><span class="info">.info</span>
-			<br>
-			<br><span class="info big">.info .big</span>
-			<br>
-			<br><span class="message info">.message .info</span>
-
-
-			<br><span class="important">.important</span>
-			<br>
-			<br><span class="important big">.important .big</span>
-			<br>
-			<br><span class="message error">.message .error</span>
-
-
-			<br><span class="erreur">.erreur</span>
-			<br>
-			<br><span class="erreur big">.erreur .big</span>
-			<br>
-			<br><span class="message erreur">.message .erreur</span>
+			</div>
 
 		</div>
 
@@ -590,7 +581,7 @@
 	<div class='space30'></div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">yellow</div>
+		<div class="fw_bold vertical_center small_padding">yellow</div>
 		<div class="bgc-yellow vertical_center fs_75" title="Class : bgc-yellow // fgc-yellow">&nbsp; --color-yellow</div>
 		<div class="bgc-yellow-50 autocenter fs_75" title="Class : bgc-yellow-50 // fgc-yellow-50">50</div>
 		<div class="bgc-yellow-100 autocenter fs_75" title="Class : bgc-yellow-100 // fgc-yellow-100">100</div>
@@ -605,7 +596,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">amber</div>
+		<div class="fw_bold vertical_center small_padding">amber</div>
 		<div class="bgc-amber vertical_center fs_75" title="Class : bgc-amber // fgc-amber">&nbsp; --color-amber</div>
 		<div class="bgc-amber-50 autocenter fs_75" title="Class : bgc-amber-50 // fgc-amber-50">50</div>
 		<div class="bgc-amber-100 autocenter fs_75" title="Class : bgc-amber-100 // fgc-amber-100">100</div>
@@ -620,7 +611,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">orange</div>
+		<div class="fw_bold vertical_center small_padding">orange</div>
 		<div class="bgc-orange vertical_center fs_75" title="Class : bgc-orange // fgc-orange">&nbsp; --color-orange</div>
 		<div class="bgc-orange-50 autocenter fs_75" title="Class : bgc-orange-50 // fgc-orange-50">50</div>
 		<div class="bgc-orange-100 autocenter fs_75" title="Class : bgc-orange-100 // fgc-orange-100">100</div>
@@ -635,7 +626,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">deep_orange</div>
+		<div class="fw_bold vertical_center small_padding">deep_orange</div>
 		<div class="bgc-deep_orange vertical_center fs_75" title="Class : bgc-deep_orange // fgc-deep_orange">&nbsp; --color-deep_orange</div>
 		<div class="bgc-deep_orange-50 autocenter fs_75" title="Class : bgc-deep_orange-50 // fgc-deep_orange-50">50</div>
 		<div class="bgc-deep_orange-100 autocenter fs_75" title="Class : bgc-deep_orange-100 // fgc-deep_orange-100">100</div>
@@ -650,7 +641,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">red</div>
+		<div class="fw_bold vertical_center small_padding">red</div>
 		<div class="bgc-red vertical_center fs_75" title="Class : bgc-red // fgc-red">&nbsp; --color-red</div>
 		<div class="bgc-red-50 autocenter fs_75" title="Class : bgc-red-50 // fgc-red-50">50</div>
 		<div class="bgc-red-100 autocenter fs_75" title="Class : bgc-red-100 // fgc-red-100">100</div>
@@ -665,7 +656,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">crimson</div>
+		<div class="fw_bold vertical_center small_padding">crimson</div>
 		<div class="bgc-crimson vertical_center fs_75" title="Class : bgc-crimson // fgc-crimson">&nbsp; --color-crimson</div>
 		<div class="bgc-crimson-50 autocenter fs_75" title="Class : bgc-crimson-50 // fgc-crimson-50">50</div>
 		<div class="bgc-crimson-100 autocenter fs_75" title="Class : bgc-crimson-100 // fgc-crimson-100">100</div>
@@ -680,7 +671,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">pink</div>
+		<div class="fw_bold vertical_center small_padding">pink</div>
 		<div class="bgc-pink vertical_center fs_75" title="Class : bgc-pink // fgc-pink">&nbsp; --color-pink</div>
 		<div class="bgc-pink-50 autocenter fs_75" title="Class : bgc-pink-50 // fgc-pink-50">50</div>
 		<div class="bgc-pink-100 autocenter fs_75" title="Class : bgc-pink-100 // fgc-pink-100">100</div>
@@ -695,7 +686,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">purple</div>
+		<div class="fw_bold vertical_center small_padding">purple</div>
 		<div class="bgc-purple vertical_center fs_75" title="Class : bgc-purple // fgc-purple">&nbsp; --color-purple</div>
 		<div class="bgc-purple-50 autocenter fs_75" title="Class : bgc-purple-50 // fgc-purple-50">50</div>
 		<div class="bgc-purple-100 autocenter fs_75" title="Class : bgc-purple-100 // fgc-purple-100">100</div>
@@ -710,7 +701,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">deep_purple</div>
+		<div class="fw_bold vertical_center small_padding">deep_purple</div>
 		<div class="bgc-deep_purple vertical_center fs_75" title="Class : bgc-deep_purple // fgc-deep_purple">&nbsp; --color-deep_purple</div>
 		<div class="bgc-deep_purple-50 autocenter fs_75" title="Class : bgc-deep_purple-50 // fgc-deep_purple-50">50</div>
 		<div class="bgc-deep_purple-100 autocenter fs_75" title="Class : bgc-deep_purple-100 // fgc-deep_purple-100">100</div>
@@ -725,7 +716,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">indigo</div>
+		<div class="fw_bold vertical_center small_padding">indigo</div>
 		<div class="bgc-indigo vertical_center fs_75" title="Class : bgc-indigo // fgc-indigo">&nbsp; --color-indigo</div>
 		<div class="bgc-indigo-50 autocenter fs_75" title="Class : bgc-indigo-50 // fgc-indigo-50">50</div>
 		<div class="bgc-indigo-100 autocenter fs_75" title="Class : bgc-indigo-100 // fgc-indigo-100">100</div>
@@ -740,7 +731,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">blue_grey</div>
+		<div class="fw_bold vertical_center small_padding">blue_grey</div>
 		<div class="bgc-blue_grey vertical_center fs_75" title="Class : bgc-blue_grey // fgc-blue_grey">&nbsp; --color-blue_grey</div>
 		<div class="bgc-blue_grey-50 autocenter fs_75" title="Class : bgc-blue_grey-50 // fgc-blue_grey-50">50</div>
 		<div class="bgc-blue_grey-100 autocenter fs_75" title="Class : bgc-blue_grey-100 // fgc-blue_grey-100">100</div>
@@ -755,7 +746,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">blue</div>
+		<div class="fw_bold vertical_center small_padding">blue</div>
 		<div class="bgc-blue vertical_center fs_75" title="Class : bgc-blue // fgc-blue">&nbsp; --color-blue</div>
 		<div class="bgc-blue-50 autocenter fs_75" title="Class : bgc-blue-50 // fgc-blue-50">50</div>
 		<div class="bgc-blue-100 autocenter fs_75" title="Class : bgc-blue-100 // fgc-blue-100">100</div>
@@ -770,7 +761,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">light_blue</div>
+		<div class="fw_bold vertical_center small_padding">light_blue</div>
 		<div class="bgc-light_blue vertical_center fs_75" title="Class : bgc-light_blue // fgc-light_blue">&nbsp; --color-light_blue</div>
 		<div class="bgc-light_blue-50 autocenter fs_75" title="Class : bgc-light_blue-50 // fgc-light_blue-50">50</div>
 		<div class="bgc-light_blue-100 autocenter fs_75" title="Class : bgc-light_blue-100 // fgc-light_blue-100">100</div>
@@ -785,7 +776,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">cyan</div>
+		<div class="fw_bold vertical_center small_padding">cyan</div>
 		<div class="bgc-cyan vertical_center fs_75" title="Class : bgc-cyan // fgc-cyan">&nbsp; --color-cyan</div>
 		<div class="bgc-cyan-50 autocenter fs_75" title="Class : bgc-cyan-50 // fgc-cyan-50">50</div>
 		<div class="bgc-cyan-100 autocenter fs_75" title="Class : bgc-cyan-100 // fgc-cyan-100">100</div>
@@ -800,7 +791,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">teal</div>
+		<div class="fw_bold vertical_center small_padding">teal</div>
 		<div class="bgc-teal vertical_center fs_75" title="Class : bgc-teal // fgc-teal">&nbsp; --color-teal</div>
 		<div class="bgc-teal-50 autocenter fs_75" title="Class : bgc-teal-50 // fgc-teal-50">50</div>
 		<div class="bgc-teal-100 autocenter fs_75" title="Class : bgc-teal-100 // fgc-teal-100">100</div>
@@ -815,7 +806,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">green</div>
+		<div class="fw_bold vertical_center small_padding">green</div>
 		<div class="bgc-green vertical_center fs_75" title="Class : bgc-green // fgc-green">&nbsp; --color-green</div>
 		<div class="bgc-green-50 autocenter fs_75" title="Class : bgc-green-50 // fgc-green-50">50</div>
 		<div class="bgc-green-100 autocenter fs_75" title="Class : bgc-green-100 // fgc-green-100">100</div>
@@ -830,7 +821,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">lime</div>
+		<div class="fw_bold vertical_center small_padding">lime</div>
 		<div class="bgc-lime vertical_center fs_75" title="Class : bgc-lime // fgc-lime">&nbsp; --color-lime</div>
 		<div class="bgc-lime-50 autocenter fs_75" title="Class : bgc-lime-50 // fgc-lime-50">50</div>
 		<div class="bgc-lime-100 autocenter fs_75" title="Class : bgc-lime-100 // fgc-lime-100">100</div>
@@ -845,7 +836,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">mint</div>
+		<div class="fw_bold vertical_center small_padding">mint</div>
 		<div class="bgc-mint vertical_center fs_75" title="Class : bgc-mint // fgc-mint">&nbsp; --color-mint</div>
 		<div class="bgc-mint-50 autocenter fs_75" title="Class : bgc-mint-50 // fgc-mint-50">50</div>
 		<div class="bgc-mint-100 autocenter fs_75" title="Class : bgc-mint-100 // fgc-mint-100">100</div>
@@ -860,7 +851,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">light_green</div>
+		<div class="fw_bold vertical_center small_padding">light_green</div>
 		<div class="bgc-light_green vertical_center fs_75" title="Class : bgc-light_green // fgc-light_green">&nbsp; --color-light_green</div>
 		<div class="bgc-light_green-50 autocenter fs_75" title="Class : bgc-light_green-50 // fgc-light_green-50">50</div>
 		<div class="bgc-light_green-100 autocenter fs_75" title="Class : bgc-light_green-100 // fgc-light_green-100">100</div>
@@ -875,7 +866,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">grey</div>
+		<div class="fw_bold vertical_center small_padding">grey</div>
 		<div class="bgc-grey vertical_center fs_75" title="Class : bgc-grey // fgc-grey">&nbsp; --color-grey</div>
 		<div class="bgc-grey-50 autocenter fs_75" title="Class : bgc-grey-50 // fgc-grey-50">50</div>
 		<div class="bgc-grey-100 autocenter fs_75" title="Class : bgc-grey-100 // fgc-grey-100">100</div>
@@ -890,7 +881,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">brown</div>
+		<div class="fw_bold vertical_center small_padding">brown</div>
 		<div class="bgc-brown vertical_center fs_75" title="Class : bgc-brown // fgc-brown">&nbsp; --color-brown</div>
 		<div class="bgc-brown-50 autocenter fs_75" title="Class : bgc-brown-50 // fgc-brown-50">50</div>
 		<div class="bgc-brown-100 autocenter fs_75" title="Class : bgc-brown-100 // fgc-brown-100">100</div>
@@ -905,7 +896,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">black</div>
+		<div class="fw_bold vertical_center small_padding">black</div>
 		<div class="bgc-black vertical_center fs_75" title="Class : bgc-black // fgc-black">&nbsp; --color-black</div>
 		<div class="bgc-black-50 autocenter fs_75" title="Class : bgc-black-50 // fgc-black-50">50</div>
 		<div class="bgc-black-100 autocenter fs_75" title="Class : bgc-black-100 // fgc-black-100">100</div>
@@ -920,7 +911,7 @@
 	</div>
 
 	<div class='flex' style='height:3.5vh;'>
-		<div class="f_bold vertical_center small_padding">white</div>
+		<div class="fw_bold vertical_center small_padding">white</div>
 		<div class="bgc-white vertical_center fs_75" title="Class : bgc-white // fgc-white">&nbsp; --color-white</div>
 		<div class="bgc-white-50 autocenter fs_75" title="Class : bgc-white-50 // fgc-white-50">50</div>
 		<div class="bgc-white-100 autocenter fs_75" title="Class : bgc-white-100 // fgc-white-100">100</div>
@@ -1964,7 +1955,6 @@
 
 	<h1>Loaders</h1>
 	<div class="space20"></div>
-
 
 	<div class="monospaced small">	<span class='tab3'></span> <b>._txt_loader</b>	</div>
 	<div>						<span class='tab3'></span> <span class='_txt_loader'></span></div>
