@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 11/02/2025 12:23
+* Last modif	: 12/02/2025 11:42
 * Description	: Fichier de config CSS par défaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1291,15 +1291,21 @@ div.space1000		{ height : calc(var(--space_size) * 1000 ); }
 	{
 		vertical-align :			middle;
 		margin :				1px;
-		color :				#333333;
+		color :				#FFFFFF;
 		background-color :		#A2A2A1;
 	}
 
-.tag,
-.tag
+div.tag
 	{
-		color :				#FFFFFF;
+		display :				block;
 	}
+
+span.tag
+	{
+		display :				inline-block;
+	}
+
+
 
 
 
@@ -1333,7 +1339,6 @@ span.msg
 .msg.erreur,
 .msg.error
 	{
-		display :				inline-block;
 		vertical-align :			middle;
 		padding :				4px 6px;
 		border-radius :			2px;
