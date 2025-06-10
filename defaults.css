@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 12/02/2025 11:42
+* Last modif	: 10/06/2025 10:40
 * Description	: Fichier de config CSS par défaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -32,6 +32,14 @@ body
 		--couleur :				#5158C5;
 		--couleur_bg :			#F5F5F5;
 		--couleur_highlight :		#FFF3CE;
+
+		--couleur_ok :			#00B35F;
+		--couleur_no :			#F34848;
+		--couleur_msg :			#6BE3FF;
+		--couleur_neutral :		#8E9091;
+		--couleur_notice :		#FBD715;
+		--couleur_warning :		#F19505;
+		--couleur_error :			#F11C44;
 
 		color :				#000000;
 		background-color :		#FFFFFF;
@@ -523,18 +531,18 @@ h5
 
 /* ------------------------------------------------------------------------------------ GRAISSES / WEIGHTS */
 
-body .fw_thin		{ font-weight :	100; }
-body .fw_extralight	{ font-weight :	200; }
-body .fw_light		{ font-weight :	300; }
-body .fw_semilight	{ font-weight :	350; }
+body .fw_thin, .fw_100		{ font-weight :	100; }
+body .fw_extralight, .fw_200	{ font-weight :	200; }
+body .fw_light, .fw_300		{ font-weight :	300; }
+body .fw_semilight, .fw_350	{ font-weight :	350; }
 body .fw_normal,
-body .fw_regular		{ font-weight :	400; }
-body .fw_medium		{ font-weight :	500; }
-body .fw_semibold		{ font-weight :	600; }
-body .fw_bold		{ font-weight :	700; }
-body .fw_extrabold	{ font-weight :	800; }
-body .fw_black		{ font-weight :	900; }
-body .fw_extrablack	{ font-weight :	950; }
+body .fw_regular, .fw_400	{ font-weight :	400; }
+body .fw_medium, .fw_500	{ font-weight :	500; }
+body .fw_semibold, .fw_600	{ font-weight :	600; }
+body .fw_bold, .fw_700		{ font-weight :	700; }
+body .fw_extrabold, .fw_800	{ font-weight :	800; }
+body .fw_black, .fw_900		{ font-weight :	900; }
+body .fw_extrablack, .fw_950	{ font-weight :	950; }
 
 
 /* ------------------------------------------------------------------------------------ FONT SIZES */
@@ -668,6 +676,11 @@ em,
 .italic
 	{
 		font-style :			italic;
+	}
+
+.fs_normal
+	{
+		font-style :			normal;
 	}
 
 .monospaced
@@ -980,6 +993,7 @@ body .height_10v			{ height :	100vh; }
 .flex > div
 	{
 		flex :				1;
+  		align-content :			center;
 	}
 
 /* Autosize width  */

@@ -42,7 +42,7 @@
 
 
 <div id="commands">
-	<span class='absolute z_right small'>11/02/2025</span>
+	<span class='absolute z_right small'>10/06/2025</span>
 	Root font-size : <input type="range" id="range_font_size" min="5" max="20" value="14" step="1" oninput="document.getElementById('range_font_size_value').innerHTML = this.value + 'px';" onchange="document.querySelector(':root').style.fontSize = this.value + 'px';">
 			     <output id="range_font_size_value" class="tag bubble large framboise">14px</output>
 
@@ -544,6 +544,26 @@
 			<input  id="field_file" type="file" class="input_file" name="file">
 		</div>
 
+	</div>
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space100"></div>
+	<a name='couleurs'></a>
+	<h1>Couleurs basiques</h1>
+	<br>
+	<br>
+
+	<div class='flex center' style='height:10vh;gap:0.5rem;'>
+		<div style="background-color:var(--couleur_ok);">--couleur_ok</div>
+		<div style="background-color:var(--couleur_no);">--couleur_no</div>
+		<div style="background-color:var(--couleur_msg);">--couleur_msg</div>
+		<div style="background-color:var(--couleur_neutral);">--couleur_neutral</div>
+		<div style="background-color:var(--couleur_notice);">--couleur_notice</div>
+		<div style="background-color:var(--couleur_warning);">--couleur_warning</div>
+		<div style="background-color:var(--couleur_error);">--couleur_error</div>
 	</div>
 
 
