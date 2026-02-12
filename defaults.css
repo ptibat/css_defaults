@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
 * Dev start		: 18/04/2014
-* Last modif	: 16/06/2025 13:00
+* Last modif	: 12/02/2026 15:50
 * Description	: Fichier de config CSS par défaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -31,7 +31,6 @@ body
 
 		--couleur :				#5158C5;
 		--couleur_bg :			#F5F5F5;
-		--couleur_highlight :		#FFF3CE;
 
 		--couleur_ok :			#00B35F;
 		--couleur_no :			#F34848;
@@ -266,26 +265,13 @@ a.external:hover:after
 
 .effet
 	{
-		-webkit-transition :		all 100ms ease;
-		   -moz-transition :		all 100ms ease;
-		    -ms-transition :		all 100ms ease;
-		     -o-transition :		all 100ms ease;
-		        transition :		all 100ms ease;
-
-		-webkit-transform :		translate3d(0,0,0);
-		   -moz-transform :		translate3d(0,0,0);
-		    -ms-transform :		translate3d(0,0,0);
-		     -o-transform :		translate3d(0,0,0);
-		        transform :		translate3d(0,0,0);
+		transition :			all 100ms ease;
+		transform :				translate3d(0,0,0);
 	}
 
 .effet.long
 	{
-		-webkit-transition :		all 400ms ease;
-		   -moz-transition :		all 400ms ease;
-		    -ms-transition :		all 400ms ease;
-		     -o-transition :		all 400ms ease;
-		        transition :		all 400ms ease;
+		transition :			all 400ms ease;
 	}
 
 
@@ -293,10 +279,7 @@ a.external:hover:after
 
 .blur
 	{
-		-webkit-filter :			blur(0.25em);
-		    -ms-filter :			blur(0.25em);
-		     -o-filter :			blur(0.25em);
-		        filter :			blur(0.25em);
+		filter :				blur(0.25em);
 	}
 
 
@@ -597,6 +580,62 @@ body .fs_850		{ font-size :	8.50rem; }
 body .fs_900		{ font-size :	9.00rem; }
 body .fs_950		{ font-size :	9.50rem; }
 
+body .fs_5p			{ font-size :	 5%; }
+body .fs_10p		{ font-size :	 10%; }
+body .fs_15p		{ font-size :	 15%; }
+body .fs_20p		{ font-size :	 20%; }
+body .fs_25p		{ font-size :	 25%; }
+body .fs_30p		{ font-size :	 30%; }
+body .fs_35p		{ font-size :	 35%; }
+body .fs_40p		{ font-size :	 40%; }
+body .fs_45p		{ font-size :	 45%; }
+body .fs_50p		{ font-size :	 50%; }
+body .fs_55p		{ font-size :	 55%; }
+body .fs_60p		{ font-size :	 60%; }
+body .fs_65p		{ font-size :	 65%; }
+body .fs_70p		{ font-size :	 70%; }
+body .fs_75p		{ font-size :	 75%; }
+body .fs_80p		{ font-size :	 80%; }
+body .fs_85p		{ font-size :	 85%; }
+body .fs_90p		{ font-size :	 90%; }
+body .fs_95p		{ font-size :	 95%; }
+body .fs_100p		{ font-size :	100%; }
+body .fs_105p		{ font-size :	105%; }
+body .fs_110p		{ font-size :	110%; }
+body .fs_115p		{ font-size :	115%; }
+body .fs_120p		{ font-size :	120%; }
+body .fs_125p		{ font-size :	125%; }
+body .fs_130p		{ font-size :	130%; }
+body .fs_135p		{ font-size :	135%; }
+body .fs_140p		{ font-size :	140%; }
+body .fs_145p		{ font-size :	145%; }
+body .fs_150p		{ font-size :	150%; }
+body .fs_155p		{ font-size :	155%; }
+body .fs_160p		{ font-size :	160%; }
+body .fs_165p		{ font-size :	165%; }
+body .fs_170p		{ font-size :	170%; }
+body .fs_175p		{ font-size :	175%; }
+body .fs_180p		{ font-size :	180%; }
+body .fs_185p		{ font-size :	185%; }
+body .fs_190p		{ font-size :	190%; }
+body .fs_195p		{ font-size :	195%; }
+body .fs_200p		{ font-size :	200%; }
+body .fs_250p		{ font-size :	250%; }
+body .fs_300p		{ font-size :	300%; }
+body .fs_350p		{ font-size :	350%; }
+body .fs_400p		{ font-size :	400%; }
+body .fs_450p		{ font-size :	450%; }
+body .fs_500p		{ font-size :	500%; }
+body .fs_550p		{ font-size :	550%; }
+body .fs_600p		{ font-size :	600%; }
+body .fs_650p		{ font-size :	650%; }
+body .fs_700p		{ font-size :	700%; }
+body .fs_750p		{ font-size :	750%; }
+body .fs_800p		{ font-size :	800%; }
+body .fs_850p		{ font-size :	850%; }
+body .fs_900p		{ font-size :	900%; }
+body .fs_950p		{ font-size :	950%; }
+
 
 /* ------------------------------------------------------------------------------------ LINES HEIGHTS */
 
@@ -716,31 +755,43 @@ a.nounderline:visited,
 		text-decoration :			none;
 	}
 
-.left,
-.align_left
+.left
 	{
 		text-align :			left !important;
+	}
+
+.right
+	{
+		text-align :			right !important;
+	}
+
+.center
+	{
+		text-align :			center !important;
+	}
+
+.justify
+	{
+		text-align :			justify !important;
+	}
+
+.align_left
+	{
 		justify-content :			left !important;
 	}
 
-.right,
 .align_right
 	{
-		text-align :			right !important;
 		justify-content :			right !important;
 	}
 
-.center,
 .align_center
 	{
-		text-align :			center !important;
 		justify-content :			center !important;
 	}
 
-.justify,
 .align_justify
 	{
-		text-align :			justify !important;
 		justify-content :			stretch !important;
 	}
 
@@ -820,11 +871,7 @@ input.t_blue
 
 .hyphens
 	{
-		-webkit-hyphens :			auto;
-		   -moz-hyphens :			auto;
-		    -ms-hyphens :			auto;
-		     -o-hyphens :			auto;
-		        hyphens :			auto;
+		hyphens :				auto;
 	}
 
 sup,
@@ -861,7 +908,7 @@ body .width_60			{ width :	60%; }
 body .width_70			{ width :	70%; }
 body .width_80			{ width :	80%; }
 body .width_90			{ width :	90%; }
-body .width_10			{ width :	100%; }
+body .width_100			{ width :	100%; }
 
 body .height_10			{ height :	10%; }
 body .height_20			{ height :	20%; }
@@ -872,7 +919,7 @@ body .height_60			{ height :	60%; }
 body .height_70			{ height :	70%; }
 body .height_80			{ height :	80%; }
 body .height_90			{ height :	90%; }
-body .height_10			{ height :	100%; }
+body .height_100			{ height :	100%; }
 
 body .width_10v			{ width :	10vw; }
 body .width_20v			{ width :	20vw; }
@@ -883,7 +930,7 @@ body .width_60v			{ width :	60vw; }
 body .width_70v			{ width :	70vw; }
 body .width_80v			{ width :	80vw; }
 body .width_90v			{ width :	90vw; }
-body .width_10v			{ width :	100vw; }
+body .width_100v			{ width :	100vw; }
 
 body .height_10v			{ height :	10vh; }
 body .height_20v			{ height :	20vh; }
@@ -894,7 +941,7 @@ body .height_60v			{ height :	60vh; }
 body .height_70v			{ height :	70vh; }
 body .height_80v			{ height :	80vh; }
 body .height_90v			{ height :	90vh; }
-body .height_10v			{ height :	100vh; }
+body .height_100v			{ height :	100vh; }
 
 
 /* ------------------------------------------------------------------------------------ DIVERS */
@@ -1042,12 +1089,6 @@ body .height_10v			{ height :	100vh; }
 		vertical-align :			middle;
 	}
 
-.autocenter
-	{
-		display :				flex;
-		align-items :			center;
-	}
-
 .vertical_center
 	{
 		display :				flex;
@@ -1062,6 +1103,8 @@ body .height_10v			{ height :	100vh; }
 
 .autocenter
 	{
+		display :				flex;
+		align-items :			center;
 		justify-content :			center;
 		text-align :			center;
 	}
@@ -1180,11 +1223,12 @@ select:-moz-focusring
 .noselect
 	{
 		-webkit-touch-callout :		none;
-		  -webkit-user-select :		none;
-		   -khtml-user-select :		none;
-		     -moz-user-select :		none;
-		      -ms-user-select :		none;
 		          user-select :		none;
+	}
+
+.userselect
+	{
+		          user-select :		text;
 	}
 
 select.minimalist
@@ -1477,9 +1521,6 @@ body .bouton:not(.disabled):hover
 		text-decoration :			none;
 
 		-webkit-touch-callout :		none;
-		  -webkit-user-select :		none;
-		     -moz-user-select :		none;
-		      -ms-user-select :		none;
 		          user-select :		none;
 	}
 
@@ -1500,12 +1541,7 @@ a.bouton,
 .bouton.ombre
 	{
 		box-shadow :			0 0 0.2em rgba( 0 , 0 , 0, 0.4 );
-
-		-webkit-transition :		all 100ms ease;
-		   -moz-transition :		all 100ms ease;
-		    -ms-transition :		all 100ms ease;
-		     -o-transition :		all 100ms ease;
-		        transition :		all 100ms ease;
+		transition :			all 100ms ease;
 	}
 
 .bouton.ombre:active
@@ -1612,7 +1648,6 @@ a.bouton,
 		outline :				0;
 		overflow :				hidden;
 		cursor :				pointer;
-		-webkit-transition :		all 0.1s ease-in;
 		transition :			all 0.1s ease-in;
 	}
 
@@ -1632,7 +1667,6 @@ a.bouton,
 		z-index :				1;
 		display :				inline-block;
 		position :				relative;
-		-webkit-transition :		all 0.15s ease-in;
 		transition :			all 0.15s ease-in;
 	}
 
@@ -1654,7 +1688,6 @@ a.bouton,
 		left :				0;
 		right :				100%;
 		background :			#0000DD;
-		-webkit-transition :		all 0.15s ease-in;
 		transition :			all 0.15s ease-in;
 	}
 .bouton.animate:before
@@ -2297,7 +2330,6 @@ textarea.resize
 select
 	{
 		-webkit-appearance :		none;
-		   -moz-appearance :		none;
 		        appearance :		none;
 	}
 
@@ -2414,10 +2446,7 @@ span.radio > label
 	{
 		display :				inline-block;
 		cursor :				pointer;
-		-webkit-user-select :		none;
-		   -moz-user-select :		none;
-		    -ms-user-select :		none;
-		        user-select :		none;
+		user-select :			none;
 	}
 
 span.checkbox > label:before,
@@ -2442,12 +2471,7 @@ span.radio > label:before
 		border-width :			2px;
 		border-style :			solid;
 		border-color :			rgba( 0 , 0 , 0 , 0.3 );
-
-		-webkit-transition :		all 200ms ease;
-		   -moz-transition :		all 200ms ease;
-		    -ms-transition :		all 200ms ease;
-		     -o-transition :		all 200ms ease;
-		        transition :		all 200ms ease;
+		transition :			all 200ms ease;
 	}
 
 
@@ -3023,10 +3047,7 @@ table.tableau > tbody > tr.highlight > td
 
 .blink
 	{
-		-webkit-animation :		blink 0.9s infinite;
-		   -moz-animation :		blink 0.9s infinite;
-		    -ms-animation :		blink 0.9s infinite;
-		        animation :		blink 0.9s infinite;
+		animation :			blink 0.9s infinite;
 	}
 
 @keyframes blink

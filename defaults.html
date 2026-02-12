@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="fr" itemscope itemtype="https://schema.org/WebPage">
+<head>
+	<title>CSS Defaults</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="ptibat">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
+	<link rel="stylesheet" href="defaults.css">
+	<style type="text/css">
+
+		html,
+		body
+			{
+				margin :			0;
+				padding :			0;
+			}
+
+		#commands,
+		#preview_css
+			{
+				position :			relative;
+				margin :			0 auto;
+				padding :			4rem;
+				width :			80%;
+				border-left :		1px solid #CCC;
+				border-right :		1px solid #CCC;
+			}
+
+		#commands
+			{
+				padding :			2rem 4rem;
+			}
+
+		#preview_css
+			{
+				box-shadow :		0 0 2rem rgba(0,0,0,0.1);
+			}
+
+	</style>
+</head>
+<body style="">
+
+
+<div id="commands">
+	<span class='absolute z_right small'>16/06/2025</span>
+	Root font-size : <input type="range" id="range_font_size" min="5" max="20" value="14" step="1" oninput="document.getElementById('range_font_size_value').innerHTML = this.value + 'px';" onchange="document.querySelector(':root').style.fontSize = this.value + 'px';">
+			     <output id="range_font_size_value" class="tag bubble large framboise">14px</output>
+
+</div>
+
+<div id="preview_css">
+
+<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="colonnes3">
+
+		<div class="colonne">
+
+			<h1 style="margin-top:0;">Fonts</h1>
+			<div class="space10"></div>
+
+			<div class="bold">.bold</div>
+			<div class="italic">.italic</div>
+			<div class="space10"></div>
+			<div class="fw_thin">.fw_thin</div>
+			<div class="fw_extralight">.fw_extralight</div>
+			<div class="fw_light">.fw_light</div>
+			<div class="fw_semilight">.fw_semilight</div>
+			<div class="fw_normal">.fw_normal</div>
+			<div class="fw_regular">.fw_regular</div>
+			<div class="fw_medium">.fw_medium</div>
+			<div class="fw_semibold">.fw_semibold</div>
+			<div class="fw_bold">.fw_bold</div>
+			<div class="fw_extrabold">.fw_extrabold</div>
+			<div class="fw_black">.fw_black</div>
+			<div class="fw_extrablack">.fw_extrablack</div>
+
+ 			<p>This text contains <sup>superscript</sup> and <sub>subscript</sub>.</p>
+
+ 				Lien hypertexte <a href="./">normal</a>,
+ 			<br>Lien hypertexte avec <a href="./" class="link">la classe ".link"</a>
+ 			<br>Lien hypertexte avec <a href="./" class="_link">la classe "._link"</a>
+
+
+			<div class="space30"></div>
+
+			<h1 style="margin-top:0;">Titres</h1>
+			<div class="space10"></div>
+
+			<h1>Titre H1</h1>
+			<h2>Titre H2</h2>
+			<h3>Titre H3</h3>
+			<h4>Titre H4</h4>
+			<h5>Titre H5</h5>
+
+		</div>
+
+
+		<div class="colonne">
+
+			<h1>Checkboxes</h1>
+			<div class="space10"></div>
+
+			<span class="checkbox">
+				<input  id="checkbox1" name="checkbox1" type="checkbox" checked="checked">
+				<label for="checkbox1"></label>
+			</span> Checked <span class='small italic'>(variable : --couleur )</span>
+
+			<br>
+
+			<span class="checkbox">
+				<input  id="checkbox2" name="checkbox2" type="checkbox">
+				<label for="checkbox2"></label>
+			</span> Unchecked
+
+			<br>
+
+			<span class="checkbox">
+				<input  id="checkbox3" name="checkbox3" type="checkbox" disabled="disabled">
+				<label for="checkbox3"></label>
+			</span> Disabled
+
+			<br>
+
+			<span class="checkbox vert">
+				<input  id="checkbox4" name="checkbox4" type="checkbox" checked="checked">
+				<label for="checkbox4"></label>
+			</span> Vert
+
+			<br>
+
+			<span class="checkbox orange">
+				<input  id="checkbox5" name="checkbox5" type="checkbox" checked="checked">
+				<label for="checkbox5"></label>
+			</span> Orange
+
+			<br>
+
+			<span class="checkbox rouge">
+				<input  id="checkbox6" name="checkbox6" type="checkbox" checked="checked">
+				<label for="checkbox6"></label>
+			</span> Rouge
+
+			<br>
+
+			<span class="checkbox bleu">
+				<input  id="checkbox7" name="checkbox7" type="checkbox" checked="checked">
+				<label for="checkbox7"></label>
+			</span> Bleu
+
+			<br>
+
+			<span class="checkbox gris">
+				<input  id="checkbox8" name="checkbox8" type="checkbox" checked="checked">
+				<label for="checkbox8"></label>
+			</span> Gris
+
+
+			<div class="space40"></div>
+
+
+			<h1>Toggle Switches</h1>
+			<div class="space10"></div>
+
+			<span class="toggle_switch">
+				<input  id="toggle_switch1" type="checkbox" checked="checked">
+				<label for="toggle_switch1"></label>
+			</span> Checked <span class='small italic'>(variable : --couleur )</span>
+
+			<br>
+
+			<span class="toggle_switch">
+				<input  id="toggle_switch2" type="checkbox">
+				<label for="toggle_switch2"></label>
+			</span> Unchecked
+
+			<br>
+
+			<span class="toggle_switch vert">
+				<input  id="toggle_switch7" type="checkbox" checked="checked">
+				<label for="toggle_switch7"></label>
+			</span> Vert
+
+			<br>
+
+			<span class="toggle_switch bleu">
+				<input  id="toggle_switch3" type="checkbox" checked="checked">
+				<label for="toggle_switch3"></label>
+			</span> Bleu
+
+			<br>
+
+			<span class="toggle_switch jaune">
+				<input  id="toggle_switch4" type="checkbox" checked="checked">
+				<label for="toggle_switch4"></label>
+			</span> Jaune
+
+			<br>
+
+			<span class="toggle_switch orange">
+				<input  id="toggle_switch5" type="checkbox" checked="checked">
+				<label for="toggle_switch5"></label>
+			</span> Orange
+
+			<br>
+
+			<span class="toggle_switch rouge">
+				<input  id="toggle_switch6" type="checkbox" checked="checked">
+				<label for="toggle_switch6"></label>
+			</span> Rouge
+
+
+
+
+
+			<div class="space40"></div>
+
+
+			<h1>Boutons radio</h1>
+			<div class="space10"></div>
+
+			<span class="radio">
+				<input  id="radio1" name="radio[]" value="oui" type="radio">
+				<label for="radio1"></label>
+			</span> Oui <span class='small italic'>(variable : --couleur )</span>
+
+			<br>
+
+			<span class="radio">
+				<input  id="radio2" name="radio[]" value="non" type="radio">
+				<label for="radio2"></label>
+			</span> Non <span class='small italic'>(variable : --couleur )</span>
+
+			<br>
+
+			<span class="radio">
+				<input  id="radio3" name="radio[]" value="peutetre" type="radio">
+				<label for="radio3"></label>
+			</span> Peut être
+
+			<br>
+
+			<span class="radio vert">
+				<input  id="radio4" name="radio[]" value="rouge" type="radio">
+				<label for="radio4"></label>
+			</span> Vert
+
+			<br>
+
+			<span class="radio orange">
+				<input  id="radio5" name="radio[]" value="rouge" type="radio">
+				<label for="radio5"></label>
+			</span> Orange
+
+			<br>
+
+			<span class="radio rouge">
+				<input  id="radio6" name="radio[]" value="orange" type="radio">
+				<label for="radio6"></label>
+			</span> Rouge
+
+			<br>
+
+			<span class="radio bleu">
+				<input  id="radio7" name="radio[]" value="orange" type="radio" checked="checked">
+				<label for="radio7"></label>
+			</span> Bleu
+
+			<br>
+
+			<span class="radio gris">
+				<input  id="radio8" name="radio[]" value="gris" type="radio">
+				<label for="radio8"></label>
+			</span> Gris
+
+
+		</div>
+
+
+		<div class="colonne">
+
+			<h1>Listes</h1>
+			<div class="space10"></div>
+
+			<h3>Virgules (.virgules)</h3>
+			<ul class="virgules">
+				<li>Un</li>
+				<li>deux</li>
+				<li>trois</li>
+				<li>quatre</li>
+			</ul>
+			<div class="space10"></div>
+
+
+			<h3>Tirets (.tiret)</h3>
+			<ul class="tiret">
+				<li>Un</li>
+				<li>Deux</li>
+				<li>Trois</li>
+				<li>Quatre</li>
+			</ul>
+			<div class="space10"></div>
+
+
+			<h3>Numéros (.number)</h3>
+			<ul class="number">
+				<li>Un</li>
+				<li>Deux</li>
+				<li>Trois</li>
+				<li>Quatre</li>
+			</ul>
+			<div class="space10"></div>
+
+
+			<h3>Flèches (.arrows)</h3>
+			<ul class="arrows">
+				<li>Un</li>
+				<li>Deux</li>
+				<li>Trois</li>
+				<li>Quatre</li>
+			</ul>
+			<div class="space10"></div>
+
+
+			<h3>Chevron (.chevron)</h3>
+			<ul class="chevron">
+				<li>Un</li>
+				<li>Deux</li>
+				<li>Trois</li>
+				<li>Quatre</li>
+			</ul>
+			<div class="space10"></div>
+
+
+			<h3>No style (.nostyle)</h3>
+			<ul class="nostyle">
+				<li>Un</li>
+				<li>Deux</li>
+				<li>Trois</li>
+				<li>Quatre</li>
+			</ul>
+			<div class="space10"></div>
+
+
+			<h3>Inline (.inline)</h3>
+			<ul class="inline">
+				<li>Un</li>
+				<li>Deux</li>
+				<li>Trois</li>
+				<li>Quatre</li>
+			</ul>
+			<div class="space10"></div>
+
+
+			<h3>Inline + spaces (.inline.spaced)</h3>
+			<ul class="inline spaced">
+				<li>Un</li>
+				<li>Deux</li>
+				<li>Trois</li>
+				<li>Quatre</li>
+			</ul>
+			<div class="space10"></div>
+
+		</div>
+
+
+	</div>
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space100"></div>
+
+	<div class="colonnes3">
+
+		<div class="colonne">
+
+			<h1 style="margin-top:0;">Boutons & Tags</h1>
+
+			<div class="space20"></div>
+
+				<span class="bouton">.bouton</span>
+			<br><span class="bouton large">.bouton .large</span>
+			<br><span class="bouton border">.bouton .border</span>
+			<br><span class="bouton big">.bouton .big</span>
+			<br><span class="bouton large animate">.bouton .large .animate</span>
+			<br>
+			<br><button class="bouton bleu extended" disabled>button.bouton .bleu disabled</button>
+			<br><span class="bouton bleu extended disabled">span.bouton .bleu .disabled</span>
+			<br>
+			<br><span class="bouton bleu extended">.bouton .bleu .extended</span>
+			<br>
+			<br><span class="bouton bleu d3">.bouton .d3</span>
+			<br>
+			<br>
+			<br><span class="bouton2">.bouton2</span>
+			<br><span class="bouton2 large">.bouton2 .large</span>
+			<br><button class="bouton2">.bouton2</button>
+			<br><button class="bouton2 large">.bouton2 .large</button>
+			<br>
+			<br><span class="btn">.btn</span>
+			<br><span class="btn animate">.btn .animate</span>
+
+			<div class="space40"></div>
+
+
+			<h1>Bubbles</h1>
+			<br><span class="tag jaune bubble">.tag .jaune .bubble</span>
+				<span class="tag jaune bubble large">.bubble .large</span>
+				<span class="tag rouge bubble">5</span>
+				<span class="tag orange bubble">84</span>
+				<span class="tag vert bubble">2020</span>
+
+			<div class="space40"></div>
+			<h1>Arrows</h1>
+			<div class="center">
+				<span class="tag bleu left_arrow">.tag .left_arrow</span>
+				<span class="tag bleu right_arrow">.tag .right_arrow</span>
+				<div class="space5"></div>
+				<span class="tag bleu double_left_arrow">.tag .double_left_arrow</span>
+				<span class="tag bleu double_right_arrow">.tag .double_right_arrow</span>
+				<div class="space5"></div>
+				<span class="tag bleu double_left_arrow chained">1</span>
+				<span class="tag bleu double_left_arrow chained">2</span>
+				<span class="tag bleu double_left_arrow chained">3</span>
+				<span class="tag bleu double_left_arrow chained">4</span>
+				<div class="space5"></div>
+				<span class="tag bleu double_right_arrow chained">1</span>
+				<span class="tag bleu double_right_arrow chained">2</span>
+				<span class="tag bleu double_right_arrow chained">3</span>
+				<span class="tag bleu double_right_arrow chained">4</span>
+			</div>
+
+			<div class="space50"></div>
+
+		</div>
+
+		<div class="colonne">
+
+
+			<h1>Couleurs des boutons et tags</h1>
+			<br><span class="bouton large">Bouton</span> <span class="tag">Tag</span>
+			<br><span class="bouton large blanc">blanc</span> <span class="tag blanc">blanc</span>
+			<br><span class="bouton large vert">vert</span> <span class="tag vert">vert</span>
+			<br><span class="bouton large vert_fonce">vert_fonce</span> <span class="tag vert_fonce">vert_fonce</span>
+			<br><span class="bouton large orange">orange</span> <span class="tag orange">orange</span>
+			<br><span class="bouton large rouge">rouge</span> <span class="tag rouge">rouge</span>
+			<br><span class="bouton large rouge_fonce">rouge_fonce</span> <span class="tag rouge_fonce">rouge_fonce</span>
+			<br><span class="bouton large cyan">cyan</span> <span class="tag cyan">cyan</span>
+			<br><span class="bouton large bleu">bleu</span> <span class="tag bleu">bleu</span>
+			<br><span class="bouton large bleu_fonce">bleu_fonce</span> <span class="tag bleu_fonce">bleu_fonce</span>
+			<br><span class="bouton large violet">violet</span> <span class="tag violet">violet</span>
+			<br><span class="bouton large violet_fonce">violet_fonce</span> <span class="tag violet_fonce">violet_fonce</span>
+			<br><span class="bouton large jaune">jaune</span> <span class="tag jaune">jaune</span>
+			<br><span class="bouton large jaune_flashy">jaune_flashy</span> <span class="tag jaune_flashy">jaune_flashy</span>
+			<br><span class="bouton large menthe">menthe</span> <span class="tag menthe">menthe</span>
+			<br><span class="bouton large rose">rose</span> <span class="tag rose">rose</span>
+			<br><span class="bouton large framboise">framboise</span> <span class="tag framboise">framboise</span>
+			<br><span class="bouton large noir">noir</span> <span class="tag noir">noir</span>
+			<br><span class="bouton large anthracite">anthracite</span> <span class="tag anthracite">anthracite</span>
+			<br><span class="bouton large gris_fonce">gris_fonce</span> <span class="tag gris_fonce">gris_fonce</span>
+			<br><span class="bouton large gris">gris</span> <span class="tag gris">gris</span>
+			<br><span class="bouton large gris_clair">gris_clair</span> <span class="tag gris_clair">gris_clair</span>
+			<br><span class="bouton large vert_clair">vert_clair</span> <span class="tag vert_clair">vert_clair</span>
+			<br><span class="bouton large bleu_clair">bleu_clair</span> <span class="tag bleu_clair">bleu_clair</span>
+			<br><span class="bouton large jaune_clair">jaune_clair</span> <span class="tag jaune_clair">jaune_clair</span>
+			<br><span class="bouton large orange_clair">orange_clair</span> <span class="tag orange_clair">orange_clair</span>
+			<br><span class="bouton large rouge_clair">rouge_clair</span> <span class="tag rouge_clair">rouge_clair</span>
+			<br><span class="bouton large aqua">aqua</span> <span class="tag aqua">aqua</span>
+			<br><span class="bouton large flashy">flashy</span> <span class="tag flashy">flashy</span>
+			<br><span class="bouton large fluo">fluo</span> <span class="tag fluo">fluo</span>
+			<br><span class="bouton large gold">gold</span> <span class="tag gold">gold</span>
+
+		</div>
+
+
+
+		<div class="colonne">
+
+			<h1>Messages & Notices</h1>
+			<div class="space20"></div>
+
+			<br><span class="msg">.msg (span)</span>
+			<br><div class="msg">.msg (div)</div>
+
+			<div class="space40"></div>
+
+			<div class="grid2 auto spaced">
+
+				<div><span class="msg notice">.msg.notice</span></div>
+				<div><span class="msg notice big">.msg .notice .big</span></div>
+
+				<div><span class="msg note">.msg .note</span></div>
+				<div><span class="msg note big">.msg .note .big</span></div>		    
+
+				<div><span class="msg info">.msg .info</span></div>
+				<div><span class="msg info big">.msg .info .big</span></div>
+				
+				<div><span class="msg important">.msg .important</span></div>
+				<div><span class="msg important big">.msg .important .big</span></div>
+				
+				<div><span class="msg error">.msg .error (.erreur)</span></div>
+				<div><span class="msg error big">.msg .error (.erreur) .big</span></div>
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space100"></div>
+	<a name='formulaires'></a>
+	<h1>Formulaires</h1>
+	<br>
+	<div class="formulaire">
+		<div class="ligne">
+			<label for="field_texte">Texte</label>
+			<input  id="field_texte" type="text" name="texte" placeholder="Texte">
+		</div>
+		<div class="ligne">
+			<label for="field_email">Email</label>
+			<input  id="field_email" type="email" name="email" placeholder="Email">
+		</div>
+		<div class="ligne">
+			<label for="field_select">Select</label>
+			<select id="field_select" name="select">
+				<option value='1'>1</option>
+				<option value='2'>2</option>
+				<option value='3'>3</option>
+				<option value='4'>4</option>
+				<option value='5'>5</option>
+			</select>
+
+		</div>
+		<div class="ligne">
+			<label for="field_file">Input file</label>
+			<input  id="field_file" type="file" class="input_file" name="file">
+		</div>
+
+	</div>
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space100"></div>
+	<a name='couleurs'></a>
+	<h1>Couleurs basiques</h1>
+	<br>
+	<br>
+
+	<div class='flex center' style='height:10vh;gap:0.5rem;'>
+		<div style="background-color:var(--couleur_ok);">--couleur_ok</div>
+		<div style="background-color:var(--couleur_no);">--couleur_no</div>
+		<div style="background-color:var(--couleur_msg);">--couleur_msg</div>
+		<div style="background-color:var(--couleur_neutral);">--couleur_neutral</div>
+		<div style="background-color:var(--couleur_highlight);">--couleur_highlight</div>
+		<div style="background-color:var(--couleur_notice);">--couleur_notice</div>
+		<div style="background-color:var(--couleur_warning);">--couleur_warning</div>
+		<div style="background-color:var(--couleur_error);">--couleur_error</div>
+	</div>
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space100"></div>
+	<a name='palette'></a>
+	<h1>Palette de couleurs</h1>
+	<br><b>Usage : </b>
+	<br>
+	<br>
+
+	<div class="table borders spaced">
+		<div class="table_row">
+			<div class="table_cell">Background color :</div>
+			<div class="table_cell">bgc-COLOR-INTENSITY</div>
+			<div class="table_cell">exemple : <span class='code'>&#x3C;span class='bgc-cyan-200'&#x3E;&#x3C;/span&#x3E;</span></div>
+			<div class="table_cell"><span class='bgc-cyan-200'>Cyan 200</span></div>
+		</div>
+		<div class="table_row">
+			<div class="table_cell">Foreground color :</div>
+			<div class="table_cell">fgc-COLOR-INTENSITY</div>
+			<div class="table_cell">exemple : <span class='code'>&#x3C;span class='fgc-pink-700'&#x3E;&#x3C;/span&#x3E;</span></div>
+			<div class="table_cell"><span class='fgc-pink-700'>Pink 700</span></div>
+		</div>
+		<div class="table_row">
+			<div class="table_cell">Variable CSS :</div>
+			<div class="table_cell">--color-COLOR-INTENSITY</div>
+			<div class="table_cell">exemple : <span class='code'>&#x3C;span style='color:var(--color-blue-900);background-color:var(--color-blue-100);'&#x3E;&#x3C;/span&#x3E;</span></div>
+			<div class="table_cell"><span style='color:var(--color-blue-900);background-color:var(--color-blue-100);'> Test </span></div>
+		</div>
+	</div>
+
+	<div class='space30'></div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">yellow</div>
+		<div class="bgc-yellow vertical_center fs_75" title="Class : bgc-yellow // fgc-yellow">&nbsp; --color-yellow</div>
+		<div class="bgc-yellow-50 autocenter fs_75" title="Class : bgc-yellow-50 // fgc-yellow-50">50</div>
+		<div class="bgc-yellow-100 autocenter fs_75" title="Class : bgc-yellow-100 // fgc-yellow-100">100</div>
+		<div class="bgc-yellow-200 autocenter fs_75" title="Class : bgc-yellow-200 // fgc-yellow-200">200</div>
+		<div class="bgc-yellow-300 autocenter fs_75" title="Class : bgc-yellow-300 // fgc-yellow-300">300</div>
+		<div class="bgc-yellow-400 autocenter fs_75" title="Class : bgc-yellow-400 // fgc-yellow-400">400</div>
+		<div class="bgc-yellow-500 autocenter fs_75" title="Class : bgc-yellow-500 // fgc-yellow-500">500</div>
+		<div class="bgc-yellow-600 autocenter fs_75" title="Class : bgc-yellow-600 // fgc-yellow-600">600</div>
+		<div class="bgc-yellow-700 autocenter fs_75" title="Class : bgc-yellow-700 // fgc-yellow-700">700</div>
+		<div class="bgc-yellow-800 autocenter fs_75" title="Class : bgc-yellow-800 // fgc-yellow-800">800</div>
+		<div class="bgc-yellow-900 autocenter fs_75" title="Class : bgc-yellow-900 // fgc-yellow-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">amber</div>
+		<div class="bgc-amber vertical_center fs_75" title="Class : bgc-amber // fgc-amber">&nbsp; --color-amber</div>
+		<div class="bgc-amber-50 autocenter fs_75" title="Class : bgc-amber-50 // fgc-amber-50">50</div>
+		<div class="bgc-amber-100 autocenter fs_75" title="Class : bgc-amber-100 // fgc-amber-100">100</div>
+		<div class="bgc-amber-200 autocenter fs_75" title="Class : bgc-amber-200 // fgc-amber-200">200</div>
+		<div class="bgc-amber-300 autocenter fs_75" title="Class : bgc-amber-300 // fgc-amber-300">300</div>
+		<div class="bgc-amber-400 autocenter fs_75" title="Class : bgc-amber-400 // fgc-amber-400">400</div>
+		<div class="bgc-amber-500 autocenter fs_75" title="Class : bgc-amber-500 // fgc-amber-500">500</div>
+		<div class="bgc-amber-600 autocenter fs_75" title="Class : bgc-amber-600 // fgc-amber-600">600</div>
+		<div class="bgc-amber-700 autocenter fs_75" title="Class : bgc-amber-700 // fgc-amber-700">700</div>
+		<div class="bgc-amber-800 autocenter fs_75" title="Class : bgc-amber-800 // fgc-amber-800">800</div>
+		<div class="bgc-amber-900 autocenter fs_75" title="Class : bgc-amber-900 // fgc-amber-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">orange</div>
+		<div class="bgc-orange vertical_center fs_75" title="Class : bgc-orange // fgc-orange">&nbsp; --color-orange</div>
+		<div class="bgc-orange-50 autocenter fs_75" title="Class : bgc-orange-50 // fgc-orange-50">50</div>
+		<div class="bgc-orange-100 autocenter fs_75" title="Class : bgc-orange-100 // fgc-orange-100">100</div>
+		<div class="bgc-orange-200 autocenter fs_75" title="Class : bgc-orange-200 // fgc-orange-200">200</div>
+		<div class="bgc-orange-300 autocenter fs_75" title="Class : bgc-orange-300 // fgc-orange-300">300</div>
+		<div class="bgc-orange-400 autocenter fs_75" title="Class : bgc-orange-400 // fgc-orange-400">400</div>
+		<div class="bgc-orange-500 autocenter fs_75" title="Class : bgc-orange-500 // fgc-orange-500">500</div>
+		<div class="bgc-orange-600 autocenter fs_75" title="Class : bgc-orange-600 // fgc-orange-600">600</div>
+		<div class="bgc-orange-700 autocenter fs_75" title="Class : bgc-orange-700 // fgc-orange-700">700</div>
+		<div class="bgc-orange-800 autocenter fs_75" title="Class : bgc-orange-800 // fgc-orange-800">800</div>
+		<div class="bgc-orange-900 autocenter fs_75" title="Class : bgc-orange-900 // fgc-orange-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">deep_orange</div>
+		<div class="bgc-deep_orange vertical_center fs_75" title="Class : bgc-deep_orange // fgc-deep_orange">&nbsp; --color-deep_orange</div>
+		<div class="bgc-deep_orange-50 autocenter fs_75" title="Class : bgc-deep_orange-50 // fgc-deep_orange-50">50</div>
+		<div class="bgc-deep_orange-100 autocenter fs_75" title="Class : bgc-deep_orange-100 // fgc-deep_orange-100">100</div>
+		<div class="bgc-deep_orange-200 autocenter fs_75" title="Class : bgc-deep_orange-200 // fgc-deep_orange-200">200</div>
+		<div class="bgc-deep_orange-300 autocenter fs_75" title="Class : bgc-deep_orange-300 // fgc-deep_orange-300">300</div>
+		<div class="bgc-deep_orange-400 autocenter fs_75" title="Class : bgc-deep_orange-400 // fgc-deep_orange-400">400</div>
+		<div class="bgc-deep_orange-500 autocenter fs_75" title="Class : bgc-deep_orange-500 // fgc-deep_orange-500">500</div>
+		<div class="bgc-deep_orange-600 autocenter fs_75" title="Class : bgc-deep_orange-600 // fgc-deep_orange-600">600</div>
+		<div class="bgc-deep_orange-700 autocenter fs_75" title="Class : bgc-deep_orange-700 // fgc-deep_orange-700">700</div>
+		<div class="bgc-deep_orange-800 autocenter fs_75" title="Class : bgc-deep_orange-800 // fgc-deep_orange-800">800</div>
+		<div class="bgc-deep_orange-900 autocenter fs_75" title="Class : bgc-deep_orange-900 // fgc-deep_orange-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">red</div>
+		<div class="bgc-red vertical_center fs_75" title="Class : bgc-red // fgc-red">&nbsp; --color-red</div>
+		<div class="bgc-red-50 autocenter fs_75" title="Class : bgc-red-50 // fgc-red-50">50</div>
+		<div class="bgc-red-100 autocenter fs_75" title="Class : bgc-red-100 // fgc-red-100">100</div>
+		<div class="bgc-red-200 autocenter fs_75" title="Class : bgc-red-200 // fgc-red-200">200</div>
+		<div class="bgc-red-300 autocenter fs_75" title="Class : bgc-red-300 // fgc-red-300">300</div>
+		<div class="bgc-red-400 autocenter fs_75" title="Class : bgc-red-400 // fgc-red-400">400</div>
+		<div class="bgc-red-500 autocenter fs_75" title="Class : bgc-red-500 // fgc-red-500">500</div>
+		<div class="bgc-red-600 autocenter fs_75" title="Class : bgc-red-600 // fgc-red-600">600</div>
+		<div class="bgc-red-700 autocenter fs_75" title="Class : bgc-red-700 // fgc-red-700">700</div>
+		<div class="bgc-red-800 autocenter fs_75" title="Class : bgc-red-800 // fgc-red-800">800</div>
+		<div class="bgc-red-900 autocenter fs_75" title="Class : bgc-red-900 // fgc-red-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">crimson</div>
+		<div class="bgc-crimson vertical_center fs_75" title="Class : bgc-crimson // fgc-crimson">&nbsp; --color-crimson</div>
+		<div class="bgc-crimson-50 autocenter fs_75" title="Class : bgc-crimson-50 // fgc-crimson-50">50</div>
+		<div class="bgc-crimson-100 autocenter fs_75" title="Class : bgc-crimson-100 // fgc-crimson-100">100</div>
+		<div class="bgc-crimson-200 autocenter fs_75" title="Class : bgc-crimson-200 // fgc-crimson-200">200</div>
+		<div class="bgc-crimson-300 autocenter fs_75" title="Class : bgc-crimson-300 // fgc-crimson-300">300</div>
+		<div class="bgc-crimson-400 autocenter fs_75" title="Class : bgc-crimson-400 // fgc-crimson-400">400</div>
+		<div class="bgc-crimson-500 autocenter fs_75" title="Class : bgc-crimson-500 // fgc-crimson-500">500</div>
+		<div class="bgc-crimson-600 autocenter fs_75" title="Class : bgc-crimson-600 // fgc-crimson-600">600</div>
+		<div class="bgc-crimson-700 autocenter fs_75" title="Class : bgc-crimson-700 // fgc-crimson-700">700</div>
+		<div class="bgc-crimson-800 autocenter fs_75" title="Class : bgc-crimson-800 // fgc-crimson-800">800</div>
+		<div class="bgc-crimson-900 autocenter fs_75" title="Class : bgc-crimson-900 // fgc-crimson-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">pink</div>
+		<div class="bgc-pink vertical_center fs_75" title="Class : bgc-pink // fgc-pink">&nbsp; --color-pink</div>
+		<div class="bgc-pink-50 autocenter fs_75" title="Class : bgc-pink-50 // fgc-pink-50">50</div>
+		<div class="bgc-pink-100 autocenter fs_75" title="Class : bgc-pink-100 // fgc-pink-100">100</div>
+		<div class="bgc-pink-200 autocenter fs_75" title="Class : bgc-pink-200 // fgc-pink-200">200</div>
+		<div class="bgc-pink-300 autocenter fs_75" title="Class : bgc-pink-300 // fgc-pink-300">300</div>
+		<div class="bgc-pink-400 autocenter fs_75" title="Class : bgc-pink-400 // fgc-pink-400">400</div>
+		<div class="bgc-pink-500 autocenter fs_75" title="Class : bgc-pink-500 // fgc-pink-500">500</div>
+		<div class="bgc-pink-600 autocenter fs_75" title="Class : bgc-pink-600 // fgc-pink-600">600</div>
+		<div class="bgc-pink-700 autocenter fs_75" title="Class : bgc-pink-700 // fgc-pink-700">700</div>
+		<div class="bgc-pink-800 autocenter fs_75" title="Class : bgc-pink-800 // fgc-pink-800">800</div>
+		<div class="bgc-pink-900 autocenter fs_75" title="Class : bgc-pink-900 // fgc-pink-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">purple</div>
+		<div class="bgc-purple vertical_center fs_75" title="Class : bgc-purple // fgc-purple">&nbsp; --color-purple</div>
+		<div class="bgc-purple-50 autocenter fs_75" title="Class : bgc-purple-50 // fgc-purple-50">50</div>
+		<div class="bgc-purple-100 autocenter fs_75" title="Class : bgc-purple-100 // fgc-purple-100">100</div>
+		<div class="bgc-purple-200 autocenter fs_75" title="Class : bgc-purple-200 // fgc-purple-200">200</div>
+		<div class="bgc-purple-300 autocenter fs_75" title="Class : bgc-purple-300 // fgc-purple-300">300</div>
+		<div class="bgc-purple-400 autocenter fs_75" title="Class : bgc-purple-400 // fgc-purple-400">400</div>
+		<div class="bgc-purple-500 autocenter fs_75" title="Class : bgc-purple-500 // fgc-purple-500">500</div>
+		<div class="bgc-purple-600 autocenter fs_75" title="Class : bgc-purple-600 // fgc-purple-600">600</div>
+		<div class="bgc-purple-700 autocenter fs_75" title="Class : bgc-purple-700 // fgc-purple-700">700</div>
+		<div class="bgc-purple-800 autocenter fs_75" title="Class : bgc-purple-800 // fgc-purple-800">800</div>
+		<div class="bgc-purple-900 autocenter fs_75" title="Class : bgc-purple-900 // fgc-purple-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">deep_purple</div>
+		<div class="bgc-deep_purple vertical_center fs_75" title="Class : bgc-deep_purple // fgc-deep_purple">&nbsp; --color-deep_purple</div>
+		<div class="bgc-deep_purple-50 autocenter fs_75" title="Class : bgc-deep_purple-50 // fgc-deep_purple-50">50</div>
+		<div class="bgc-deep_purple-100 autocenter fs_75" title="Class : bgc-deep_purple-100 // fgc-deep_purple-100">100</div>
+		<div class="bgc-deep_purple-200 autocenter fs_75" title="Class : bgc-deep_purple-200 // fgc-deep_purple-200">200</div>
+		<div class="bgc-deep_purple-300 autocenter fs_75" title="Class : bgc-deep_purple-300 // fgc-deep_purple-300">300</div>
+		<div class="bgc-deep_purple-400 autocenter fs_75" title="Class : bgc-deep_purple-400 // fgc-deep_purple-400">400</div>
+		<div class="bgc-deep_purple-500 autocenter fs_75" title="Class : bgc-deep_purple-500 // fgc-deep_purple-500">500</div>
+		<div class="bgc-deep_purple-600 autocenter fs_75" title="Class : bgc-deep_purple-600 // fgc-deep_purple-600">600</div>
+		<div class="bgc-deep_purple-700 autocenter fs_75" title="Class : bgc-deep_purple-700 // fgc-deep_purple-700">700</div>
+		<div class="bgc-deep_purple-800 autocenter fs_75" title="Class : bgc-deep_purple-800 // fgc-deep_purple-800">800</div>
+		<div class="bgc-deep_purple-900 autocenter fs_75" title="Class : bgc-deep_purple-900 // fgc-deep_purple-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">indigo</div>
+		<div class="bgc-indigo vertical_center fs_75" title="Class : bgc-indigo // fgc-indigo">&nbsp; --color-indigo</div>
+		<div class="bgc-indigo-50 autocenter fs_75" title="Class : bgc-indigo-50 // fgc-indigo-50">50</div>
+		<div class="bgc-indigo-100 autocenter fs_75" title="Class : bgc-indigo-100 // fgc-indigo-100">100</div>
+		<div class="bgc-indigo-200 autocenter fs_75" title="Class : bgc-indigo-200 // fgc-indigo-200">200</div>
+		<div class="bgc-indigo-300 autocenter fs_75" title="Class : bgc-indigo-300 // fgc-indigo-300">300</div>
+		<div class="bgc-indigo-400 autocenter fs_75" title="Class : bgc-indigo-400 // fgc-indigo-400">400</div>
+		<div class="bgc-indigo-500 autocenter fs_75" title="Class : bgc-indigo-500 // fgc-indigo-500">500</div>
+		<div class="bgc-indigo-600 autocenter fs_75" title="Class : bgc-indigo-600 // fgc-indigo-600">600</div>
+		<div class="bgc-indigo-700 autocenter fs_75" title="Class : bgc-indigo-700 // fgc-indigo-700">700</div>
+		<div class="bgc-indigo-800 autocenter fs_75" title="Class : bgc-indigo-800 // fgc-indigo-800">800</div>
+		<div class="bgc-indigo-900 autocenter fs_75" title="Class : bgc-indigo-900 // fgc-indigo-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">blue_grey</div>
+		<div class="bgc-blue_grey vertical_center fs_75" title="Class : bgc-blue_grey // fgc-blue_grey">&nbsp; --color-blue_grey</div>
+		<div class="bgc-blue_grey-50 autocenter fs_75" title="Class : bgc-blue_grey-50 // fgc-blue_grey-50">50</div>
+		<div class="bgc-blue_grey-100 autocenter fs_75" title="Class : bgc-blue_grey-100 // fgc-blue_grey-100">100</div>
+		<div class="bgc-blue_grey-200 autocenter fs_75" title="Class : bgc-blue_grey-200 // fgc-blue_grey-200">200</div>
+		<div class="bgc-blue_grey-300 autocenter fs_75" title="Class : bgc-blue_grey-300 // fgc-blue_grey-300">300</div>
+		<div class="bgc-blue_grey-400 autocenter fs_75" title="Class : bgc-blue_grey-400 // fgc-blue_grey-400">400</div>
+		<div class="bgc-blue_grey-500 autocenter fs_75" title="Class : bgc-blue_grey-500 // fgc-blue_grey-500">500</div>
+		<div class="bgc-blue_grey-600 autocenter fs_75" title="Class : bgc-blue_grey-600 // fgc-blue_grey-600">600</div>
+		<div class="bgc-blue_grey-700 autocenter fs_75" title="Class : bgc-blue_grey-700 // fgc-blue_grey-700">700</div>
+		<div class="bgc-blue_grey-800 autocenter fs_75" title="Class : bgc-blue_grey-800 // fgc-blue_grey-800">800</div>
+		<div class="bgc-blue_grey-900 autocenter fs_75" title="Class : bgc-blue_grey-900 // fgc-blue_grey-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">blue</div>
+		<div class="bgc-blue vertical_center fs_75" title="Class : bgc-blue // fgc-blue">&nbsp; --color-blue</div>
+		<div class="bgc-blue-50 autocenter fs_75" title="Class : bgc-blue-50 // fgc-blue-50">50</div>
+		<div class="bgc-blue-100 autocenter fs_75" title="Class : bgc-blue-100 // fgc-blue-100">100</div>
+		<div class="bgc-blue-200 autocenter fs_75" title="Class : bgc-blue-200 // fgc-blue-200">200</div>
+		<div class="bgc-blue-300 autocenter fs_75" title="Class : bgc-blue-300 // fgc-blue-300">300</div>
+		<div class="bgc-blue-400 autocenter fs_75" title="Class : bgc-blue-400 // fgc-blue-400">400</div>
+		<div class="bgc-blue-500 autocenter fs_75" title="Class : bgc-blue-500 // fgc-blue-500">500</div>
+		<div class="bgc-blue-600 autocenter fs_75" title="Class : bgc-blue-600 // fgc-blue-600">600</div>
+		<div class="bgc-blue-700 autocenter fs_75" title="Class : bgc-blue-700 // fgc-blue-700">700</div>
+		<div class="bgc-blue-800 autocenter fs_75" title="Class : bgc-blue-800 // fgc-blue-800">800</div>
+		<div class="bgc-blue-900 autocenter fs_75" title="Class : bgc-blue-900 // fgc-blue-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">light_blue</div>
+		<div class="bgc-light_blue vertical_center fs_75" title="Class : bgc-light_blue // fgc-light_blue">&nbsp; --color-light_blue</div>
+		<div class="bgc-light_blue-50 autocenter fs_75" title="Class : bgc-light_blue-50 // fgc-light_blue-50">50</div>
+		<div class="bgc-light_blue-100 autocenter fs_75" title="Class : bgc-light_blue-100 // fgc-light_blue-100">100</div>
+		<div class="bgc-light_blue-200 autocenter fs_75" title="Class : bgc-light_blue-200 // fgc-light_blue-200">200</div>
+		<div class="bgc-light_blue-300 autocenter fs_75" title="Class : bgc-light_blue-300 // fgc-light_blue-300">300</div>
+		<div class="bgc-light_blue-400 autocenter fs_75" title="Class : bgc-light_blue-400 // fgc-light_blue-400">400</div>
+		<div class="bgc-light_blue-500 autocenter fs_75" title="Class : bgc-light_blue-500 // fgc-light_blue-500">500</div>
+		<div class="bgc-light_blue-600 autocenter fs_75" title="Class : bgc-light_blue-600 // fgc-light_blue-600">600</div>
+		<div class="bgc-light_blue-700 autocenter fs_75" title="Class : bgc-light_blue-700 // fgc-light_blue-700">700</div>
+		<div class="bgc-light_blue-800 autocenter fs_75" title="Class : bgc-light_blue-800 // fgc-light_blue-800">800</div>
+		<div class="bgc-light_blue-900 autocenter fs_75" title="Class : bgc-light_blue-900 // fgc-light_blue-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">cyan</div>
+		<div class="bgc-cyan vertical_center fs_75" title="Class : bgc-cyan // fgc-cyan">&nbsp; --color-cyan</div>
+		<div class="bgc-cyan-50 autocenter fs_75" title="Class : bgc-cyan-50 // fgc-cyan-50">50</div>
+		<div class="bgc-cyan-100 autocenter fs_75" title="Class : bgc-cyan-100 // fgc-cyan-100">100</div>
+		<div class="bgc-cyan-200 autocenter fs_75" title="Class : bgc-cyan-200 // fgc-cyan-200">200</div>
+		<div class="bgc-cyan-300 autocenter fs_75" title="Class : bgc-cyan-300 // fgc-cyan-300">300</div>
+		<div class="bgc-cyan-400 autocenter fs_75" title="Class : bgc-cyan-400 // fgc-cyan-400">400</div>
+		<div class="bgc-cyan-500 autocenter fs_75" title="Class : bgc-cyan-500 // fgc-cyan-500">500</div>
+		<div class="bgc-cyan-600 autocenter fs_75" title="Class : bgc-cyan-600 // fgc-cyan-600">600</div>
+		<div class="bgc-cyan-700 autocenter fs_75" title="Class : bgc-cyan-700 // fgc-cyan-700">700</div>
+		<div class="bgc-cyan-800 autocenter fs_75" title="Class : bgc-cyan-800 // fgc-cyan-800">800</div>
+		<div class="bgc-cyan-900 autocenter fs_75" title="Class : bgc-cyan-900 // fgc-cyan-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">teal</div>
+		<div class="bgc-teal vertical_center fs_75" title="Class : bgc-teal // fgc-teal">&nbsp; --color-teal</div>
+		<div class="bgc-teal-50 autocenter fs_75" title="Class : bgc-teal-50 // fgc-teal-50">50</div>
+		<div class="bgc-teal-100 autocenter fs_75" title="Class : bgc-teal-100 // fgc-teal-100">100</div>
+		<div class="bgc-teal-200 autocenter fs_75" title="Class : bgc-teal-200 // fgc-teal-200">200</div>
+		<div class="bgc-teal-300 autocenter fs_75" title="Class : bgc-teal-300 // fgc-teal-300">300</div>
+		<div class="bgc-teal-400 autocenter fs_75" title="Class : bgc-teal-400 // fgc-teal-400">400</div>
+		<div class="bgc-teal-500 autocenter fs_75" title="Class : bgc-teal-500 // fgc-teal-500">500</div>
+		<div class="bgc-teal-600 autocenter fs_75" title="Class : bgc-teal-600 // fgc-teal-600">600</div>
+		<div class="bgc-teal-700 autocenter fs_75" title="Class : bgc-teal-700 // fgc-teal-700">700</div>
+		<div class="bgc-teal-800 autocenter fs_75" title="Class : bgc-teal-800 // fgc-teal-800">800</div>
+		<div class="bgc-teal-900 autocenter fs_75" title="Class : bgc-teal-900 // fgc-teal-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">green</div>
+		<div class="bgc-green vertical_center fs_75" title="Class : bgc-green // fgc-green">&nbsp; --color-green</div>
+		<div class="bgc-green-50 autocenter fs_75" title="Class : bgc-green-50 // fgc-green-50">50</div>
+		<div class="bgc-green-100 autocenter fs_75" title="Class : bgc-green-100 // fgc-green-100">100</div>
+		<div class="bgc-green-200 autocenter fs_75" title="Class : bgc-green-200 // fgc-green-200">200</div>
+		<div class="bgc-green-300 autocenter fs_75" title="Class : bgc-green-300 // fgc-green-300">300</div>
+		<div class="bgc-green-400 autocenter fs_75" title="Class : bgc-green-400 // fgc-green-400">400</div>
+		<div class="bgc-green-500 autocenter fs_75" title="Class : bgc-green-500 // fgc-green-500">500</div>
+		<div class="bgc-green-600 autocenter fs_75" title="Class : bgc-green-600 // fgc-green-600">600</div>
+		<div class="bgc-green-700 autocenter fs_75" title="Class : bgc-green-700 // fgc-green-700">700</div>
+		<div class="bgc-green-800 autocenter fs_75" title="Class : bgc-green-800 // fgc-green-800">800</div>
+		<div class="bgc-green-900 autocenter fs_75" title="Class : bgc-green-900 // fgc-green-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">lime</div>
+		<div class="bgc-lime vertical_center fs_75" title="Class : bgc-lime // fgc-lime">&nbsp; --color-lime</div>
+		<div class="bgc-lime-50 autocenter fs_75" title="Class : bgc-lime-50 // fgc-lime-50">50</div>
+		<div class="bgc-lime-100 autocenter fs_75" title="Class : bgc-lime-100 // fgc-lime-100">100</div>
+		<div class="bgc-lime-200 autocenter fs_75" title="Class : bgc-lime-200 // fgc-lime-200">200</div>
+		<div class="bgc-lime-300 autocenter fs_75" title="Class : bgc-lime-300 // fgc-lime-300">300</div>
+		<div class="bgc-lime-400 autocenter fs_75" title="Class : bgc-lime-400 // fgc-lime-400">400</div>
+		<div class="bgc-lime-500 autocenter fs_75" title="Class : bgc-lime-500 // fgc-lime-500">500</div>
+		<div class="bgc-lime-600 autocenter fs_75" title="Class : bgc-lime-600 // fgc-lime-600">600</div>
+		<div class="bgc-lime-700 autocenter fs_75" title="Class : bgc-lime-700 // fgc-lime-700">700</div>
+		<div class="bgc-lime-800 autocenter fs_75" title="Class : bgc-lime-800 // fgc-lime-800">800</div>
+		<div class="bgc-lime-900 autocenter fs_75" title="Class : bgc-lime-900 // fgc-lime-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">mint</div>
+		<div class="bgc-mint vertical_center fs_75" title="Class : bgc-mint // fgc-mint">&nbsp; --color-mint</div>
+		<div class="bgc-mint-50 autocenter fs_75" title="Class : bgc-mint-50 // fgc-mint-50">50</div>
+		<div class="bgc-mint-100 autocenter fs_75" title="Class : bgc-mint-100 // fgc-mint-100">100</div>
+		<div class="bgc-mint-200 autocenter fs_75" title="Class : bgc-mint-200 // fgc-mint-200">200</div>
+		<div class="bgc-mint-300 autocenter fs_75" title="Class : bgc-mint-300 // fgc-mint-300">300</div>
+		<div class="bgc-mint-400 autocenter fs_75" title="Class : bgc-mint-400 // fgc-mint-400">400</div>
+		<div class="bgc-mint-500 autocenter fs_75" title="Class : bgc-mint-500 // fgc-mint-500">500</div>
+		<div class="bgc-mint-600 autocenter fs_75" title="Class : bgc-mint-600 // fgc-mint-600">600</div>
+		<div class="bgc-mint-700 autocenter fs_75" title="Class : bgc-mint-700 // fgc-mint-700">700</div>
+		<div class="bgc-mint-800 autocenter fs_75" title="Class : bgc-mint-800 // fgc-mint-800">800</div>
+		<div class="bgc-mint-900 autocenter fs_75" title="Class : bgc-mint-900 // fgc-mint-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">light_green</div>
+		<div class="bgc-light_green vertical_center fs_75" title="Class : bgc-light_green // fgc-light_green">&nbsp; --color-light_green</div>
+		<div class="bgc-light_green-50 autocenter fs_75" title="Class : bgc-light_green-50 // fgc-light_green-50">50</div>
+		<div class="bgc-light_green-100 autocenter fs_75" title="Class : bgc-light_green-100 // fgc-light_green-100">100</div>
+		<div class="bgc-light_green-200 autocenter fs_75" title="Class : bgc-light_green-200 // fgc-light_green-200">200</div>
+		<div class="bgc-light_green-300 autocenter fs_75" title="Class : bgc-light_green-300 // fgc-light_green-300">300</div>
+		<div class="bgc-light_green-400 autocenter fs_75" title="Class : bgc-light_green-400 // fgc-light_green-400">400</div>
+		<div class="bgc-light_green-500 autocenter fs_75" title="Class : bgc-light_green-500 // fgc-light_green-500">500</div>
+		<div class="bgc-light_green-600 autocenter fs_75" title="Class : bgc-light_green-600 // fgc-light_green-600">600</div>
+		<div class="bgc-light_green-700 autocenter fs_75" title="Class : bgc-light_green-700 // fgc-light_green-700">700</div>
+		<div class="bgc-light_green-800 autocenter fs_75" title="Class : bgc-light_green-800 // fgc-light_green-800">800</div>
+		<div class="bgc-light_green-900 autocenter fs_75" title="Class : bgc-light_green-900 // fgc-light_green-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">grey</div>
+		<div class="bgc-grey vertical_center fs_75" title="Class : bgc-grey // fgc-grey">&nbsp; --color-grey</div>
+		<div class="bgc-grey-50 autocenter fs_75" title="Class : bgc-grey-50 // fgc-grey-50">50</div>
+		<div class="bgc-grey-100 autocenter fs_75" title="Class : bgc-grey-100 // fgc-grey-100">100</div>
+		<div class="bgc-grey-200 autocenter fs_75" title="Class : bgc-grey-200 // fgc-grey-200">200</div>
+		<div class="bgc-grey-300 autocenter fs_75" title="Class : bgc-grey-300 // fgc-grey-300">300</div>
+		<div class="bgc-grey-400 autocenter fs_75" title="Class : bgc-grey-400 // fgc-grey-400">400</div>
+		<div class="bgc-grey-500 autocenter fs_75" title="Class : bgc-grey-500 // fgc-grey-500">500</div>
+		<div class="bgc-grey-600 autocenter fs_75" title="Class : bgc-grey-600 // fgc-grey-600">600</div>
+		<div class="bgc-grey-700 autocenter fs_75" title="Class : bgc-grey-700 // fgc-grey-700">700</div>
+		<div class="bgc-grey-800 autocenter fs_75" title="Class : bgc-grey-800 // fgc-grey-800">800</div>
+		<div class="bgc-grey-900 autocenter fs_75" title="Class : bgc-grey-900 // fgc-grey-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">brown</div>
+		<div class="bgc-brown vertical_center fs_75" title="Class : bgc-brown // fgc-brown">&nbsp; --color-brown</div>
+		<div class="bgc-brown-50 autocenter fs_75" title="Class : bgc-brown-50 // fgc-brown-50">50</div>
+		<div class="bgc-brown-100 autocenter fs_75" title="Class : bgc-brown-100 // fgc-brown-100">100</div>
+		<div class="bgc-brown-200 autocenter fs_75" title="Class : bgc-brown-200 // fgc-brown-200">200</div>
+		<div class="bgc-brown-300 autocenter fs_75" title="Class : bgc-brown-300 // fgc-brown-300">300</div>
+		<div class="bgc-brown-400 autocenter fs_75" title="Class : bgc-brown-400 // fgc-brown-400">400</div>
+		<div class="bgc-brown-500 autocenter fs_75" title="Class : bgc-brown-500 // fgc-brown-500">500</div>
+		<div class="bgc-brown-600 autocenter fs_75" title="Class : bgc-brown-600 // fgc-brown-600">600</div>
+		<div class="bgc-brown-700 autocenter fs_75" title="Class : bgc-brown-700 // fgc-brown-700">700</div>
+		<div class="bgc-brown-800 autocenter fs_75" title="Class : bgc-brown-800 // fgc-brown-800">800</div>
+		<div class="bgc-brown-900 autocenter fs_75" title="Class : bgc-brown-900 // fgc-brown-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">black</div>
+		<div class="bgc-black vertical_center fs_75" title="Class : bgc-black // fgc-black">&nbsp; --color-black</div>
+		<div class="bgc-black-50 autocenter fs_75" title="Class : bgc-black-50 // fgc-black-50">50</div>
+		<div class="bgc-black-100 autocenter fs_75" title="Class : bgc-black-100 // fgc-black-100">100</div>
+		<div class="bgc-black-200 autocenter fs_75" title="Class : bgc-black-200 // fgc-black-200">200</div>
+		<div class="bgc-black-300 autocenter fs_75" title="Class : bgc-black-300 // fgc-black-300">300</div>
+		<div class="bgc-black-400 autocenter fs_75" title="Class : bgc-black-400 // fgc-black-400">400</div>
+		<div class="bgc-black-500 autocenter fs_75" title="Class : bgc-black-500 // fgc-black-500">500</div>
+		<div class="bgc-black-600 autocenter fs_75" title="Class : bgc-black-600 // fgc-black-600">600</div>
+		<div class="bgc-black-700 autocenter fs_75" title="Class : bgc-black-700 // fgc-black-700">700</div>
+		<div class="bgc-black-800 autocenter fs_75" title="Class : bgc-black-800 // fgc-black-800">800</div>
+		<div class="bgc-black-900 autocenter fs_75" title="Class : bgc-black-900 // fgc-black-900">900</div>
+	</div>
+
+	<div class='flex' style='height:3.5vh;'>
+		<div class="fw_bold vertical_center small_padding">white</div>
+		<div class="bgc-white vertical_center fs_75" title="Class : bgc-white // fgc-white">&nbsp; --color-white</div>
+		<div class="bgc-white-50 autocenter fs_75" title="Class : bgc-white-50 // fgc-white-50">50</div>
+		<div class="bgc-white-100 autocenter fs_75" title="Class : bgc-white-100 // fgc-white-100">100</div>
+		<div class="bgc-white-200 autocenter fs_75" title="Class : bgc-white-200 // fgc-white-200">200</div>
+		<div class="bgc-white-300 autocenter fs_75" title="Class : bgc-white-300 // fgc-white-300">300</div>
+		<div class="bgc-white-400 autocenter fs_75" title="Class : bgc-white-400 // fgc-white-400">400</div>
+		<div class="bgc-white-500 autocenter fs_75" title="Class : bgc-white-500 // fgc-white-500">500</div>
+		<div class="bgc-white-600 autocenter fs_75" title="Class : bgc-white-600 // fgc-white-600">600</div>
+		<div class="bgc-white-700 autocenter fs_75" title="Class : bgc-white-700 // fgc-white-700">700</div>
+		<div class="bgc-white-800 autocenter fs_75" title="Class : bgc-white-800 // fgc-white-800">800</div>
+		<div class="bgc-white-900 autocenter fs_75" title="Class : bgc-white-900 // fgc-white-900">900</div>
+	</div>
+
+
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space100"></div>
+
+	<a name='code'></a>
+	<h1>Balises de code &lt;pre&gt; /  &lt;xmp&gt; / &lt;code&gt;</h1>
+	<pre>
+	body
+		{
+			font-family :	Sans-serif;
+			font-size :		14px;
+		}
+	</pre>
+
+	<div class="space20"></div>
+
+	Exemple avec une balise span : <span class="code">&lt;span class="code"&gt;&lt;/span&gt;</span>
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<a name='positions'></a>
+	<h1>Positions</h1>
+	<span class="tag big bleu_clair absolute" style="left:30%;">.absolute   <span class='fs_75'>(30% from left)</span></span>
+	<span class="tag big bleu_clair sticky" style="z-index:100;">.sticky</span>
+
+	<div class="space5"></div>
+
+	<span class="tag big bleu_clair f_left">Float left : .f_left</span>
+	<span class="tag big bleu_clair f_right">Float right : .f_right</span>
+
+	<div class="space50"></div>
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<a name='align'></a>
+	<h1>Alignement</h1>
+	<div class="notice big left">.left</div>
+	<div class="space5"></div>
+	<div class="notice big center">.center</div>
+	<div class="space5"></div>
+	<div class="notice big right">.right</div>
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Textes</h1>
+
+	<div class="space10"></div>
+	<h3>Normal</h3>
+	<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.small</h3>
+	<p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.condensed</h3>
+	<p class="condensed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.light</h3>
+	<p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.uppercase</h3>
+	<p class="uppercase">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.smallcaps</h3>
+	<p class="smallcaps">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.monospaced</h3>
+	<p class="monospaced">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.monospaced.small</h3>
+	<p class="monospaced small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</p>
+
+
+	<div class="space10"></div>
+	<h3>.strikeout</h3>
+	<span class="strikeout">C'est faux !</span>
+
+
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Font sizes</h1>
+
+	<div class="space10"></div>
+
+	<div class='grid6 spaced'>
+		<div class="fs_40">.fs_40</div>
+		<div class="fs_45">.fs_45</div>
+		<div class="fs_50">.fs_50</div>
+		<div class="fs_55">.fs_55</div>
+		<div class="fs_60">.fs_60</div>
+		<div class="fs_65">.fs_65</div>
+		<div class="fs_70">.fs_70</div>
+		<div class="fs_75">.fs_75</div>
+		<div class="fs_80">.fs_80</div>
+		<div class="fs_85">.fs_85</div>
+		<div class="fs_90">.fs_90</div>
+		<div class="fs_95">.fs_95</div>
+		<div class="fs_100">.fs_100</div>
+		<div class="fs_105">.fs_105</div>
+		<div class="fs_110">.fs_110</div>
+		<div class="fs_115">.fs_115</div>
+		<div class="fs_120">.fs_120</div>
+		<div class="fs_125">.fs_125</div>
+		<div class="fs_130">.fs_130</div>
+		<div class="fs_135">.fs_135</div>
+		<div class="fs_140">.fs_140</div>
+		<div class="fs_145">.fs_145</div>
+		<div class="fs_150">.fs_150</div>
+		<div class="fs_155">.fs_155</div>
+		<div class="fs_160">.fs_160</div>
+		<div class="fs_165">.fs_165</div>
+		<div class="fs_170">.fs_170</div>
+		<div class="fs_175">.fs_175</div>
+		<div class="fs_180">.fs_180</div>
+		<div class="fs_185">.fs_185</div>
+		<div class="fs_190">.fs_190</div>
+		<div class="fs_195">.fs_195</div>
+		<div class="fs_200">.fs_200</div>
+	</div>
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Lines heights</h1>
+
+	<div class="space10"></div>
+
+	<div class='grid4 spaced'>
+		<div class="lh_60">	<span class='tag noir large bold'>.lh_60</span>		<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_70">	<span class='tag noir large bold'>.lh_70</span>		<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_80">	<span class='tag noir large bold'>.lh_80</span>		<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_90">	<span class='tag noir large bold'>.lh_90</span>		<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_100">	<span class='tag noir large bold'>.lh_100</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_110">	<span class='tag noir large bold'>.lh_110</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_120">	<span class='tag noir large bold'>.lh_120</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_130">	<span class='tag noir large bold'>.lh_130</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_140">	<span class='tag noir large bold'>.lh_140</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_150">	<span class='tag noir large bold'>.lh_150</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_160">	<span class='tag noir large bold'>.lh_160</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_170">	<span class='tag noir large bold'>.lh_170</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_180">	<span class='tag noir large bold'>.lh_180</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_190">	<span class='tag noir large bold'>.lh_190</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+		<div class="lh_200">	<span class='tag noir large bold'>.lh_200</span>	<br><br>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+	</div>
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<a name='forms'></a>
+	<h1>Formulaires</h1>
+
+	<div class="space20"></div>
+	<h3>Input : text</h3>
+	<input type="text" placeholder="input">
+	<input type="text" class="vert" placeholder=".vert">
+	<input type="text" class="orange" placeholder=".orange">
+	<input type="text" class="rouge" placeholder=".rouge">
+	<input type="text" class="bleu" placeholder=".bleu">
+
+
+	<div class="space20"></div>
+	<h3>Input : range</h3>
+	<div class="space5"></div>
+
+	<input type="range" id="range_demo" min="0" max="100" value="90" step="10" oninput="document.getElementById('range_demo_value').innerHTML = this.value;">
+	 <output id="range_demo_value" class="tag bubble large framboise">90</output>
+
+
+	<div class="space20"></div>
+	<h3>Select</h3>
+	<select>
+		<option>Option 1</option>
+		<option>Option 2</option>
+		<option>Option 3</option>
+		<option>Option 4</option>
+	</select>
+
+	<div class="space20"></div>
+
+	<h3>Textarea</h3>
+	<textarea placeholder="no resize (défaut)"></textarea>
+	<textarea class="resize" placeholder=".resize"></textarea>
+
+
+	<br>
+	<br>
+	<br><b>Bouton de confirmation : </b> <span class="tab"></span> <span class='small'>(Requiert JQuery)</span>
+		<div class="btn_confirm">
+			<span class="btn_confirm_span_1" onclick="$(this).hide();$(this).parent().find('.btn_confirm_span_2').fadeIn('fast');">Supprimer cet élement</span>
+			<span class="btn_confirm_span_2">
+				En êtes vous sûr ?
+				<a class="btn_confirm_link_oui" href="" onclick="$('.btn_confirm_span_2').fadeOut();">OUI</a>
+				<span class="btn_confirm_link_non" onclick="$('.btn_confirm_span_2').hide();$('.btn_confirm_span_1').fadeIn('fast');">NON</span>
+			</span>
+		</div>
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space100"></div>
+
+	<a name='col'></a>
+	<h1>Colonnes</h1>
+
+	<div class="space20"></div><b>Texte 2 colonnes</b><div class="space50"></div><div class="colonnes2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+	<div class="space50"></div><b>Texte 3 colonnes</b><div class="space50"></div><div class="colonnes3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+	<div class="space50"></div><b>Texte 4 colonnes</b><div class="space50"></div><div class="colonnes4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+	<div class="space50"></div><b>Texte 5 colonnes</b><div class="space50"></div><div class="colonnes5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus diam, blandit vel congue efficitur, lobortis nec nisi. Nulla eu ligula et ligula posuere vulputate. Morbi in eleifend est. Cras tempus id leo non sodales.</div>
+
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class='space100'></div>
+
+	<a name='grid'></a>
+	<h1>Contents</h1>
+
+	<div class='space20'></div>
+
+	<b>Content : 50/50</b> (.content__5050 .spaced)
+	<div class='content__5050 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>50</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>50</div>
+	</div>
+	
+	<div class='space20'></div>
+
+	<b>Content : 1/2</b> (.content__1-2 .spaced)
+	<div class='content__1-2 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2</div>
+	</div>
+	
+	<div class='space20'></div>
+
+	<b>Content : 2/1</b> (.content__2-1 .spaced)
+	<div class='content__2-1 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+	</div>
+
+	<div class='space20'></div>
+
+	<b>Content : 1/3</b> (.content__1-3 .spaced)
+	<div class='content__1-3 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>3</div>
+	</div>
+	
+	<div class='space20'></div>
+
+	<b>Content : 3/1</b> (.content__3-1 .spaced)
+	<div class='content__3-1 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>3</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+	</div>
+
+	
+	<div class='space20'></div>
+
+	<b>Content : 1/2/1</b> (.content__1-2-1 .spaced)
+	<div class='content__1-2-1 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class='space100'></div>
+
+	<a name='grid'></a>
+	<h1>Grilles</h1>
+
+	<div class='space20'></div>
+
+	<b>2 Colonnes</b> (.grid2 .spaced)
+	<div class='grid2 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2</div>
+	</div>
+
+	<b>2 Colonnes autosize</b> (.grid2 .spaced .auto)
+	<div class='grid2 spaced auto'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2 2 2 2 2 2 2 2 2 2</div>
+	</div>
+
+	<b>2 Colonnes autofit</b> (.grid2 .spaced .autofit)
+	<div class='grid2 spaced autofit'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2 2 2 2 2 2 2 2 2 2</div>
+	</div>
+
+
+	<div class='space20'></div>
+	<b>3 Colonnes</b> (.grid3 .spaced)
+	<div class='space20'></div>
+
+	<div class='grid3 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>3</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>4</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>5</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>6</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>7</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>8</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>9</div>
+	</div>
+
+	<div class='space20'></div>
+	<b>4 Colonnes</b> (.grid4 .spaced)
+	<div class='space20'></div>
+
+	<div class='grid4 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>3</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>4</div>
+	</div>
+
+
+	<div class='space20'></div>
+	<b>5 Colonnes</b> (.grid5 .spaced)
+	<div class='space20'></div>
+
+	<div class='grid5 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>3</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>4</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>5</div>
+	</div>
+
+
+	<div class='space20'></div>
+	<b>6 Colonnes</b> (.grid6 .spaced)
+	<div class='space20'></div>
+
+	<div class='grid6 spaced'>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>1</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>2</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>3</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>4</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>5</div>
+		<div class='center' style='background-color:lightpink;padding:4rem;'>6</div>
+	</div>
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class='space100'></div>
+	<a name="flex"></a>
+	<h1>Flexboxes</h1>
+
+	<div class='space20'></div>
+
+	<b>Flexbox</b> (.flex)
+	<div class='space20'></div>
+	<div class='flex'>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Lorem</div>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Ipsum</div>
+	</div>
+
+	<div class='space20'></div>
+
+	<b>Flexbox</b> (.flex)
+	<div class='space20'></div>
+	<div class='flex'>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Lorem ipsum dolor sit amet.</div>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</div>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Semper a suscipit amet, consectetur adipiscing elit.</div>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Fusce magna est, semper a suscipit vitae, tempor eget odio.</div>
+	</div>
+
+	<div class='space20'></div>
+
+	<b>Flexbox Autosized</b> (.flex .auto)
+	<div class='space20'></div>
+	<div class='flex auto'>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Lorem ipsum dolor sit amet.</div>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce magna est, semper a suscipit vitae, tempor eget odio.</div>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Semper a suscipit amet, consectetur adipiscing elit.</div>
+		<div class='center' style='border:1px dashed crimson;padding:4rem;'>Fusce magna est, semper a suscipit vitae, tempor eget odio.</div>
+	</div>
+
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space100"></div>
+	<h1>Tableaux</h1>
+
+	<h3>.tableau</h3>
+	<div class="space5"></div>
+	<table class="tableau">
+		<tbody>
+			<tr>
+				<td>TD 1</td>
+				<td>TD 2</td>
+				<td>TD 3</td>
+				<td>TD 4</td>
+			</tr>
+			<tr>
+				<td>TD 5</td>
+				<td>TD 6</td>
+				<td>TD 7</td>
+				<td>TD 8</td>
+			</tr>
+			<tr>
+				<td>TD 9</td>
+				<td>TD 10</td>
+				<td>TD 11</td>
+				<td>TD 12</td>
+			</tr>
+			<tr>
+				<td>TD 13</td>
+				<td>TD 14</td>
+				<td>TD 15</td>
+				<td>TD 16</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="space20"></div>
+
+
+	<div class="colonnes3">
+
+		<div class="colonne">
+			<h3>.tableau .spaced .auto</h3>
+			<div class="space5"></div>
+			<table class="tableau borders compact auto">
+				<tbody>
+					<tr>
+						<td>TD 1</td>
+						<td>TD 2</td>
+						<td>TD 3</td>
+						<td>TD 4</td>
+					</tr>
+					<tr>
+						<td>TD 5</td>
+						<td>TD 6</td>
+						<td>TD 7</td>
+						<td>TD 8</td>
+					</tr>
+					<tr>
+						<td>TD 9</td>
+						<td>TD 10</td>
+						<td>TD 11</td>
+						<td>TD 12</td>
+					</tr>
+					<tr>
+						<td>TD 13</td>
+						<td>TD 14</td>
+						<td>TD 15</td>
+						<td>TD 16</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="colonne">
+			<h3>.tableau .compact_spaced .auto</h3>
+			<div class="space5"></div>
+			<table class="tableau borders compact_spaced auto">
+				<tbody>
+					<tr>
+						<td>TD 1</td>
+						<td>TD 2</td>
+						<td>TD 3</td>
+						<td>TD 4</td>
+					</tr>
+					<tr>
+						<td>TD 5</td>
+						<td>TD 6</td>
+						<td>TD 7</td>
+						<td>TD 8</td>
+					</tr>
+					<tr>
+						<td>TD 9</td>
+						<td>TD 10</td>
+						<td>TD 11</td>
+						<td>TD 12</td>
+					</tr>
+					<tr>
+						<td>TD 13</td>
+						<td>TD 14</td>
+						<td>TD 15</td>
+						<td>TD 16</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="colonne">
+			<h3>.tableau .spaced .auto</h3>
+			<div class="space5"></div>
+			<table class="tableau borders spaced auto">
+				<tbody>
+					<tr>
+						<td>TD 1</td>
+						<td>TD 2</td>
+						<td>TD 3</td>
+						<td>TD 4</td>
+					</tr>
+					<tr>
+						<td>TD 5</td>
+						<td>TD 6</td>
+						<td>TD 7</td>
+						<td>TD 8</td>
+					</tr>
+					<tr>
+						<td>TD 9</td>
+						<td>TD 10</td>
+						<td>TD 11</td>
+						<td>TD 12</td>
+					</tr>
+					<tr>
+						<td>TD 13</td>
+						<td>TD 14</td>
+						<td>TD 15</td>
+						<td>TD 16</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+
+
+	<div class="space20"></div>
+
+	<h3>.tableau .borders</h3>
+	<div class="space5"></div>
+	<table class="tableau borders">
+		<tbody>
+			<tr>
+				<td>TD 1</td>
+				<td>TD 2</td>
+				<td>TD 3</td>
+				<td>TD 4</td>
+			</tr>
+			<tr>
+				<td>TD 5</td>
+				<td>TD 6</td>
+				<td>TD 7</td>
+				<td>TD 8</td>
+			</tr>
+			<tr>
+				<td>TD 9</td>
+				<td>TD 10</td>
+				<td>TD 11</td>
+				<td>TD 12</td>
+			</tr>
+			<tr>
+				<td>TD 13</td>
+				<td>TD 14</td>
+				<td>TD 15</td>
+				<td>TD 16</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="space20"></div>
+
+	<h3>.tableau .lines</h3>
+	<div class="space5"></div>
+	<table class="tableau lines">
+		<tbody>
+			<tr>
+				<td>TD 1</td>
+				<td>TD 2</td>
+				<td>TD 3</td>
+				<td>TD 4</td>
+			</tr>
+			<tr>
+				<td>TD 5</td>
+				<td>TD 6</td>
+				<td>TD 7</td>
+				<td>TD 8</td>
+			</tr>
+			<tr>
+				<td>TD 9</td>
+				<td>TD 10</td>
+				<td>TD 11</td>
+				<td>TD 12</td>
+			</tr>
+			<tr>
+				<td>TD 13</td>
+				<td>TD 14</td>
+				<td>TD 15</td>
+				<td>TD 16</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="space20"></div>
+
+	<h3>.tableau .borders .lines</h3>
+	<div class="space5"></div>
+	<table class="tableau borders lines">
+		<tbody>
+			<tr>
+				<td>TD 1</td>
+				<td>TD 2</td>
+				<td>TD 3</td>
+				<td>TD 4</td>
+			</tr>
+			<tr>
+				<td>TD 5</td>
+				<td>TD 6</td>
+				<td>TD 7</td>
+				<td>TD 8</td>
+			</tr>
+			<tr>
+				<td>TD 9</td>
+				<td>TD 10</td>
+				<td>TD 11</td>
+				<td>TD 12</td>
+			</tr>
+			<tr>
+				<td>TD 13</td>
+				<td>TD 14</td>
+				<td>TD 15</td>
+				<td>TD 16</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="space20"></div>
+
+	<h3>.tableau .borders .lines .hover</h3>
+	<div class="space5"></div>
+	<table class="tableau borders lines hover">
+		<tbody>
+			<tr>
+				<td>TD 1</td>
+				<td>TD 2</td>
+				<td>TD 3</td>
+				<td>TD 4</td>
+			</tr>
+			<tr>
+				<td>TD 5</td>
+				<td>TD 6</td>
+				<td>TD 7</td>
+				<td>TD 8</td>
+			</tr>
+			<tr>
+				<td>TD 9</td>
+				<td>TD 10</td>
+				<td>TD 11</td>
+				<td>TD 12</td>
+			</tr>
+			<tr>
+				<td>TD 13</td>
+				<td>TD 14</td>
+				<td>TD 15</td>
+				<td>TD 16</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="space20"></div>
+
+	<h3>.tableau .borders .lines ( + thead + colgroup )</h3>
+	<div class="space5"></div>
+	<table class="tableau borders lines">
+		<colgroup>
+			<col>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+
+		<thead>
+			<tr>
+				<th>Colonne 1</th>
+				<th>Colonne 2</th>
+				<th>Colonne 3</th>
+				<th>Colonne 4</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>TD 1</td>
+				<td>TD 2</td>
+				<td>TD 3</td>
+				<td>TD 4</td>
+			</tr>
+			<tr>
+				<td>TD 5</td>
+				<td>TD 6</td>
+				<td>TD 7</td>
+				<td>TD 8</td>
+			</tr>
+			<tr>
+				<td>TD 9</td>
+				<td>TD 10</td>
+				<td>TD 11</td>
+				<td>TD 12</td>
+			</tr>
+			<tr>
+				<td>TD 13</td>
+				<td>TD 14</td>
+				<td>TD 15</td>
+				<td>TD 16</td>
+			</tr>
+		</tbody>
+
+	</table>
+
+
+	<div class="space20"></div>
+
+	<h3>.tableau .auto .borders</h3>
+	<div class="space5"></div>
+	<table class="tableau auto borders">
+		<thead>
+			<tr>
+				<th>Colonne 1</th>
+				<th>Colonne 2</th>
+				<th>Colonne 3</th>
+				<th>Colonne 4</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>TD 1</td>
+				<td>TD 2</td>
+				<td>TD 3</td>
+				<td>TD 4</td>
+			</tr>
+			<tr>
+				<td>TD 5</td>
+				<td>TD 6</td>
+				<td>TD 7</td>
+				<td>TD 8</td>
+			</tr>
+			<tr>
+				<td>TD 9</td>
+				<td>TD 10</td>
+				<td>TD 11</td>
+				<td>TD 12</td>
+			</tr>
+			<tr>
+				<td>TD 13</td>
+				<td>TD 14</td>
+				<td>TD 15</td>
+				<td>TD 16</td>
+			</tr>
+		</tbody>
+
+	</table>
+
+
+
+	<div class="space50"></div>
+
+
+	<div class="colonnes3">
+
+		<div class="colonne">
+			<h3>div.table</h3>
+			<div class="space5"></div>
+
+			<div class="table">
+				<div class="table_row">
+					<div class="table_cell">div.table_cell 1</div>
+					<div class="table_cell">div.table_cell 2</div>
+				</div>
+				<div class="table_row">
+					<div class="table_cell">div.table_cell 3</div>
+					<div class="table_cell">div.table_cell 4</div>
+				</div>
+				<div class="table_row">
+					<div class="table_cell">div.table_cell 5</div>
+					<div class="table_cell">div.table_cell 6</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="colonne">
+			<h3>div.table.borders</h3>
+			<div class="space5"></div>
+
+			<div class="table borders">
+				<div class="table_row">
+					<div class="table_cell">div.table_cell 1</div>
+					<div class="table_cell">div.table_cell 2</div>
+				</div>
+				<div class="table_row">
+					<div class="table_cell">div.table_cell 3</div>
+					<div class="table_cell">div.table_cell 4</div>
+				</div>
+				<div class="table_row">
+					<div class="table_cell">div.table_cell 5</div>
+					<div class="table_cell">div.table_cell 6</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="colonne">
+			<h3>div.table.borders.spaced</h3>
+			<div class="space5"></div>
+
+			<div class="table borders spaced">
+				<div class="table_row">
+					<div class="table_cell">div.table_cell 1</div>
+					<div class="table_cell">div.table_cell 2</div>
+				</div>
+				<div class="table_row">
+					<div class="table_cell">div.table_cell 3</div>
+					<div class="table_cell">div.table_cell 4</div>
+				</div>
+				<div class="table_row">
+					<div class="table_cell">div.table_cell 5</div>
+					<div class="table_cell">div.table_cell 6</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<div class="space20"></div>
+
+	<h3>div .table .large</h3>
+	<div class="space5"></div>
+
+	<div class="table large borders">
+		<div class="table_row">
+			<div class="table_cell">div.table_cell 1-1</div>
+			<div class="table_cell">div.table_cell 1-2</div>
+			<div class="table_cell">div.table_cell 1-3</div>
+			<div class="table_cell">div.table_cell 1-4</div>
+		</div>
+		<div class="table_row">
+			<div class="table_cell">div.table_cell 2-1</div>
+			<div class="table_cell">div.table_cell 2-2</div>
+			<div class="table_cell">div.table_cell 2-3</div>
+			<div class="table_cell">div.table_cell 2-4</div>
+		</div>
+		<div class="table_row">
+			<div class="table_cell">div.table_cell 3-1</div>
+			<div class="table_cell">div.table_cell 3-2</div>
+			<div class="table_cell">div.table_cell 3-3</div>
+			<div class="table_cell">div.table_cell 3-4</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Lignes HR</h1>
+	<div class="space20"></div>
+
+	<h3>.hr / .hr1</h3>
+	<hr>
+
+	<h3>.hr2</h3>
+	<hr class="hr2">
+
+	<h3>.hr3</h3>
+	<hr class="hr3">
+
+	<h3>.hr4</h3>
+	<hr class="hr4">
+
+	<h3>.hr5</h3>
+	<hr class="hr5">
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Autosize</h1>
+	<div class="space20"></div>
+
+	<div class="grid4 spaced">
+		<div class="center" style="padding:4rem;"><div class="monospaced fs_85 autosize" style="border:2px dashed crimson;color:crimson;"><div class="absolute full autocenter">.autosize (16/9)</div></div></div>
+		<div class="center" style="padding:4rem;"><div class="monospaced fs_85 autosize ratio-3-2" style="border:2px dashed crimson;color:crimson;"><div class="absolute full autocenter">.autosize.ratio-3-2</div></div></div>
+		<div class="center" style="padding:4rem;"><div class="monospaced fs_85 autosize ratio-4-3" style="border:2px dashed crimson;color:crimson;"><div class="absolute full autocenter">.autosize.ratio-4-3</div></div></div>
+		<div class="center" style="padding:4rem;"><div class="monospaced fs_85 autosize ratio-1-1" style="border:2px dashed crimson;color:crimson;"><div class="absolute full autocenter">.autosize.ratio-1-1</div></div></div>
+	</div>
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Centering</h1>
+	<div class="space20"></div>
+
+	<div class="grid3 spaced">
+
+		<div class="center" style="padding:4rem;">
+			<div class="monospaced fs_85 vertical_center" style="height:5rem;border:2px dashed crimson;color:crimson;">.vertical_center</div>
+		</div>
+
+		<div class="center" style="padding:4rem;">
+			<div class="monospaced fs_85 autocenter" style="height:5rem;border:2px dashed crimson;color:crimson;">.autocenter</div>
+		</div>
+
+		<div class="center" style="padding:4rem;">
+			<div class="monospaced fs_85 vertical_center right" style="height:5rem;border:2px dashed crimson;color:crimson;">.vertical_center .right</div>
+		</div>
+
+	</div>
+
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Ombres</h1>
+	<div class="space20"></div>
+
+	<div class="grid4 spaced">
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white" style="padding:3rem 0rem;">*none*</div></div>
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_legere" style="padding:3rem 0rem;">.ombre_legere</div></div>
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre" style="padding:3rem 0rem;">.ombre</div></div>
+	</div>
+
+	<div class="grid4 spaced">
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_top" style="padding:3rem 0rem;">.ombre_top</div></div>
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_left" style="padding:3rem 0rem;">.ombre_left</div></div>
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_right" style="padding:3rem 0rem;">.ombre_right</div></div>
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_bottom" style="padding:3rem 0rem;">.ombre_bottom</div></div>
+	</div>
+
+	<div class="grid4 spaced">
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_inset_top" style="padding:3rem 0rem;">.ombre_inset_top</div></div>
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_inset_left" style="padding:3rem 0rem;">.ombre_inset_left</div></div>
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_inset_right" style="padding:3rem 0rem;">.ombre_inset_right</div></div>
+		<div class="center padding" style="padding:3rem;"><div class="autocenter monospaced fs_85 bgc-white ombre_inset_bottom" style="padding:3rem 0rem;">.ombre_inset_bottom</div></div>
+	</div>
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space50"></div>
+
+	<h1>Loaders</h1>
+	<div class="space20"></div>
+
+	<div class="monospaced small">	<span class='tab3'></span> <b>._txt_loader</b>	</div>
+	<div>						<span class='tab3'></span> <span class='_txt_loader'></span></div>
+
+	<div class="space20"></div>
+
+	<div class="grid6 spaced">
+		<div class="center padding monospaced small"><b>._loader.small</b>	</div>
+		<div class="center padding monospaced small"><b>._loader</b>		</div>
+		<div class="center padding monospaced small"><b>._loader.big</b>		</div>
+		<div class="center padding monospaced small"><b>._loader</b> 	<br><br>--s : 100px;</div>
+		<div class="center padding monospaced small"><b>._loader</b> 	<br><br>--bg : #D7D1F7;<br>--fg : #4F3B78;</div>
+		<div class="center padding monospaced small"><b>._loader</b> 	<br><br>--bg : #0b8457;<br>--fg : transparent;</div>
+
+		<div class="center padding"><span class='_loader small'></span></div>
+		<div class="center padding"><span class='_loader'></span></div>
+		<div class="center padding"><span class='_loader big'></span></div>
+		<div class="center padding"><span class='_loader' style='--s:100px;'></span></div>
+		<div class="center padding"><span class='_loader' style='--bg:#D7D1F7;--fg:#4F3B78;'></span></div>
+		<div class="center padding"><span class='_loader' style='--bg:#0b8457;--fg:transparent;'></span></div>
+	</div>
+
+	
+	
+
+
+
+	<!-- --------------------------------------------------------------------------------------------- -->
+
+	<div class="space200"></div>
+
+
+
+<!-- --------------------------------------------------------------------------------------------- -->
+
+</div>
+
+</body>
+</html>
