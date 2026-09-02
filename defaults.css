@@ -1,7 +1,7 @@
 /** --------------------------------------------------------------------------------------------------------------------------------------------
 * Author		: @ptibat
-* Dev start		: 18/04/2014
-* Last modif	: 12/02/2026 15:50
+* Dev start		: 2014-04-18
+* Last modif	: 2026-07-23 15:48
 * Description	: Fichier de config CSS par défaut
 --------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -340,6 +340,7 @@ img.zoom_effect:hover,
 	{
 		transform :				scale(1.1);
 	}
+
 
 /* ------------------------------------------------------------------------------------ MONOCHROME */
 
@@ -1187,7 +1188,6 @@ body .height_100v			{ height :	100vh; }
 		display :				none;
 	}
 
-.hidden,
 .captcha
 	{
 		visibility :			hidden;
@@ -1199,18 +1199,6 @@ body .height_100v			{ height :	100vh; }
 		padding :				0 !important;
 		width :				0 !important;
 		height :				0 !important;
-	}
-
-.hide
-	{
-		display :				none;
-	}
-
-.force_hide
-	{
-		position :				absolute;
-		top :					-9999px;
-		left :				-9999px;
 	}
 
 
@@ -1278,6 +1266,31 @@ select.minimalist
 		left :				0;
 		right :				0;
 	}
+
+/* ------------------------------------------------------------------------------------ VISIBILITÉ */
+
+[hidden]
+	{
+		display :				none !important;
+	}
+
+.hidden
+	{
+		visibility :			hidden;
+	}
+
+body .hide
+	{
+		display :				none;
+	}
+
+body .force_hide
+	{
+		position :				absolute;
+		top :					-9999px;
+		left :				-9999px;
+	}
+
 
 /* ------------------------------------------------------------------------------------ ESPACEMENTS */
 
@@ -1361,7 +1374,7 @@ div.tag
 
 span.tag
 	{
-		display :				inline-block;
+		display :				inline;
 	}
 
 
@@ -1489,6 +1502,11 @@ body .opacity_100		{ opacity :		1.0;  }
 .ombre_legere
 	{
 		box-shadow :			0 0 2em rgba( 0 , 0 , 0, 0.03 );
+	}
+
+.ombre_large
+	{
+		box-shadow :			0 25px 60px #151c2c24;
 	}
 
 .ombre_top			{ box-shadow : 0 -0.5em 0.8em -0.5em rgba(0,0,0,0.4);	}
@@ -1931,9 +1949,9 @@ a.bouton,
 /* ----------------------------------------------------------------- CYAN */
 
 .bouton.cyan,
-.tag.cyan							{ background-color : 	#05B9D6; }
+.tag.cyan							{ background-color : 	#01BAFF; }
 .bouton.cyan:not(.disabled):hover,
-.bouton.cyan.current					{ background-color :	#3BAFDA; color : #FFF; }
+.bouton.cyan.current					{ background-color :	#00A5E2; color : #FFF; }
 .bouton.cyan,
 .bouton.cyan *:not(.bouton):not(.tag),
 .tag.cyan,
@@ -1953,13 +1971,24 @@ a.bouton,
 /* ----------------------------------------------------------------- BLEU FONCÉ */
 
 .bouton.bleu_fonce,
-.tag.bleu_fonce						{ background-color : 	#095496; }
+.tag.bleu_fonce						{ background-color : 	#0000AA; }
 .bouton.bleu_fonce:not(.disabled):hover,
-.bouton.bleu_fonce.current				{ background-color :	#0F4C82; color : #FFF; }
+.bouton.bleu_fonce.current				{ background-color :	#001188; color : #FFF; }
 .bouton.bleu_fonce,
 .bouton.bleu_fonce *:not(.bouton):not(.tag),
 .tag.bleu_fonce,
 .tag.bleu_fonce *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
+
+/* ----------------------------------------------------------------- BLEU MARINE */
+
+.bouton.bleu_marine,
+.tag.bleu_marine						{ background-color : 	#103668; }
+.bouton.bleu_marine:not(.disabled):hover,
+.bouton.bleu_marine.current				{ background-color :	#0A2B58; color : #FFF; }
+.bouton.bleu_marine,
+.bouton.bleu_marine *:not(.bouton):not(.tag),
+.tag.bleu_marine,
+.tag.bleu_marine *:not(.bouton):not(.tag)		{ color : 			#FFFFFF; }
 
 /* ----------------------------------------------------------------- BLEU CLAIR */
 
@@ -2257,7 +2286,6 @@ textarea,
 select,
 input[type="text"],
 input[type="number"],
-input[type="date"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
@@ -2301,6 +2329,11 @@ textarea:required:focus
 	{
 		border-color :			#A66;
 		border-left-color :		#F00;
+	}
+
+input[type="date"]
+	{
+		text-transform :			uppercase;
 	}
 
 input.date
@@ -2908,7 +2941,7 @@ table.tableau > tbody > tr.highlight > td
 
 /* ------------------------------------------------------------------------------------ GRILLE */
 
-[class*="grid"]
+[class*="grid__"]
 	{
 		--col : 				1fr;
 
@@ -2919,67 +2952,67 @@ table.tableau > tbody > tr.highlight > td
 		grid-auto-flow :			dense;
 	}
 
-[class*="grid"].spaced
+[class*="grid__"].spaced
 	{
 		grid-gap :				0.6rem;
 	}
 
-[class*="grid"].large_spaced
+[class*="grid__"].large_spaced
 	{
 		grid-gap :				2rem;
 	}
 
 
-[class*="grid"].auto,
-[class*="grid"].autofit
+[class*="grid__"].auto,
+[class*="grid__"].autofit
 	{
 		--col :				auto;
 		width :				fit-content;
 	}
 
-[class*="grid"].autofit,
-[class*="grid"].autofit > div
+[class*="grid__"].autofit,
+[class*="grid__"].autofit > div
 	{
 		--col :				auto;
 		width :				min-content;
 	}
 
-[class*="grid"] > div
+[class*="grid__"] > div
 	{
 		grid-column-end :			span 1;
 		grid-row-end :			span 1;
 	}
 
-.grid1	{ grid-template-columns : repeat(  1 , var(--col) ); }
-.grid2	{ grid-template-columns : repeat(  2 , var(--col) ); }
-.grid3	{ grid-template-columns : repeat(  3 , var(--col) ); }
-.grid4	{ grid-template-columns : repeat(  4 , var(--col) ); }
-.grid5	{ grid-template-columns : repeat(  5 , var(--col) ); }
-.grid6	{ grid-template-columns : repeat(  6 , var(--col) ); }
-.grid7	{ grid-template-columns : repeat(  7 , var(--col) ); }
-.grid8	{ grid-template-columns : repeat(  8 , var(--col) ); }
-.grid9	{ grid-template-columns : repeat(  9 , var(--col) ); }
-.grid10	{ grid-template-columns : repeat( 10 , var(--col) ); }
-.grid11	{ grid-template-columns : repeat( 11 , var(--col) ); }
-.grid12	{ grid-template-columns : repeat( 12 , var(--col) ); }
-.grid13	{ grid-template-columns : repeat( 13 , var(--col) ); }
-.grid14	{ grid-template-columns : repeat( 14 , var(--col) ); }
-.grid15	{ grid-template-columns : repeat( 15 , var(--col) ); }
-.grid16	{ grid-template-columns : repeat( 16 , var(--col) ); }
-.grid17	{ grid-template-columns : repeat( 17 , var(--col) ); }
-.grid18	{ grid-template-columns : repeat( 18 , var(--col) ); }
-.grid19	{ grid-template-columns : repeat( 19 , var(--col) ); }
-.grid20	{ grid-template-columns : repeat( 20 , var(--col) ); }
-.grid21	{ grid-template-columns : repeat( 21 , var(--col) ); }
-.grid22	{ grid-template-columns : repeat( 22 , var(--col) ); }
-.grid23	{ grid-template-columns : repeat( 23 , var(--col) ); }
-.grid24	{ grid-template-columns : repeat( 24 , var(--col) ); }
-.grid25	{ grid-template-columns : repeat( 25 , var(--col) ); }
-.grid26	{ grid-template-columns : repeat( 26 , var(--col) ); }
-.grid27	{ grid-template-columns : repeat( 27 , var(--col) ); }
-.grid28	{ grid-template-columns : repeat( 28 , var(--col) ); }
-.grid29	{ grid-template-columns : repeat( 29 , var(--col) ); }
-.grid30	{ grid-template-columns : repeat( 30 , var(--col) ); }
+.grid__1	{ grid-template-columns : repeat(  1 , var(--col) ); }
+.grid__2	{ grid-template-columns : repeat(  2 , var(--col) ); }
+.grid__3	{ grid-template-columns : repeat(  3 , var(--col) ); }
+.grid__4	{ grid-template-columns : repeat(  4 , var(--col) ); }
+.grid__5	{ grid-template-columns : repeat(  5 , var(--col) ); }
+.grid__6	{ grid-template-columns : repeat(  6 , var(--col) ); }
+.grid__7	{ grid-template-columns : repeat(  7 , var(--col) ); }
+.grid__8	{ grid-template-columns : repeat(  8 , var(--col) ); }
+.grid__9	{ grid-template-columns : repeat(  9 , var(--col) ); }
+.grid__10	{ grid-template-columns : repeat( 10 , var(--col) ); }
+.grid__11	{ grid-template-columns : repeat( 11 , var(--col) ); }
+.grid__12	{ grid-template-columns : repeat( 12 , var(--col) ); }
+.grid__13	{ grid-template-columns : repeat( 13 , var(--col) ); }
+.grid__14	{ grid-template-columns : repeat( 14 , var(--col) ); }
+.grid__15	{ grid-template-columns : repeat( 15 , var(--col) ); }
+.grid__16	{ grid-template-columns : repeat( 16 , var(--col) ); }
+.grid__17	{ grid-template-columns : repeat( 17 , var(--col) ); }
+.grid__18	{ grid-template-columns : repeat( 18 , var(--col) ); }
+.grid__19	{ grid-template-columns : repeat( 19 , var(--col) ); }
+.grid__20	{ grid-template-columns : repeat( 20 , var(--col) ); }
+.grid__21	{ grid-template-columns : repeat( 21 , var(--col) ); }
+.grid__22	{ grid-template-columns : repeat( 22 , var(--col) ); }
+.grid__23	{ grid-template-columns : repeat( 23 , var(--col) ); }
+.grid__24	{ grid-template-columns : repeat( 24 , var(--col) ); }
+.grid__25	{ grid-template-columns : repeat( 25 , var(--col) ); }
+.grid__26	{ grid-template-columns : repeat( 26 , var(--col) ); }
+.grid__27	{ grid-template-columns : repeat( 27 , var(--col) ); }
+.grid__28	{ grid-template-columns : repeat( 28 , var(--col) ); }
+.grid__29	{ grid-template-columns : repeat( 29 , var(--col) ); }
+.grid__30	{ grid-template-columns : repeat( 30 , var(--col) ); }
 
 
 
